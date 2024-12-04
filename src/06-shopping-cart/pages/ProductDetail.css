@@ -1,0 +1,146 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerproductdetail {
+  border-radius: 6px;
+  width: 750px;
+  max-height: 420px;
+  border: 1px solid gray;
+}
+
+.productdetail {
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+}
+
+.containerpdimg {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.containerpdimg img {
+  width: 400px;
+  height: 385px;
+  object-fit: contain;
+}
+
+.pdcontent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+#p-title {
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: white;
+  opacity: 0.8;
+}
+
+#p-price {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: white;
+  font-weight: 800;
+}
+
+#p-ccuotas {
+  text-decoration: underline;
+}
+
+#octv {
+  margin-top: 20px;
+}
+
+.padrebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productdetail button {
+  cursor: pointer;
+  width: 200px;
+}
+
+/* cart icon */
+.containercp .cart-button {
+  left: -100px;
+}
+
+@media (min-width: 359px) and (max-width: 376px) {
+  .containerproductdetail {
+    width: 310px;
+    max-height: 720px;
+  }
+
+  .containerproductdetail .containerpdimg img {
+    width: 250px;
+  }
+
+  .productdetail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #octv {
+    width: 62%;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 391px) {
+  .containerproductdetail {
+    width: 320px;
+    max-height: 750px;
+  }
+
+  .containerproductdetail .containerpdimg {
+    margin-top: 0;
+  }
+
+  .containerproductdetail .containerpdimg img {
+    width: 270px;
+  }
+
+  .containerproductdetail .pdcontent {
+    margin-top: 0;
+  }
+  .productdetail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #octv {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 411px) and (max-width: 432px) {
+  .containerproductdetail {
+    width: 355px;
+    max-height: 760px;
+  }
+
+  .containerproductdetail .containerpdimg img {
+    width: 180px;
+  }
+
+  .productdetail {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #octv {
+    width: 95%;
+    margin-top: 20px;
+  }
+}
