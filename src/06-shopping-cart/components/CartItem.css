@@ -1,0 +1,31 @@
+strong {
+  color: black;
+}
+
+#title {
+  opacity: 0.8;
+}
+
+#price {
+  font-size: 22px;
+  font-weight: 790;
+}
+
+footer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+footer button {
+  color: black;
+  background-color: green;
+  font-size: 18px;
+}
+
+footer span {
+  color: black;
+  opacity: 0.9;
+  font-size: 18px;
+}
