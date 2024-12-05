@@ -11,7 +11,7 @@
       "brand": "Golden",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "/assets/productos/key holder.jpg",
+      "thumbnail": "./assets/productos/key holder.jpg",
       "images": ["http://localhost:5173/imagenes/key holder.jpg"]
     },
     {
@@ -25,7 +25,7 @@
       "brand": "Apple",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "/assets/productos/mcbook-pro-1-631.jpg",
+      "thumbnail": "./assets/productos/mcbook-pro-1-631.jpg",
       "images": ["http://localhost:5173/imagenes/mcbook-pro-1-631.jpg"]
     },
     {
