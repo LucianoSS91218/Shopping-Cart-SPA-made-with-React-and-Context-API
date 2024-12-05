@@ -11,7 +11,7 @@
       "brand": "Golden",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/key holder.jpg",
+      "thumbnail": "/assets/productos/key holder.jpg",
       "images": ["http://localhost:5173/imagenes/key holder.jpg"]
     },
     {
@@ -25,7 +25,7 @@
       "brand": "Apple",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/mcbook-pro-1-631.jpg",
+      "thumbnail": "/assets/productos/mcbook-pro-1-631.jpg",
       "images": ["http://localhost:5173/imagenes/mcbook-pro-1-631.jpg"]
     },
     {
@@ -39,7 +39,7 @@
       "brand": "Apple",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/iphone x.jpg",
+      "thumbnail": "/assets/productos/iphone x.jpg",
       "images": ["http://localhost:5173/imagenes/iphone x.jpg"]
     },
     {
@@ -53,7 +53,7 @@
       "brand": "Samsung",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/galaxy-s9.jpg",
+      "thumbnail": "/assets/productos/galaxy-s9.jpg",
       "images": ["http://localhost:5173/imagenes/galaxy-s9.jpg"]
     },
     {
@@ -67,7 +67,7 @@
       "brand": "OPPO",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/oppo-f19.jpg",
+      "thumbnail": "/assets/productos/oppo-f19.jpg",
       "images": ["http://localhost:5173/imagenes/oppo-f19.jpg"]
     },
     {
@@ -81,7 +81,7 @@
       "brand": "Huawei",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/huawei p30.jpg",
+      "thumbnail": "/assets/productos/huawei p30.jpg",
       "images": ["http://localhost:5173/imagenes/huawei p30.jpg"]
     },
     {
@@ -95,7 +95,7 @@
       "brand": "Samsung",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/samsung galaxy book laptop.jpg",
+      "thumbnail": "/assets/productos/samsung galaxy book laptop.jpg",
       "images": [
         "http://localhost:5173/imagenes/samsung galaxy book laptop.jpg"
       ]
@@ -111,7 +111,7 @@
       "brand": "Apple",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/iphone_9_white.jpg",
+      "thumbnail": "/assets/productos/iphone_9_white.jpg",
       "images": ["http://localhost:5173/imagenes/iphone_9_white.jpg"]
     },
     {
@@ -125,7 +125,7 @@
       "brand": "Microsoft Surface",
       "category": "laptops",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/microsoft-surface-laptop 4.jpg",
+      "thumbnail": "/assets/productos/microsoft-surface-laptop 4.jpg",
       "images": [
         "http://localhost:5173/imagenes/microsoft-surface-laptop 4.jpg"
       ]
@@ -141,7 +141,7 @@
       "brand": "Infinix",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Infinix INBOOK.jpg",
+      "thumbnail": "/assets/productos/Infinix INBOOK.jpg",
       "images": ["http://localhost:5173/imagenes/Infinix INBOOK.jpg"]
     },
     {
@@ -155,7 +155,7 @@
       "brand": "HP Pavilion",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/hp pavilion 15.jpg",
+      "thumbnail": "/assets/productos/hp pavilion 15.jpg",
       "images": ["http://localhost:5173/imagenes/Hp pavilion 15.jpg"]
     },
     {
@@ -169,7 +169,7 @@
       "brand": "Impression of Acqua Di Gio",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Non-Alcoholic Concentrated Perfume Oil.webp",
+      "thumbnail": "/assets/productos/Non-Alcoholic Concentrated Perfume Oil.webp",
       "images": [
         "http://localhost:5173/imagenes/Non-Alcoholic Concentrated Perfume Oil.webp"
       ]
@@ -185,7 +185,7 @@
       "brand": "Royal_Mirage",
       "category": "fragrances",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/Brown Perfume.jpg",
+      "thumbnail": "/assets/productos/Brown Perfume.jpg",
       "images": ["http://localhost:5173/imagenes/Brown Perfume.jpg"]
     },
     {
@@ -199,7 +199,7 @@
       "brand": "Fog Scent Xpressio",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Fog Scent Xpressio Perfume.jpg",
+      "thumbnail": "/assets/productos/Fog Scent Xpressio Perfume.jpg",
       "images": [
         "http://localhost:5173/imagenes/Fog Scent Xpressio Perfume.jpg"
       ]
@@ -215,7 +215,7 @@
       "brand": "Al Munakh",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/nonalcoholicperfume.jpg",
+      "thumbnail": "/assets/productos/nonalcoholicperfume.jpg",
       "images": ["http://localhost:5173/imagenes/nonalcoholicperfume.jpg"]
     },
     {
@@ -229,7 +229,7 @@
       "brand": "Lord - Al-Rehab",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Eau De Perfume Spray.jpg",
+      "thumbnail": "/assets/productos/Eau De Perfume Spray.jpg",
       "images": ["http://localhost:5173/imagenes/Eau De Perfume Spray.jpg"]
     },
     {
@@ -243,7 +243,7 @@
       "brand": "L'Oreal Paris",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Hyaluronic Acid Serum.jpg",
+      "thumbnail": "/assets/productos/Hyaluronic Acid Serum.jpg",
       "images": ["http://localhost:5173/imagenes/Hyaluronic Acid Serum.png"]
     },
     {
@@ -257,7 +257,7 @@
       "brand": "Hemani Tea",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Tree Oil 30ml.jpg",
+      "thumbnail": "/assets/productos/Tree Oil 30ml.jpg",
       "images": ["http://localhost:5173/imagenes/Tree Oil 30ml.jpg"]
     },
     {
@@ -271,7 +271,7 @@
       "brand": "Dermive",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Oil Free Moisturizer 100ml.jpg",
+      "thumbnail": "/assets/productos/Oil Free Moisturizer 100ml.jpg",
       "images": [
         "http://localhost:5173/imagenes/Oil Free Moisturizer 100ml.jpg"
       ]
@@ -287,7 +287,7 @@
       "brand": "ROREC White Rice",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Skin Beauty Serum.jpg",
+      "thumbnail": "/assets/productos/Skin Beauty Serum.jpg",
       "images": ["http://localhost:5173/imagenes/Skin Beauty Serum.jpg"]
     },
     {
@@ -301,7 +301,7 @@
       "brand": "Fair & Clear",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Freckle Treatment Cream- 15gm.jpg",
+      "thumbnail": "/assets/productos/Freckle Treatment Cream- 15gm.jpg",
       "images": [
         "http://localhost:5173/imagenes/Freckle Treatment Cream- 15gm.jpg"
       ]
@@ -317,7 +317,7 @@
       "brand": "Saaf & Khaas",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Daal Masoor 500 grams.jpg",
+      "thumbnail": "/assets/productos/Daal Masoor 500 grams.jpg",
       "images": ["http://localhost:5173/imagenes/Daal Masoor 500 grams.jpg"]
     },
     {
@@ -331,7 +331,7 @@
       "brand": "Bake Parlor Big",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Elbow Macaroni - 400 gm.webp",
+      "thumbnail": "/assets/productos/Elbow Macaroni - 400 gm.webp",
       "images": ["http://localhost:5173/imagenes/Elbow Macaroni - 400 gm.webp"]
     },
     {
@@ -345,7 +345,7 @@
       "brand": "Baking Food Items",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Orange Essence Food Flavou.jpg",
+      "thumbnail": "/assets/productos/Orange Essence Food Flavou.jpg",
       "images": [
         "http://localhost:5173/imagenes/Orange Essence Food Flavou.jpg"
       ]
@@ -361,7 +361,7 @@
       "brand": "fauji",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/cereals muesli fruit nuts.jpg",
+      "thumbnail": "/assets/productos/cereals muesli fruit nuts.jpg",
       "images": ["http://localhost:5173/imagenes/cereals muesli fruit nuts.jpg"]
     },
     {
@@ -375,7 +375,7 @@
       "brand": "Dry Rose",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Gulab Powder 50 Gram.jpg",
+      "thumbnail": "/assets/productos/Gulab Powder 50 Gram.jpg",
       "images": ["http://localhost:5173/imagenes/Gulab Powder 50 Gram.png"]
     },
     {
@@ -389,7 +389,7 @@
       "brand": "Boho Decor",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Plant Hanger For Home.jpg",
+      "thumbnail": "/assets/productos/Plant Hanger For Home.jpg",
       "images": ["http://localhost:5173/imagenes/Plant Hanger For Home.jpg"]
     },
     {
@@ -403,7 +403,7 @@
       "brand": "Flying Wooden",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Flying Wooden Bird.jpg",
+      "thumbnail": "/assets/productos/Flying Wooden Bird.jpg",
       "images": ["http://localhost:5173/imagenes/Flying Wooden Bird.jpg"]
     },
     {
@@ -417,7 +417,7 @@
       "brand": "LED Lights",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/3D Embellishment Art Lamp.jpg",
+      "thumbnail": "/assets/productos/3D Embellishment Art Lamp.jpg",
       "images": ["http://localhost:5173/imagenes/3D Embellishment Art Lamp.jpg"]
     },
     {
@@ -431,7 +431,7 @@
       "brand": "luxury palace",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Handcraft Chinese style.jpg",
+      "thumbnail": "/assets/productos/Handcraft Chinese style.jpg",
       "images": ["http://localhost:5173/imagenes/Handcraft Chinese style.jpg"]
     },
     {
@@ -445,7 +445,7 @@
       "brand": "Motorola",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/motorola-g60.jpg",
+      "thumbnail": "/assets/productos/motorola-g60.jpg",
       "images": ["http://localhost:5173/imagenes/motorola-g60.jpg"]
     },
     {
@@ -459,7 +459,7 @@
       "brand": "Motorola",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/moto-edge-40.jpg",
+      "thumbnail": "/assets/productos/moto-edge-40.jpg",
       "images": ["http://localhost:5173/imagenes/moto-edge-40.jpg"]
     },
     {
@@ -473,7 +473,7 @@
       "brand": "Motorola",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/moto-edge-50.jpg",
+      "thumbnail": "/assets/productos/moto-edge-50.jpg",
       "images": ["http://localhost:5173/imagenes/moto-edge-50.jpg"]
     },
     {
@@ -487,7 +487,7 @@
       "brand": "Motorola",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Moto-G42.jpg",
+      "thumbnail": "/assets/productos/Moto-G42.jpg",
       "images": ["http://localhost:5173/imagenes/Moto-G42.jpg"]
     },
     {
@@ -501,7 +501,7 @@
       "brand": "Google",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/google-pixel-5.jpg",
+      "thumbnail": "/assets/productos/google-pixel-5.jpg",
       "images": ["http://localhost:5173/imagenes/google-pixel-5.jpg"]
     },
     {
@@ -515,7 +515,7 @@
       "brand": "Iphone",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/iphone 13.jpg",
+      "thumbnail": "/assets/productos/iphone 13.jpg",
       "images": ["http://localhost:5173/imagenes/iphone 13.jpg"]
     },
     {
@@ -529,7 +529,7 @@
       "brand": "Xiaomi",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Pocophone Poco C40.jpg",
+      "thumbnail": "/assets/productos/Pocophone Poco C40.jpg",
       "images": ["http://localhost:5173/imagenes/Pocophone Poco C40.jpg"]
     },
     {
@@ -543,7 +543,7 @@
       "brand": "Xiaomi",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Redmi A3.jpg",
+      "thumbnail": "/assets/productos/Redmi A3.jpg",
       "images": ["http://localhost:5173/imagenes/Redmi A3.jpg"]
     },
     {
@@ -557,7 +557,7 @@
       "brand": "Samsung",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/galaxy a04.jpg",
+      "thumbnail": "/assets/productos/galaxy a04.jpg",
       "images": ["http://localhost:5173/imagenes/galaxy a04.jpg"]
     },
     {
@@ -571,7 +571,7 @@
       "brand": "Iphone",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/iphone-8-256gb-gold.jpg",
+      "thumbnail": "/assets/productos/iphone-8-256gb-gold.jpg",
       "images": ["http://localhost:5173/imagenes/iphone-8-256gb-gold.jpg"]
     },
     {
@@ -585,7 +585,7 @@
       "brand": "Google",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/google-pixel-4.jpg",
+      "thumbnail": "/assets/productos/google-pixel-4.jpg",
       "images": ["http://localhost:5173/imagenes/google-pixel-4.jpg"]
     },
     {
@@ -599,7 +599,7 @@
       "brand": "Samsung",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/SGS20FE.jpg",
+      "thumbnail": "/assets/productos/imagenes/SGS20FE.jpg",
       "images": ["http://localhost:5173/imagenes/SGS20FE.jpg"]
     },
     {
@@ -613,7 +613,7 @@
       "brand": "Iphone",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/iphone 12.jpg",
+      "thumbnail": "/assets/productos/iphone 12.jpg",
       "images": ["http://localhost:5173/imagenes/iphone 12.jpg"]
     },
     {
@@ -627,7 +627,7 @@
       "brand": "Mac",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Moto G04s.jpg",
+      "thumbnail": "/assets/productos/Moto G04s.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -644,7 +644,7 @@
       "brand": "Mac",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/galaxy a15.jpg",
+      "thumbnail": "/assets/productos/galaxy a15.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -661,7 +661,7 @@
       "brand": "Mac",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/TCL 40SE.jpg",
+      "thumbnail": "/assets/productos/TCL 40SE.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -678,7 +678,7 @@
       "brand": "Mac",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/Galaxy A55.jpg",
+      "thumbnail": "/assets/productos/Galaxy A55.jpg",
       "images": [
         "http://localhost:5173/imagenes/Galaxy A55.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -695,7 +695,7 @@
       "brand": "Mac",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/Moto G85.jpg",
+      "thumbnail": "/assets/productos/Moto G85.jpg",
       "images": [
         "http://localhost:5173/imagenes/Moto G85.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -712,7 +712,7 @@
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "/assets/productos/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -729,7 +729,7 @@
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "/assets/productos/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -746,7 +746,7 @@
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "/assets/productos/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -763,7 +763,7 @@
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "/assets/productos/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -780,7 +780,7 @@
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "/assets/productos/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -797,7 +797,7 @@
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "/assets/productos/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -814,7 +814,7 @@
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "/assets/productos/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -831,7 +831,7 @@
       "brand": "Mac",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Macbook-pro-14.jpg",
+      "thumbnail": "/assets/productos/Macbook-pro-14.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -848,7 +848,7 @@
       "brand": "Mac",
       "category": "laptops",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/Macbook-air-15.jpg",
+      "thumbnail": "/assets/productos/Macbook-air-15.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -865,7 +865,7 @@
       "brand": "Mac",
       "category": "laptops",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/MacBook_Pro_16.jpeg",
+      "thumbnail": "/assets/productos/MacBook_Pro_16.jpeg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
