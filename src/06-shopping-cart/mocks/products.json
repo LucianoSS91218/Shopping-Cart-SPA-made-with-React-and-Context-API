@@ -39,7 +39,7 @@
       "brand": "Apple",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "/assets/productos/iphone x.jpg",
+      "thumbnail": "./assets/productos/iphone x.jpg",
       "images": ["http://localhost:5173/imagenes/iphone x.jpg"]
     },
     {
@@ -53,7 +53,7 @@
       "brand": "Samsung",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "/assets/productos/galaxy-s9.jpg",
+      "thumbnail": "./assets/productos/galaxy-s9.jpg",
       "images": ["http://localhost:5173/imagenes/galaxy-s9.jpg"]
     },
     {
@@ -67,7 +67,7 @@
       "brand": "OPPO",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "/assets/productos/oppo-f19.jpg",
+      "thumbnail": "./assets/productos/oppo-f19.jpg",
       "images": ["http://localhost:5173/imagenes/oppo-f19.jpg"]
     },
     {
@@ -81,7 +81,7 @@
       "brand": "Huawei",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "/assets/productos/huawei p30.jpg",
+      "thumbnail": "./assets/productos/huawei p30.jpg",
       "images": ["http://localhost:5173/imagenes/huawei p30.jpg"]
     },
     {
@@ -95,7 +95,7 @@
       "brand": "Samsung",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "/assets/productos/samsung galaxy book laptop.jpg",
+      "thumbnail": "./assets/productos/samsung galaxy book laptop.jpg",
       "images": [
         "http://localhost:5173/imagenes/samsung galaxy book laptop.jpg"
       ]
@@ -111,7 +111,7 @@
       "brand": "Apple",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "/assets/productos/iphone_9_white.jpg",
+      "thumbnail": "./assets/productos/iphone_9_white.jpg",
       "images": ["http://localhost:5173/imagenes/iphone_9_white.jpg"]
     },
     {
@@ -125,7 +125,7 @@
       "brand": "Microsoft Surface",
       "category": "laptops",
       "stars": 5,
-      "thumbnail": "/assets/productos/microsoft-surface-laptop 4.jpg",
+      "thumbnail": "./assets/productos/microsoft-surface-laptop 4.jpg",
       "images": [
         "http://localhost:5173/imagenes/microsoft-surface-laptop 4.jpg"
       ]
@@ -141,7 +141,7 @@
       "brand": "Infinix",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "/assets/productos/Infinix INBOOK.jpg",
+      "thumbnail": "./assets/productos/Infinix INBOOK.jpg",
       "images": ["http://localhost:5173/imagenes/Infinix INBOOK.jpg"]
     },
     {
@@ -155,7 +155,7 @@
       "brand": "HP Pavilion",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "/assets/productos/hp pavilion 15.jpg",
+      "thumbnail": "./assets/productos/hp pavilion 15.jpg",
       "images": ["http://localhost:5173/imagenes/Hp pavilion 15.jpg"]
     },
     {
