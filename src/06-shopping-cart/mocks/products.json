@@ -11,7 +11,7 @@
       "brand": "Golden",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "./assets/productos/key holder.jpg",
+      "thumbnail": "https://i.ibb.co/4V01K7d/key-holder.jpg",
       "images": ["http://localhost:5173/imagenes/key holder.jpg"]
     },
     {
@@ -25,7 +25,7 @@
       "brand": "Apple",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "./assets/productos/mcbook-pro-1-631.jpg",
+      "thumbnail": "https://i.ibb.co/7k6SRBg/Macbook-AIR-13.jpg",
       "images": ["http://localhost:5173/imagenes/mcbook-pro-1-631.jpg"]
     },
     {
@@ -39,7 +39,7 @@
       "brand": "Apple",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "./assets/productos/iphone x.jpg",
+      "thumbnail": "https://i.ibb.co/Mcn0yRJ/iphone-x.jpg",
       "images": ["http://localhost:5173/imagenes/iphone x.jpg"]
     },
     {
