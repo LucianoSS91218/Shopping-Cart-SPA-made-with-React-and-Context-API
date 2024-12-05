@@ -49,7 +49,7 @@
   cursor: pointer;
 }
 
-@media (min-width: 359px) and (max-width: 376px) {
+@media (min-width: 343px) and (max-width: 376px) {
   .products li {
     width: calc(42% - 36px);
   }
