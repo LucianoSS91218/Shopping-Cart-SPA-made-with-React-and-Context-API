@@ -29,7 +29,6 @@ export function ProductDetail() {
 
         <div className="nav">
         <div className="padrehome">
-          <div id="home">
             <img
               src={Home}
               width="105px"
@@ -37,10 +36,9 @@ export function ProductDetail() {
               onClick={() => navigte("/")}
             ></img>
             <h2>Back to home</h2>
-          </div>
         </div>
-        <CartPage />
       </div>
+      <CartPage />
 
       {pidDetail.map((product) => {
         const isProductInCart = checkProductInCart(product);
