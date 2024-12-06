@@ -70,14 +70,15 @@
 }
 
 @media (max-width: 768px) {
-  .nav {
-    margin-bottom: 10px;
-  }
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .containercp {
-    display: flex;
-    justify-content: flex-start;
-  }
+.padrehome {
+  display: flex;
+  align-items: center;
+}
 
   .containerproductdetail {
     width: 280px;
