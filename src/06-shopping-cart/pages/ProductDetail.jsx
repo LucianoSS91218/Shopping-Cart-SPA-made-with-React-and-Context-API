@@ -26,19 +26,18 @@ export function ProductDetail() {
 
   return (
     <>
-
-        <div className="nav">
+      <nav className="nav">
         <div className="padrehome">
-            <img
-              src={Home}
-              width="105px"
-              height="95px"
-              onClick={() => navigte("/")}
-            ></img>
-            <h2>Back to home</h2>
+          <img
+            src={Home}
+            width="105px"
+            height="95px"
+            onClick={() => navigte("/")}
+          ></img>
+          <h2>Back to home</h2>
         </div>
-      </div>
-      <CartPage />
+        <CartPage />
+      </nav>
 
       {pidDetail.map((product) => {
         const isProductInCart = checkProductInCart(product);
@@ -47,8 +46,8 @@ export function ProductDetail() {
 
         return (
           <>
-            <div className="containerproductdetail">
-              <div className="productdetail" key={product.id}>
+            <div className="containerproductdetail" key={product.id}>
+              <div className="productdetail">
                 <div className="containerpdimg">
                   <img src={product.thumbnail} alt={product.title} />
                 </div>
@@ -84,8 +83,10 @@ export function ProductDetail() {
             </div>
             <br />
             <br />
-            <h2 id="octv">Otros clientes tambien vieron</h2>
-           <Carousel similarprodct={filterp} />
+            <div className="padreoctv">
+              <h2 id="octv">Otros clientes tambien vieron</h2>
+            </div>
+            <Carousel similarprodct={filterp} />
           </>
         );
       })}
