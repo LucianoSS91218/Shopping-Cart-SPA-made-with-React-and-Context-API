@@ -27,17 +27,17 @@ export function ProductDetail() {
   return (
     <>
       <div className="nav">
-        <div className="padrehome">
-          <div id="home">
-            <img
-              src={Home}
-              width="105px"
-              height="95px"
-              onClick={() => navigte("/")}
-            ></img>
-            <h2>Back to home</h2>
-          </div>
+        <div id="home">
+          <img
+            src={Home}
+            width="105px"
+            height="95px"
+            onClick={() => navigte("/")}
+          ></img>
+          <h2>Back to home</h2>
         </div>
+      </div>
+      <div className="containercp">
         <CartPage />
       </div>
 
