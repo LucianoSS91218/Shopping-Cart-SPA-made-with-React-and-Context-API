@@ -15,26 +15,20 @@
   gap: 1rem;
 }
 
+
 @media (max-width: 768px) {
   .filters {
     flex-direction: column;
-    width: 50%;
   }
 
   .filters .pricefilter {
     flex-direction: column;
-  }
-
-  .filters .pricefilter {
     margin-bottom: 24px;
   }
 
   .filters .categoryfilter {
-    display: flex;
-    justify-content: flex-start;
+    margin-bottom: 20px;
+    justify-content: center;
   }
-
-  .filters .categoryfilter select {
-    width: 90%;
-  }
+}
 }
