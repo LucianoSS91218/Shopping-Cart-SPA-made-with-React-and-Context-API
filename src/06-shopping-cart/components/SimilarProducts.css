@@ -81,11 +81,11 @@
   }
 
   .carousel .carouselRightNav {
-    right: 30px;
+    right: 17px;
   }
 
   .carousel .carouselItems {
-    max-width: 256px;
+    max-width: 247px;
   }
 
   .carousel .carouselItems .carouselItem {
@@ -99,11 +99,47 @@
   }
 
   .carousel .carouselRightNav {
-    right: 31px;
+    right: 19px;
   }
 
   .carousel .carouselItems {
-    max-width: 256px;
+    max-width: 257px;
+  }
+
+  .carousel .carouselItems .carouselItem {
+    width: 113px;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 415px) {
+  .carousel .carouselLeftNav {
+    left: 20px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 54px;
+  }
+
+  .carousel .carouselItems {
+    max-width: 248px;
+  }
+
+  .carousel .carouselItems .carouselItem {
+    width: 113px;
+  }
+}
+
+@media (min-width: 428px) and (max-width: 432px) {
+  .carousel .carouselLeftNav {
+    left: 20px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 54px;
+  }
+
+  .carousel .carouselItems {
+    max-width: 250px;
   }
 
   .carousel .carouselItems .carouselItem {
