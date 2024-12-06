@@ -6,6 +6,10 @@
   font-weight: 700;
 }
 
+.filters #minprice {
+  font-size: 20px;
+}
+
 .filters > div {
   display: flex;
   gap: 1rem;
@@ -14,13 +18,23 @@
 @media (max-width: 768px) {
   .filters {
     flex-direction: column;
+    width: 50%;
+  }
+
+  .filters .pricefilter {
+    flex-direction: column;
   }
 
   .filters .pricefilter {
     margin-bottom: 24px;
   }
 
-  .filters .pricefilter label {
-    width: 20%;
+  .filters .categoryfilter {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .filters .categoryfilter select {
+    width: 90%;
   }
 }
