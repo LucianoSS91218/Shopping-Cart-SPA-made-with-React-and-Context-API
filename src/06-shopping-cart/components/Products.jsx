@@ -8,6 +8,7 @@ export function Products({ products }) {
   const checkProductInCart = (product) => {
     return cart.some((item) => item.id === product.id);
   };
+
   return (
     <main className="products">
       <ul>
