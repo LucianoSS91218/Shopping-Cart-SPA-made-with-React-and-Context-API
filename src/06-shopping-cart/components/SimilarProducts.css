@@ -71,9 +71,35 @@
   opacity: 0.5;
 }
 
-@media (min-width: 359px) and (max-width: 376px) {
+@media (min-width: 338px) and (max-width: 358px) {
+  #octv {
+    width: 89%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 30px;
+  }
+
   .carousel .carouselRightNav {
-    right: 82px;
+    right: 30px;
+  }
+
+  .carousel .carouselItems {
+    max-width: 256px;
+  }
+
+  .carousel .carouselItems .carouselItem {
+    width: 111px;
+  }
+}
+
+@media (min-width: 359px) and (max-width: 376px) {
+  .carousel .carouselLeftNav {
+    left: 30px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 31px;
   }
 
   .carousel .carouselItems {
