@@ -1,6 +1,6 @@
-.nav {
+.padrehome {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .containerproductdetail {
@@ -13,7 +13,6 @@
 .productdetail {
   display: flex;
   justify-content: space-between;
-  justify-content: center;
 }
 
 .containerpdimg {
@@ -69,18 +68,28 @@
   width: 200px;
 }
 
-@media (max-width: 768px) {
-.containercp {
-  display: flex;
-  justify-content: flex-end
+@media (min-width: 338px) and (max-width: 431px) {
+  .containerproductdetail {
+    width: 265px;
+    margin: 0;
+    max-height: 790px;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 540px) {
+  .padreoctv {
+    display: flex;
+    justify-content: center;
+  }
 
   .containerproductdetail {
     width: 280px;
     margin: 0;
     max-height: 790px;
-    display: flex;
   }
+}
 
+@media (max-width: 768px) {
   .containerproductdetail .productdetail {
     display: flex;
     flex-direction: column;
