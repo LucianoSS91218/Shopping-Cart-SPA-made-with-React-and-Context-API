@@ -17,8 +17,8 @@ export const Carousel = ({ similarprodct }) => {
 
     const scrollAmount =
       dir === "left"
-        ? container.scrollLeft - (container.offsetWidth + 20)
-        : container.scrollLeft + (container.offsetWidth + 20);
+        ? container.scrollLeft - (container.offsetWidth + 10)
+        : container.scrollLeft + (container.offsetWidth + 4);
 
     container.scrollTo({
       left: scrollAmount,
