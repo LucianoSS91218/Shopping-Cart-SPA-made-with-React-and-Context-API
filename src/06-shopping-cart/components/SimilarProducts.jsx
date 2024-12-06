@@ -9,8 +9,8 @@ import "./SimilarProducts.css";
 
 import ContentWrapper from "../components/ContentWrapper.jsx";
 export const Carousel = ({ similarprodct }) => {
-  const carouselContainer = useRef();
   const navigte = useNavigate();
+  /*const carouselContainer = useRef();
 
   const navigation = (dir) => {
     const container = carouselContainer.current;
@@ -24,14 +24,10 @@ export const Carousel = ({ similarprodct }) => {
       left: scrollAmount,
       behavior: "smooth",
     });
-  };
+  };*/
 
-  return (
-    <>
-      {similarprodct ? (
-        <div className="carousel">
-          <ContentWrapper>
-            <BsFillArrowLeftCircleFill
+  /*
+              <BsFillArrowLeftCircleFill
               className="carouselLeftNav arrow"
               onClick={() => navigation("left")}
             />
@@ -39,7 +35,15 @@ export const Carousel = ({ similarprodct }) => {
               className="carouselRightNav arrow"
               onClick={() => navigation("right")}
             />
-            <div className="carouselItems" ref={carouselContainer}>
+  */
+  
+  return (
+    <>
+      {similarprodct ? (
+        <div className="carousel">
+          <ContentWrapper>
+
+            <div className="carouselItems">
               {similarprodct.map((prodct) => {
                 return (
                   <>
