@@ -27,6 +27,21 @@ export function ProductDetail() {
   return (
     <>
 
+        <div className="nav">
+        <div className="padrehome">
+          <div id="home">
+            <img
+              src={Home}
+              width="105px"
+              height="95px"
+              onClick={() => navigte("/")}
+            ></img>
+            <h2>Back to home</h2>
+          </div>
+        </div>
+        <CartPage />
+      </div>
+
       {pidDetail.map((product) => {
         const isProductInCart = checkProductInCart(product);
         const filterp = slices.filter((f) => f.category === product.category);
@@ -72,6 +87,7 @@ export function ProductDetail() {
             <br />
             <br />
             <h2 id="octv">Otros clientes tambien vieron</h2>
+           <Carousel similarprodct={filterp} />
           </>
         );
       })}
