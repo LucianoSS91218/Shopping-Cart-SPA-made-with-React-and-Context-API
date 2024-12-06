@@ -72,7 +72,6 @@ export function ProductDetail() {
             <br />
             <br />
             <h2 id="octv">Otros clientes tambien vieron</h2>
-            <Carousel similarprodct={filterp} />
           </>
         );
       })}
