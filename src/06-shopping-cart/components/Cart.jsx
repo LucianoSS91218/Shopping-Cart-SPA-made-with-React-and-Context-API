@@ -39,16 +39,20 @@ export function Cart() {
         <CartPage />
       </div>
       <section className="container">
-        <ul className="cart">
-          {cart.map((product) => (
-            <CartItem
-              {...product}
-              key={product.id}
-              addToCart={() => addToCart(product)}
-              decrementProduct={() => decrementProduct(product)}
-            />
-          ))}
-        </ul>
+{cart?.length ? (
+          <ul className="cart">
+            {cart.map((product) => (
+              <CartItem
+                {...product}
+                key={product.id}
+                addToCart={() => addToCart(product)}
+                decrementProduct={() => decrementProduct(product)}
+              />
+            ))}
+          </ul>
+        ) : (
+          <h2>No tenes productos en carrito</h2>
+        )}
         <div className="cartfooter">
           <h3>{`Total: $${amount}`}</h3>
           <button className={"clearcart"} onClick={clearCart}>
