@@ -36,9 +36,6 @@ export function ProductDetail() {
           ></img>
           <h2>Back to home</h2>
         </div>
-        <div className="containercp">
-          <CartPage />
-        </div>
       </div>
 
       {pidDetail.map((product) => {
