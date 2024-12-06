@@ -3,6 +3,12 @@
   flex-direction: column;
 }
 
+.miniimages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
 .containerproductdetail {
   border-radius: 6px;
   width: 750px;
