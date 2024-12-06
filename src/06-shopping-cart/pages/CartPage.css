@@ -1,15 +1,12 @@
 .containercp {
-  position: relative;
+  display: flex;
+  justify-content: center;
   margin-bottom: 25px;
 }
 
 .containercp .cart-button {
-  position: absolute;
-  top: 35px;
-  left: 640px;
-  z-index: 50;
   background-color: deepskyblue;
-  border-radius: 350px;
+  border-radius: 50px;
   width: 42px;
   height: 33px;
 }
@@ -18,9 +15,8 @@
   scale: 1.1;
 }
 
-@media (max-width: 541px) {
-  .containercp .cart-button {
-    position: absolute;
-    left: 87px;
+@media (max-width: 768px) {
+  .containercp {
+    justify-content: flex-start;
   }
 }
