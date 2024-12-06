@@ -79,16 +79,11 @@
     padding: 0;
   }
 
-    /* Cart Icon */
-  .containercp {
-    display: flex;
-    justify-content: center;
-  }
-
   .containerproductdetail {
-    width: 220px;
+    width: 280px;
     margin: 0;
     max-height: 790px;
+    display: flex;
   }
 
   .containerproductdetail .productdetail {
