@@ -26,7 +26,7 @@ export function Products({ products }) {
               </div>
 
               <NavLink to={`/products/${product.id}`}>Ver producto</NavLink>
-              <div>
+              <div className="isproductincart">
                 <button
                   style={{
                     backgroundColor: isProductInCart ? "red" : "#09f",
