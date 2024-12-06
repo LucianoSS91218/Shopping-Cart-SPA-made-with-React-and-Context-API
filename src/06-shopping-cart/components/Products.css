@@ -53,7 +53,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 431px) {
   .products li {
     width: calc(51% - 32px);
   }
@@ -61,5 +61,28 @@
   .products img {
     width: 100px;
     height: 100px;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 541px) {
+  .products li {
+    width: calc(29% - 12px);
+  }
+
+  .products img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* iPad mini */
+@media (min-width: 767px) and (max-width: 769px) {
+  .products li {
+    width: calc(31% - 28px);
+  }
+
+  .products img {
+    width: 140px;
+    height: 122px;
   }
 }
