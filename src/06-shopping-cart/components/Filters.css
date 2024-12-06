@@ -22,6 +22,7 @@
   .filters .pricefilter {
     flex-direction: column;
     margin-bottom: 24px;
+    width: 50%;
   }
 
   .filters .categoryfilter {
