@@ -79,6 +79,12 @@
     padding: 0;
   }
 
+    /* Cart Icon */
+  .containercp {
+    display: flex;
+    justify-content: center;
+  }
+
   .containerproductdetail {
     width: 220px;
     margin: 0;
