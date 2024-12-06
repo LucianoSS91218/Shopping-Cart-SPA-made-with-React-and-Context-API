@@ -1,5 +1,10 @@
 @media (max-width: 768px) {
-  h1 {
-    width: 90%;
+  header {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  header h1 {
+    width: 50%;
   }
 }
