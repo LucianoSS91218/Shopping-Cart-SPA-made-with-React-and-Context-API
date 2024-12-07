@@ -11,8 +11,7 @@
       "brand": "Golden",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/4V01K7d/key-holder.jpg",
-      "images": ["http://localhost:5173/imagenes/key holder.jpg"]
+      "thumbnail": "https://i.ibb.co/4V01K7d/key-holder.jpg"
     },
     {
       "id": 6,
@@ -169,10 +168,7 @@
       "brand": "Impression of Acqua Di Gio",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/TL2mRyV/perfume-Oil.webp",
-      "images": [
-        "http://localhost:5173/imagenes/Non-Alcoholic Concentrated Perfume Oil.webp"
-      ]
+      "thumbnail": "https://i.ibb.co/TL2mRyV/perfume-Oil.webp"
     },
     {
       "id": 12,
@@ -185,8 +181,7 @@
       "brand": "Royal_Mirage",
       "category": "fragrances",
       "stars": 5,
-      "thumbnail": "https://i.ibb.co/KNDYJgw/Brown-Perfume.jpg",
-      "images": ["http://localhost:5173/imagenes/Brown Perfume.jpg"]
+      "thumbnail": "https://i.ibb.co/KNDYJgw/Brown-Perfume.jpg"
     },
     {
       "id": 13,
@@ -199,10 +194,7 @@
       "brand": "Fog Scent Xpressio",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/QKZZkbT/Fog-Scent-Xpressio-Perfume.jpg",
-      "images": [
-        "http://localhost:5173/imagenes/Fog Scent Xpressio Perfume.jpg"
-      ]
+      "thumbnail": "https://i.ibb.co/QKZZkbT/Fog-Scent-Xpressio-Perfume.jpg"
     },
     {
       "id": 14,
@@ -215,8 +207,7 @@
       "brand": "Al Munakh",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/yRhDBGd/Non-Alcoholic-Concentrated-Perfume-Oil.webp",
-      "images": ["http://localhost:5173/imagenes/nonalcoholicperfume.jpg"]
+      "thumbnail": "https://i.ibb.co/yRhDBGd/Non-Alcoholic-Concentrated-Perfume-Oil.webp"
     },
     {
       "id": 15,
@@ -229,8 +220,7 @@
       "brand": "Lord - Al-Rehab",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/N2Zzm8V/Eau-De-Perfume-Spray.jpg",
-      "images": ["http://localhost:5173/imagenes/Eau De Perfume Spray.jpg"]
+      "thumbnail": "https://i.ibb.co/N2Zzm8V/Eau-De-Perfume-Spray.jpg"
     },
     {
       "id": 16,
@@ -243,8 +233,7 @@
       "brand": "L'Oreal Paris",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/5BRgSPx/Hyaluronic-Acid-Serum.jpg",
-      "images": ["http://localhost:5173/imagenes/Hyaluronic Acid Serum.png"]
+      "thumbnail": "https://i.ibb.co/5BRgSPx/Hyaluronic-Acid-Serum.jpg"
     },
     {
       "id": 17,
@@ -257,8 +246,7 @@
       "brand": "Hemani Tea",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/7z1vQFy/Tree-Oil-30ml.jpg",
-      "images": ["http://localhost:5173/imagenes/Tree Oil 30ml.jpg"]
+      "thumbnail": "https://i.ibb.co/7z1vQFy/Tree-Oil-30ml.jpg"
     },
     {
       "id": 18,
@@ -271,10 +259,7 @@
       "brand": "Dermive",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/DV3jNmG/Oil-Free-Moisturizer-100ml.jpg",
-      "images": [
-        "http://localhost:5173/imagenes/Oil Free Moisturizer 100ml.jpg"
-      ]
+      "thumbnail": "https://i.ibb.co/DV3jNmG/Oil-Free-Moisturizer-100ml.jpg"
     },
     {
       "id": 19,
@@ -287,9 +272,7 @@
       "brand": "ROREC White Rice",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/bzyBMBk/Skin-Beauty-Serum.jpg",
-      "images": ["http://localhost:5173/imagenes/Skin Beauty Serum.jpg"]
-    },
+      "thumbnail": "https://i.ibb.co/bzyBMBk/Skin-Beauty-Serum.jpg"
     {
       "id": 20,
       "title": "Freckle Treatment Cream- 15gm",
@@ -301,10 +284,7 @@
       "brand": "Fair & Clear",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/f1qFZLd/Freckle-Treatment-Cream-15gm.jpg",
-      "images": [
-        "http://localhost:5173/imagenes/Freckle Treatment Cream- 15gm.jpg"
-      ]
+      "thumbnail": "https://i.ibb.co/f1qFZLd/Freckle-Treatment-Cream-15gm.jpg"
     },
     {
       "id": 21,
@@ -317,8 +297,7 @@
       "brand": "Saaf & Khaas",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/dLmNwZR/Daal-Masoor-500-grams.jpg",
-      "images": ["http://localhost:5173/imagenes/Daal Masoor 500 grams.jpg"]
+      "thumbnail": "https://i.ibb.co/dLmNwZR/Daal-Masoor-500-grams.jpg"
     },
     {
       "id": 22,
@@ -331,9 +310,7 @@
       "brand": "Bake Parlor Big",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/QfDgprK/Elbow-Macaroni-400-gm.webp",
-      "images": ["http://localhost:5173/imagenes/Elbow Macaroni - 400 gm.webp"]
-    },
+      "thumbnail": "https://i.ibb.co/QfDgprK/Elbow-Macaroni-400-gm.webp"
     {
       "id": 23,
       "title": "Orange Essence Food Flavou",
@@ -345,10 +322,7 @@
       "brand": "Baking Food Items",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/yWX9L5R/Orange-Essence-Food-Flavou.jpg",
-      "images": [
-        "http://localhost:5173/imagenes/Orange Essence Food Flavou.jpg"
-      ]
+      "thumbnail": "https://i.ibb.co/yWX9L5R/Orange-Essence-Food-Flavou.jpg"
     },
     {
       "id": 24,
@@ -361,8 +335,7 @@
       "brand": "fauji",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/tLG46jB/cereals-muesli-fruit-nuts.jpg",
-      "images": ["http://localhost:5173/imagenes/cereals muesli fruit nuts.jpg"]
+      "thumbnail": "https://i.ibb.co/tLG46jB/cereals-muesli-fruit-nuts.jpg"
     },
     {
       "id": 25,
@@ -375,9 +348,7 @@
       "brand": "Dry Rose",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/bRf7T1r/Gulab-Powder-50-Gram.jpg",
-      "images": ["http://localhost:5173/imagenes/Gulab Powder 50 Gram.png"]
-    },
+      "thumbnail": "https://i.ibb.co/bRf7T1r/Gulab-Powder-50-Gram.jpg"
     {
       "id": 26,
       "title": "Plant Hanger For Home",
@@ -389,9 +360,7 @@
       "brand": "Boho Decor",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/DVV72wD/Plant-Hanger-For-Home.jpg",
-      "images": ["http://localhost:5173/imagenes/Plant Hanger For Home.jpg"]
-    },
+      "thumbnail": "https://i.ibb.co/DVV72wD/Plant-Hanger-For-Home.jpg"
     {
       "id": 27,
       "title": "Flying Wooden Bird",
@@ -403,9 +372,7 @@
       "brand": "Flying Wooden",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/1XLxr0v/Flying-Wooden-Bird.jpg",
-      "images": ["http://localhost:5173/imagenes/Flying Wooden Bird.jpg"]
-    },
+      "thumbnail": "https://i.ibb.co/1XLxr0v/Flying-Wooden-Bird.jpg"
     {
       "id": 28,
       "title": "3D Embellishment Art Lamp",
@@ -417,9 +384,7 @@
       "brand": "LED Lights",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/BBpBHGg/3-D-Embellishment-Art-Lamp.jpg",
-      "images": ["http://localhost:5173/imagenes/3D Embellishment Art Lamp.jpg"]
-    },
+      "thumbnail": "https://i.ibb.co/BBpBHGg/3-D-Embellishment-Art-Lamp.jpg"
     {
       "id": 29,
       "title": "Handcraft Chinese style",
@@ -431,9 +396,7 @@
       "brand": "luxury palace",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/1R0B9Mz/Handcraft-Chinese-style.jpg",
-      "images": ["http://localhost:5173/imagenes/Handcraft Chinese style.jpg"]
-    },
+      "thumbnail": "https://i.ibb.co/1R0B9Mz/Handcraft-Chinese-style.jpg"
     {
       "id": 30,
       "title": "Motorola G-60",
