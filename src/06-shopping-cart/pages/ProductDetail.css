@@ -6,7 +6,15 @@
 .miniimages {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 0.3rem;
+  margin-left: 15px;
+}
+
+.miniimages img {
+  width: 65px;
+  height: 70px;
+  object-fit: fill;
 }
 
 .containerproductdetail {
