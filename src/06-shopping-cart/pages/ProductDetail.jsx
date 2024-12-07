@@ -26,34 +26,6 @@ export function ProductDetail() {
 
   const slices = OtherProducts.slice(30, 57);
 
-  /*
-  el tema que como esto es un supermercado no podemos hacer la logica de poner cheto 
-  las caracteristicas porque no es una pagina como Naldo o Fravega,
-  como aca tenemos alimentos y bebidas por eso te digo
-   */
-
-  const ejemplo = [
-    {
-      id: 1,
-      title: "iPhone X",
-      description:
-        "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      price: 899,
-      discountPercentage: 17.94,
-      rating: 4.44,
-      stock: 34,
-      brand: "Apple",
-      category: "smartphones",
-      stars: 5,
-      thumbnail: "http://localhost:5173/imagenes/iphone x.jpg",
-      images: [
-        "http://localhost:5173/imagenes/iphone x.jpg",
-        "http://localhost:5173/imagenes/iphone x2.jpg",
-        "http://localhost:5173/imagenes/iphone x3.jpg",
-      ],
-    },
-  ];
-
   return (
     <>
       <nav className="nav">
@@ -76,31 +48,12 @@ export function ProductDetail() {
 
         return (
           <>
-            <button onClick={() => setValue(index + 1)}>sdsdsd</button>
             <div className="containerproductdetail" key={product.id}>
               <div className="productdetail">
                 <div className="miniimages">
-                  <img
-                    onClick={() => setValue(0)}
-                    src={product.images[0]}
-                    alt="image1"
-                    width="70px"
-                    height="70px"
-                  ></img>
-                  <img
-                    src={product.images[1]}
-                    onClick={() => setValue(1)}
-                    alt="image2"
-                    width="70px"
-                    height="70px"
-                  ></img>
-                  <img
-                    src={product.images[2]}
-                    onClick={() => setValue(2)}
-                    alt="image2"
-                    width="70px"
-                    height="70px"
-                  ></img>
+                  {product.images?.map((x, id) => (
+                    <img src={x} alt={id} onClick={() => setValue(id)}></img>
+                  ))}
                 </div>
                 <div className="containerpdimg">
                   <img src={product.images[value]} alt={product.title} />
