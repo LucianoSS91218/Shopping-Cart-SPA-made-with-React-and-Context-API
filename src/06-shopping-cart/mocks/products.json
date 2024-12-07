@@ -25,7 +25,11 @@
       "category": "laptops",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/7k6SRBg/Macbook-AIR-13.jpg",
-      "images": ["http://localhost:5173/imagenes/mcbook-pro-1-631.jpg"]
+      "images": [
+        "https://i.ibb.co/VT1ct2m/Macbook-AIR-13.jpg",
+        "https://i.ibb.co/mTYKQ5B/Macbook-AIR-13dos.png",
+        "https://i.ibb.co/ZKS3Knc/macbook-pro-13-m2-chip-8-core-cpu-10-core-gpu-512gb-ssd-space-grey.jpg"
+      ]
     },
     {
       "id": 2,
@@ -39,7 +43,11 @@
       "category": "smartphones",
       "stars": 5,
       "thumbnail": "https://i.ibb.co/Mcn0yRJ/iphone-x.jpg",
-      "images": ["http://localhost:5173/imagenes/iphone x.jpg"]
+      "images": [
+        "https://i.ibb.co/Mcn0yRJ/iphone-x.jpg",
+        "https://i.ibb.co/nBDTRBD/iphone-x2.jpg",
+        "https://i.ibb.co/VWC0Wp8/iphone-x3.jpg"
+      ]
     },
     {
       "id": 3,
@@ -53,7 +61,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/f0w8HXM/galaxy-s9.jpg",
-      "images": ["http://localhost:5173/imagenes/galaxy-s9.jpg"]
+      "images": ["https://i.ibb.co/f0w8HXM/galaxy-s9.jpg"]
     },
     {
       "id": 4,
@@ -67,7 +75,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/tqdshYp/oppo-f19.jpg",
-      "images": ["http://localhost:5173/imagenes/oppo-f19.jpg"]
+      "images": ["https://i.ibb.co/tqdshYp/oppo-f19.jpg"]
     },
     {
       "id": 5,
@@ -81,7 +89,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/gwH3BHT/huawei-p30.jpg",
-      "images": ["http://localhost:5173/imagenes/huawei p30.jpg"]
+      "images": ["https://i.ibb.co/gwH3BHT/huawei-p30.jpg"]
     },
     {
       "id": 7,
@@ -95,9 +103,7 @@
       "category": "laptops",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/ggFzzbP/samsung-galaxy-book-laptop.jpg",
-      "images": [
-        "http://localhost:5173/imagenes/samsung galaxy book laptop.jpg"
-      ]
+      "images": ["https://i.ibb.co/ggFzzbP/samsung-galaxy-book-laptop.jpg"]
     },
     {
       "id": 1,
@@ -111,7 +117,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/Csxj2sy/iphone-9-white.jpg",
-      "images": ["http://localhost:5173/imagenes/iphone_9_white.jpg"]
+      "images": ["https://i.ibb.co/Csxj2sy/iphone-9-white.jpg"]
     },
     {
       "id": 8,
@@ -125,9 +131,7 @@
       "category": "laptops",
       "stars": 5,
       "thumbnail": "https://i.ibb.co/64ShWvm/microsoft-surface-laptop-4.jpg",
-      "images": [
-        "http://localhost:5173/imagenes/microsoft-surface-laptop 4.jpg"
-      ]
+      "images": ["https://i.ibb.co/64ShWvm/microsoft-surface-laptop-4.jpg"]
     },
     {
       "id": 9,
@@ -141,7 +145,7 @@
       "category": "laptops",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/Rpn7y7P/Infinix-INBOOK.jpg",
-      "images": ["http://localhost:5173/imagenes/Infinix INBOOK.jpg"]
+      "images": ["https://i.ibb.co/Rpn7y7P/Infinix-INBOOK.jpg"]
     },
     {
       "id": 10,
@@ -155,7 +159,7 @@
       "category": "laptops",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/LJHjByd/hp-pavilion-15.jpg",
-      "images": ["http://localhost:5173/imagenes/Hp pavilion 15.jpg"]
+      "images": ["https://i.ibb.co/LJHjByd/hp-pavilion-15.jpg"]
     },
     {
       "id": 11,
@@ -416,7 +420,7 @@
       "category": "smartphones",
       "stars": 5,
       "thumbnail": "https://i.ibb.co/8Py0LnB/motorola-g60.webp",
-      "images": ["http://localhost:5173/imagenes/motorola-g60.jpg"]
+      "images": ["https://i.ibb.co/8Py0LnB/motorola-g60.webp"]
     },
     {
       "id": 31,
@@ -430,7 +434,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/m8HTBHJ/moto-edge-40.jpg",
-      "images": ["http://localhost:5173/imagenes/moto-edge-40.jpg"]
+      "images": ["https://i.ibb.co/m8HTBHJ/moto-edge-40.jpg"]
     },
     {
       "id": 32,
@@ -444,7 +448,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/2WX7BWg/moto-edge-50.png",
-      "images": ["http://localhost:5173/imagenes/moto-edge-50.jpg"]
+      "images": ["https://i.ibb.co/2WX7BWg/moto-edge-50.png"]
     },
     {
       "id": 33,
@@ -458,7 +462,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/kmH3L88/Moto-G42.jpg",
-      "images": ["http://localhost:5173/imagenes/Moto-G42.jpg"]
+      "images": ["https://i.ibb.co/kmH3L88/Moto-G42.jpg"]
     },
     {
       "id": 34,
@@ -472,7 +476,7 @@
       "category": "smartphones",
       "stars": 5,
       "thumbnail": "https://i.ibb.co/Qdh6BfJ/google-pixel-5.jpg",
-      "images": ["http://localhost:5173/imagenes/google-pixel-5.jpg"]
+      "images": ["https://i.ibb.co/Qdh6BfJ/google-pixel-5.jpg"]
     },
     {
       "id": 35,
@@ -486,7 +490,7 @@
       "category": "smartphones",
       "stars": 5,
       "thumbnail": "https://i.ibb.co/r2kr8WJ/iphone-13.jpg",
-      "images": ["http://localhost:5173/imagenes/iphone 13.jpg"]
+      "images": ["https://i.ibb.co/r2kr8WJ/iphone-13.jpg"]
     },
     {
       "id": 36,
@@ -500,7 +504,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/FWgS4yk/Pocophone-Poco-C40.png",
-      "images": ["http://localhost:5173/imagenes/Pocophone Poco C40.jpg"]
+      "images": ["https://i.ibb.co/FWgS4yk/Pocophone-Poco-C40.png"]
     },
     {
       "id": 37,
@@ -514,7 +518,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/H4zxDFW/Redmi-A3.webp",
-      "images": ["http://localhost:5173/imagenes/Redmi A3.jpg"]
+      "images": ["https://i.ibb.co/H4zxDFW/Redmi-A3.webp"]
     },
     {
       "id": 38,
@@ -528,7 +532,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/YN9SThm/galaxy-a04.jpg",
-      "images": ["http://localhost:5173/imagenes/galaxy a04.jpg"]
+      "images": ["https://i.ibb.co/YN9SThm/galaxy-a04.jpg"]
     },
     {
       "id": 39,
@@ -542,7 +546,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/xXv7TrC/iphone-8-256gb-gold.jpg",
-      "images": ["http://localhost:5173/imagenes/iphone-8-256gb-gold.jpg"]
+      "images": ["https://i.ibb.co/xXv7TrC/iphone-8-256gb-gold.jpg"]
     },
     {
       "id": 40,
@@ -555,8 +559,8 @@
       "brand": "Google",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "https://i.ibb.co/Qdh6BfJ/google-pixel-5.jpg",
-      "images": ["http://localhost:5173/imagenes/google-pixel-4.jpg"]
+      "thumbnail": "https://i.ibb.co/80wY0b3/google-pixel-4.png",
+      "images": ["https://i.ibb.co/80wY0b3/google-pixel-4.png"]
     },
     {
       "id": 41,
@@ -570,7 +574,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/YD6k9wZ/SGS20FE.png",
-      "images": ["http://localhost:5173/imagenes/SGS20FE.jpg"]
+      "images": ["https://i.ibb.co/YD6k9wZ/SGS20FE.png"]
     },
     {
       "id": 42,
@@ -584,7 +588,7 @@
       "category": "smartphones",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/sQGkrTQ/iphone-12.jpg",
-      "images": ["http://localhost:5173/imagenes/iphone 12.jpg"]
+      "images": ["https://i.ibb.co/sQGkrTQ/iphone-12.jpg"]
     },
     {
       "id": 43,
@@ -599,7 +603,7 @@
       "stars": 4,
       "thumbnail": "https://i.ibb.co/sRYJrhV/Moto-G04s.jpg",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/sRYJrhV/Moto-G04s.jpg",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -616,7 +620,7 @@
       "stars": 4,
       "thumbnail": "https://i.ibb.co/2Kngjb8/galaxy-a15.jpg",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/2Kngjb8/galaxy-a15.jpg",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -633,7 +637,7 @@
       "stars": 5,
       "thumbnail": "https://i.ibb.co/hWMs1PT/TCL-40SE.jpg",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/hWMs1PT/TCL-40SE.jpg",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -650,8 +654,8 @@
       "stars": 5,
       "thumbnail": "https://i.ibb.co/61D4RyV/Galaxy-A55.webp",
       "images": [
-        "http://localhost:5173/imagenes/Galaxy A55.jpg",
-        "http://localhost:5173/imagenes/.jpg"
+        "https://i.ibb.co/61D4RyV/Galaxy-A55.webp",
+        "https://i.ibb.co/61D4RyV/Galaxy-A55.webp"
       ]
     },
     {
@@ -667,7 +671,7 @@
       "stars": 5,
       "thumbnail": "https://i.ibb.co/HH0vYS0/Moto-G85.webp",
       "images": [
-        "http://localhost:5173/imagenes/Moto G85.jpg",
+        "https://i.ibb.co/HH0vYS0/Moto-G85.webp",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -684,7 +688,7 @@
       "stars": 4,
       "thumbnail": "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -701,7 +705,7 @@
       "stars": 4,
       "thumbnail": "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -718,7 +722,7 @@
       "stars": 4,
       "thumbnail": "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -735,7 +739,7 @@
       "stars": 4,
       "thumbnail": "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -752,7 +756,7 @@
       "stars": 4,
       "thumbnail": "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -769,7 +773,7 @@
       "stars": 4,
       "thumbnail": "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -786,7 +790,7 @@
       "stars": 4,
       "thumbnail": "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -803,7 +807,7 @@
       "stars": 4,
       "thumbnail": "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -820,7 +824,7 @@
       "stars": 5,
       "thumbnail": "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
         "http://localhost:5173/imagenes/.jpg"
       ]
     },
@@ -837,7 +841,7 @@
       "stars": 5,
       "thumbnail": "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
       "images": [
-        "http://localhost:5173/imagenes/.jpg",
+        "https://i.ibb.co/2N1Gc7K/ASUS-Core-I3.png",
         "http://localhost:5173/imagenes/.jpg"
       ]
     }
