@@ -5,8 +5,8 @@
 
 .containerproductdetail {
   border-radius: 6px;
-  width: 600px;
-  max-height: 420px;
+  width: 620px;
+  max-height: 440px;
   border: 1px solid gray;
 }
 
@@ -86,7 +86,7 @@
 
 @media (min-width: 338px) and (max-width: 431px) {
   .containerproductdetail {
-    width: 355px;
+    width: 346px;
     margin: 0;
     max-height: 790px;
   }
@@ -107,9 +107,13 @@
   }
 
   .containerproductdetail {
-    width: 280px;
+    width: 397px;
     margin: 0;
     max-height: 790px;
+  }
+
+  .containerpdimg {
+    flex-direction: column;
   }
 }
 
