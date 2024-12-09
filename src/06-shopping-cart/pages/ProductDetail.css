@@ -1,7 +1,29 @@
-.padrehome {
+/* navbar */
+.nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  background-color: #1c4e80;
 }
+
+.padreheart {
+  display: flex;
+  justify-content: center;
+}
+
+.padreheart {
+  color: red;
+}
+
+/* section */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* product detail */
 
 .containerproductdetail {
   border-radius: 6px;
@@ -25,7 +47,7 @@
 
 .containerpdimg #thumbnail {
   width: 400px;
-  height: 305px;
+  height: 300px;
   object-fit: contain;
 }
 
@@ -36,10 +58,10 @@
 }
 
 .miniimages img {
-  width: 40%;
-  height: 40%;
-  max-width: 95px;
-  max-height: 90px;
+  width: 35%;
+  height: 35%;
+  max-width: 66px;
+  max-height: 56px;
 }
 
 /* other content */
@@ -69,6 +91,11 @@
   text-decoration: underline;
 }
 
+.padreoctv {
+  display: flex;
+  justify-content: center;
+}
+
 #octv {
   margin-top: 20px;
 }
@@ -84,10 +111,9 @@
   width: 200px;
 }
 
-@media (min-width: 338px) and (max-width: 431px) {
+@media (min-width: 298px) and (max-width: 391px) {
   .containerproductdetail {
-    width: 346px;
-    margin: 0;
+    width: 320px;
     max-height: 790px;
   }
 
@@ -95,8 +121,17 @@
     flex-direction: column;
   }
 
-  .containerpdimg #thumbnail {
-    max-width: 280px;
+  .containerproductdetail .productdetail .containerpdimg .padremainimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 431px) {
+  .containerproductdetail {
+    width: 350px;
+    max-height: 790px;
   }
 }
 
@@ -107,7 +142,7 @@
   }
 
   .containerproductdetail {
-    width: 397px;
+    width: 410px;
     margin: 0;
     max-height: 790px;
   }
@@ -118,11 +153,6 @@
 }
 
 @media (max-width: 768px) {
-  .miniimages img {
-    width: 5px;
-    height: 5px;
-  }
-
   .containerproductdetail .productdetail {
     display: flex;
     flex-direction: column;
@@ -130,14 +160,10 @@
 
   .pdcontent {
     margin-top: 2px;
+    align-items: center;
   }
 
-  .containerproductdetail .productdetail .containerpdimg img {
-    width: 160px;
-    height: 180px;
-  }
-
-  #octv {
-    width: 60%;
+  .containerproductdetail .productdetail .containerpdimg #thumbnail {
+    max-width: 100%;
   }
 }
