@@ -16,11 +16,11 @@
 }
 
 .carousel .carouselLeftNav {
-  left: 24px;
+  left: 30px;
 }
 
 .carousel .carouselRightNav {
-  right: 95px;
+  right: 85px;
 }
 
 .carousel .carouselItems {
@@ -45,7 +45,7 @@
   height: 155px;
   padding: 5px;
 }
-/*el object-fit da problemas*/
+
 .carousel .carouselItems .carouselItem .padreImg img {
   width: 90%;
   height: 95%;
@@ -72,78 +72,110 @@
   opacity: 0.5;
 }
 
-@media (min-width: 338px) and (max-width: 358px) {
+@media (min-width: 300px) and (max-width: 358px) {
   #octv {
-    width: 89%;
+    width: 100%;
   }
 
   .carousel .carouselLeftNav {
-    left: 30px;
+    left: 28px;
   }
 
   .carousel .carouselRightNav {
-    right: 17px;
+    right: 18px;
   }
 }
 
-@media (min-width: 339px) and (max-width: 431px) {
+@media (min-width: 359px) and (max-width: 391px) {
+  #octv {
+    width: 90%;
+  }
+
   .carousel .carouselLeftNav {
     left: 30px;
   }
 
   .carousel .carouselRightNav {
-    right: 19px;
+    right: 20px;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 412px) {
+  #octv {
+    width: 100%;
   }
 
+  .carousel .carouselLeftNav {
+    left: 30px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 43px;
+  }
+}
+
+@media (min-width: 413px) and (max-width: 415px) {
+  #octv {
+    width: 57%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 30px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 58px;
+  }
+}
+
+@media (min-width: 428px) and (max-width: 431px) {
+  #octv {
+    width: 95%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 30px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 60px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 390px) {
   .carousel .carouselItems {
-    max-width: 269px;
+    max-width: 276px;
   }
 
   .carousel .carouselItems .carouselItem {
-    width: 123px;
+    width: 108px;
   }
 }
 
-@media (min-width: 390px) and (max-width: 431px) {
-  .carousel .carouselLeftNav {
-    left: 30px;
+@media (min-width: 400px) and (max-width: 431px) {
+  .carousel .carouselItems {
+    max-width: 266px;
   }
 
-  .carousel .carouselRightNav {
-    right: 44px;
-  }
-}
-
-@media (min-width: 410px) and (max-width: 415px) {
-  .carousel .carouselLeftNav {
-    left: 30px;
-  }
-
-  .carousel .carouselRightNav {
-    right: 64px;
-  }
-}
-
-@media (min-width: 428px) and (max-width: 432px) {
-  .carousel .carouselRightNav {
-    right: 86px;
+  .carousel .carouselItems .carouselItem {
+    width: 121px;
   }
 }
 
 @media (min-width: 460px) and (max-width: 540px) {
   .carousel .carouselLeftNav {
-    left: 25px;
+    left: 30px;
   }
 
   .carousel .carouselRightNav {
-    right: 86px;
+    right: 33px;
   }
 
   .carousel .carouselItems {
-    max-width: 459px;
+    max-width: 400px;
   }
 
   .carousel .carouselItems .carouselItem {
-    width: 140px;
+    width: 122px;
   }
 }
