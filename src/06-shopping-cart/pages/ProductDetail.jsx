@@ -1,18 +1,25 @@
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { useState } from "react";
 import { productos } from "../mocks/products.json";
 import { AddToCartIcon, RemoveFromCartIcon } from "../components/Icons.jsx";
 import { useCart } from "../hooks/useCart.js";
 import CartPage from "../pages/CartPage.jsx";
-import Home from "../assets/home-icon-transparent-free.png";
+import { Header } from "../components/Header.jsx";
 import StarRating from "../components/StarRating.jsx";
+import { RiHeart3Fill } from "react-icons/ri";
 import "./ProductDetail.css";
 import { productos as OtherProducts } from "../mocks/products.json";
-import { useNavigate } from "react-router-dom";
 
 import { Carousel } from "../components/SimilarProducts.jsx";
 
 export function ProductDetail() {
+  // acordate que para hacer la paginacion de productos, desde el frontend
+  // la unica forma seria consumiendo una api como el caso de la movieapp
+  // te acordas
+
+  // actually in ecommerces the product ids are the product title plus a
+  // hyphen and the id
+
   const [value, setValue] = useState(0);
   const navigte = useNavigate();
   const pid = useParams();
@@ -32,10 +39,6 @@ export function ProductDetail() {
   como aca tenemos alimentos y bebidas por eso te digo
    */
 
-  //el carrefour por ej tiene las 3 img abajo y dos flechitas para cambiar de indice
-  // esta bien lo que yo hice de elegir que productos y cuanta cantidad de imagenes
-  // porque el carrefour y el chango son asi dependiendo del producto
-
   // hace eso entonces en las especificaciones copiate del carrefour
 
   /* el mock de abajo es con localhost por las dudas si el dia de mañana se mueren los links
@@ -54,7 +57,7 @@ export function ProductDetail() {
       "brand": "Golden",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/key holder.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/key holder.jpg"
     },
     {
       "id": 6,
@@ -219,7 +222,7 @@ export function ProductDetail() {
       "brand": "Impression of Acqua Di Gio",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Non-Alcoholic Concentrated Perfume Oil.webp"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Non-Alcoholic Concentrated Perfume Oil.webp"
     },
     {
       "id": 12,
@@ -232,7 +235,7 @@ export function ProductDetail() {
       "brand": "Royal_Mirage",
       "category": "fragrances",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/Brown Perfume.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Brown Perfume.jpg"
     },
     {
       "id": 13,
@@ -245,7 +248,7 @@ export function ProductDetail() {
       "brand": "Fog Scent Xpressio",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Fog Scent Xpressio Perfume.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Fog Scent Xpressio Perfume.jpg"
     },
     {
       "id": 14,
@@ -258,7 +261,7 @@ export function ProductDetail() {
       "brand": "Al Munakh",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/nonalcoholicperfume.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/nonalcoholicperfume.jpg"
     },
     {
       "id": 15,
@@ -271,7 +274,7 @@ export function ProductDetail() {
       "brand": "Lord - Al-Rehab",
       "category": "fragrances",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Eau De Perfume Spray.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Eau De Perfume Spray.jpg"
     },
     {
       "id": 16,
@@ -284,7 +287,7 @@ export function ProductDetail() {
       "brand": "L'Oreal Paris",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Hyaluronic Acid Serum.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otro/Hyaluronic Acid Serum.jpg"
     },
     {
       "id": 17,
@@ -297,7 +300,7 @@ export function ProductDetail() {
       "brand": "Hemani Tea",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Tree Oil 30ml.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Tree Oil 30ml.jpg"
     },
     {
       "id": 18,
@@ -323,7 +326,7 @@ export function ProductDetail() {
       "brand": "ROREC White Rice",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Skin Beauty Serum.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Skin Beauty Serum.jpg"
     },
     {
       "id": 20,
@@ -336,7 +339,7 @@ export function ProductDetail() {
       "brand": "Fair & Clear",
       "category": "skincare",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Freckle Treatment Cream- 15gm.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Freckle Treatment Cream- 15gm.jpg"
     },
     {
       "id": 21,
@@ -349,7 +352,7 @@ export function ProductDetail() {
       "brand": "Saaf & Khaas",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Daal Masoor 500 grams.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Daal Masoor 500 grams.jpg"
     },
     {
       "id": 22,
@@ -362,7 +365,7 @@ export function ProductDetail() {
       "brand": "Bake Parlor Big",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Elbow Macaroni - 400 gm.webp"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Elbow Macaroni - 400 gm.webp"
     },
     {
       "id": 23,
@@ -375,7 +378,7 @@ export function ProductDetail() {
       "brand": "Baking Food Items",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Orange Essence Food Flavou.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Orange Essence Food Flavou.jpg"
     },
     {
       "id": 24,
@@ -388,7 +391,7 @@ export function ProductDetail() {
       "brand": "fauji",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/cereals muesli fruit nuts.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/cereals muesli fruit nuts.jpg"
     },
     {
       "id": 25,
@@ -401,7 +404,7 @@ export function ProductDetail() {
       "brand": "Dry Rose",
       "category": "groceries",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Gulab Powder 50 Gram.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Gulab Powder 50 Gram.jpg"
     },
     {
       "id": 26,
@@ -414,7 +417,7 @@ export function ProductDetail() {
       "brand": "Boho Decor",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Plant Hanger For Home.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Plant Hanger For Home.jpg"
     },
     {
       "id": 27,
@@ -427,7 +430,7 @@ export function ProductDetail() {
       "brand": "Flying Wooden",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Flying Wooden Bird.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Flying Wooden Bird.jpg"
     },
     {
       "id": 28,
@@ -440,7 +443,7 @@ export function ProductDetail() {
       "brand": "LED Lights",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/3D Embellishment Art Lamp.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/3D Embellishment Art Lamp.jpg"
     },
     {
       "id": 29,
@@ -453,7 +456,7 @@ export function ProductDetail() {
       "brand": "luxury palace",
       "category": "home-decoration",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Handcraft Chinese style.jpg"
+      "thumbnail": "http://localhost:5173/imagenes/otros/Handcraft Chinese style.jpg"
     },
     {
       "id": 30,
@@ -466,8 +469,8 @@ export function ProductDetail() {
       "brand": "Motorola",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/motorola-g60.jpg",
-      "images": ["http://localhost:5173/imagenes/motorola-g60.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/motorola-g60.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/motorola-g60.jpg"]
     },
     {
       "id": 31,
@@ -480,8 +483,8 @@ export function ProductDetail() {
       "brand": "Motorola",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/moto-edge-40.jpg",
-      "images": ["http://localhost:5173/imagenes/moto-edge-40.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/moto-edge-40.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/moto-edge-40.jpg"]
     },
     {
       "id": 32,
@@ -494,8 +497,8 @@ export function ProductDetail() {
       "brand": "Motorola",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/moto-edge-50.jpg",
-      "images": ["http://localhost:5173/imagenes/moto-edge-50.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/moto-edge-50.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/moto-edge-50.jpg"]
     },
     {
       "id": 33,
@@ -508,8 +511,8 @@ export function ProductDetail() {
       "brand": "Motorola",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Moto-G42.jpg",
-      "images": ["http://localhost:5173/imagenes/Moto-G42.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/Moto-G42.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/Moto-G42.jpg"]
     },
     {
       "id": 34,
@@ -522,8 +525,8 @@ export function ProductDetail() {
       "brand": "Google",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/google-pixel-5.jpg",
-      "images": ["http://localhost:5173/imagenes/google-pixel-5.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/google-pixel-5.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/google-pixel-5.jpg"]
     },
     {
       "id": 35,
@@ -536,8 +539,8 @@ export function ProductDetail() {
       "brand": "Iphone",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/iphone 13.jpg",
-      "images": ["http://localhost:5173/imagenes/iphone 13.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/iphone 13.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/iphone 13.jpg"]
     },
     {
       "id": 36,
@@ -550,8 +553,8 @@ export function ProductDetail() {
       "brand": "Xiaomi",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Pocophone Poco C40.jpg",
-      "images": ["http://localhost:5173/imagenes/Pocophone Poco C40.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/Pocophone Poco C40.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/Pocophone Poco C40.jpg"]
     },
     {
       "id": 37,
@@ -564,8 +567,8 @@ export function ProductDetail() {
       "brand": "Xiaomi",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Redmi A3.jpg",
-      "images": ["http://localhost:5173/imagenes/Redmi A3.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/Redmi A3.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/Redmi A3.jpg"]
     },
     {
       "id": 38,
@@ -578,8 +581,8 @@ export function ProductDetail() {
       "brand": "Samsung",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/galaxy a04.jpg",
-      "images": ["http://localhost:5173/imagenes/galaxy a04.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/galaxy a04.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/galaxy a04.jpg"]
     },
     {
       "id": 39,
@@ -592,8 +595,8 @@ export function ProductDetail() {
       "brand": "Iphone",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/iphone-8-256gb-gold.jpg",
-      "images": ["http://localhost:5173/imagenes/iphone-8-256gb-gold.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/iphone-8-256gb-gold.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/iphone-8-256gb-gold.jpg"]
     },
     {
       "id": 40,
@@ -606,8 +609,8 @@ export function ProductDetail() {
       "brand": "Google",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/google-pixel-4.jpg",
-      "images": ["http://localhost:5173/imagenes/google-pixel-4.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/google-pixel-4.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/google-pixel-4.jpg"]
     },
     {
       "id": 41,
@@ -620,8 +623,8 @@ export function ProductDetail() {
       "brand": "Samsung",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/SGS20FE.jpg",
-      "images": ["http://localhost:5173/imagenes/SGS20FE.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/SGS20FE.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/SGS20FE.jpg"]
     },
     {
       "id": 42,
@@ -634,8 +637,8 @@ export function ProductDetail() {
       "brand": "Iphone",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/iphone 12.jpg",
-      "images": ["http://localhost:5173/imagenes/iphone 12.jpg"]
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/iphone 12.jpg",
+      "images": ["http://localhost:5173/imagenes/smartphones/iphone 12.jpg"]
     },
     {
       "id": 43,
@@ -648,7 +651,7 @@ export function ProductDetail() {
       "brand": "Mac",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Moto G04s.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/Moto G04s.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -665,7 +668,7 @@ export function ProductDetail() {
       "brand": "Mac",
       "category": "smartphones",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/galaxy a15.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/galaxy a15.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -682,7 +685,7 @@ export function ProductDetail() {
       "brand": "Mac",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/TCL 40SE.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/TCL 40SE.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -699,7 +702,7 @@ export function ProductDetail() {
       "brand": "Mac",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/Galaxy A55.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/smartphones/Galaxy A55.jpg",
       "images": [
         "http://localhost:5173/imagenes/Galaxy A55.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -716,7 +719,7 @@ export function ProductDetail() {
       "brand": "Mac",
       "category": "smartphones",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/Moto G85.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/laptops/Moto G85.jpg",
       "images": [
         "http://localhost:5173/imagenes/Moto G85.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -733,7 +736,7 @@ export function ProductDetail() {
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/laptops/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -750,7 +753,7 @@ export function ProductDetail() {
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/laptops/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -767,7 +770,7 @@ export function ProductDetail() {
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/laptops/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -784,7 +787,7 @@ export function ProductDetail() {
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/laptops/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -801,7 +804,7 @@ export function ProductDetail() {
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/laptops/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -818,7 +821,7 @@ export function ProductDetail() {
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/laptops/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -835,7 +838,7 @@ export function ProductDetail() {
       "brand": "ASUS",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/ASUS Core I3.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/laptops/ASUS Core I3.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -852,7 +855,7 @@ export function ProductDetail() {
       "brand": "Mac",
       "category": "laptops",
       "stars": 4,
-      "thumbnail": "http://localhost:5173/imagenes/Macbook-pro-14.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/laptops/Macbook-pro-14.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -869,7 +872,7 @@ export function ProductDetail() {
       "brand": "Mac",
       "category": "laptops",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/Macbook-air-15.jpg",
+      "thumbnail": "http://localhost:5173/imagenes/laptops/Macbook-air-15.jpg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -886,7 +889,7 @@ export function ProductDetail() {
       "brand": "Mac",
       "category": "laptops",
       "stars": 5,
-      "thumbnail": "http://localhost:5173/imagenes/MacBook_Pro_16.jpeg",
+      "thumbnail": "http://localhost:5173/imagenes/laptops/MacBook_Pro_16.jpeg",
       "images": [
         "http://localhost:5173/imagenes/.jpg",
         "http://localhost:5173/imagenes/.jpg"
@@ -900,99 +903,208 @@ export function ProductDetail() {
 
    */
 
+  /* sssss 
+
+  /* aca pongo lo que tenes q poner para mapear los medios de pago
+  import { CiCreditCard1 } from "react-icons/ci";
+
+   tenes q importar el icono de mercado pago
+
+  import { CiBank } from "react-icons/ci";
+
+
+  aca abajo para envios
+  import { CiDeliveryTruck } from "react-icons/ci";
+
+  import { FaStoreAlt } from "react-icons/fa";
+  */
+  /*
+
+  [
+  {
+    "id": "hgy474sa2103",
+    "order": 4,
+    "title": "Full Stack Web Developer",
+    "duties": [
+      "Tote bag sartorial mlkshk air plant vinyl banjo lumbersexual poke leggings offal cold-pressed brunch neutra. Hammock photo booth live-edge disrupt",
+      "Post-ironic selvage chambray sartorial freegan meditation. Chambray chartreuse kombucha meditation, man bun four dollar toast street art cloud bread live-edge heirloom",
+      "Butcher drinking vinegar franzen authentic messenger bag copper mug food truck taxidermy. Mumblecore lomo echo park readymade iPhone migas single-origin coffee franzen cloud bread tilde vegan flexitarian."
+    ],
+    "type": "Espeficicaciones"
+  },
+  {
+    "id": "fty356ht7819",
+    "order": 3,
+    "title": "Front-End Engineer",
+    "duties": [
+      "Hashtag drinking vinegar scenester mumblescore snackwave four dollar toast, lumbersexual XOXO. Cardigan church-key pabst, biodiesel vexillologist viral squid.",
+      "Franzen af pitchfork, mumblecore try-hard kogi XOXO roof party la croix cardigan neutra retro tattooed copper mug. Meditation lomo biodiesel scenester",
+      "Fam VHS enamel pin try-hard echo park raw denim unicorn fanny pack vape authentic. Helvetica fixie church-key, small batch jianbing messenger bag scenester +1"
+    ],
+    "type": "Descripcion"
+  },
+  {
+    "id": "fty356ht7819",
+    "order": 3,
+    "title": "Front-End Engineer",
+    "duties": [
+      "Hashtag drinking vinegar scenester mumblescore snackwave four dollar toast, lumbersexual XOXO. Cardigan church-key pabst, biodiesel vexillologist viral squid.",
+      "Franzen af pitchfork, mumblecore try-hard kogi XOXO roof party la croix cardigan neutra retro tattooed copper mug. Meditation lomo biodiesel scenester",
+      "Fam VHS enamel pin try-hard echo park raw denim unicorn fanny pack vape authentic. Helvetica fixie church-key, small batch jianbing messenger bag scenester +1"
+    ],
+    "type": "Medios de pago"
+  },
+  {
+    "id": "fty356ht7819",
+    "order": 3,
+    "title": "Front-End Engineer",
+    "duties": [
+      "Hashtag drinking vinegar scenester mumblescore snackwave four dollar toast, lumbersexual XOXO. Cardigan church-key pabst, biodiesel vexillologist viral squid.",
+      "Franzen af pitchfork, mumblecore try-hard kogi XOXO roof party la croix cardigan neutra retro tattooed copper mug. Meditation lomo biodiesel scenester",
+      "Fam VHS enamel pin try-hard echo park raw denim unicorn fanny pack vape authentic. Helvetica fixie church-key, small batch jianbing messenger bag scenester +1"
+    ],
+    "type": "Envios"
+  },
+]
+
+   
+*/
+
+  const ejemplo = [
+    {
+      id: "recAGJfiU4CeaV0HL",
+      title: "Full Stack Web Developer",
+      duties: (
+        <aside>
+          <button>perro</button>
+          <strong>fuerte</strong>
+        </aside>
+      ),
+      company: "TOMMY",
+    },
+    {
+      id: "cerIL6mJNfWObonls",
+      order: 2,
+      title: "Front-End Engineer",
+      dates: "May 2015 - December 2015",
+      duties: (
+        <section>
+          <p>parrafo</p>
+          <br />
+          <br />
+          <i></i>
+        </section>
+      ),
+      company: "BIGDROP",
+    },
+    {
+      id: "cfg61x18GVY99hQq5",
+      order: 1,
+      title: "Engineering Intern",
+      dates: "May 2014 - September 2015",
+      elementos: (
+        <footer>
+          <span>sdsdsd</span>
+          <button>boton</button>
+        </footer>
+      ),
+      company: "CUKER",
+    },
+  ];
+
   return (
     <>
       <nav className="nav">
-        <div className="padrehome">
-          <img
-            src={Home}
-            width="105px"
-            height="95px"
-            onClick={() => navigte("/")}
-          ></img>
-          <h2>Back to home</h2>
+        <Header />
+        <div className="padreheart">
+          <RiHeart3Fill onClick={() => navigte("wishlist")} className="heart" />
         </div>
         <CartPage />
       </nav>
+      <section>
+        {pidDetail.map((product) => {
+          const isProductInCart = checkProductInCart(product);
+          const filterp = slices.filter((f) => f.category === product.category);
+          const stars = product.stars;
 
-      {pidDetail.map((product) => {
-        const isProductInCart = checkProductInCart(product);
-        const filterp = slices.filter((f) => f.category === product.category);
-        const stars = product.stars;
-
-        return (
-          <>
-            <div className="containerproductdetail" key={product.id}>
-              <div className="productdetail">
-                <div className="containerpdimg">
-                  <img
-                    id="thumbnail"
-                    src={
-                      product.images ? product.images[value] : product.thumbnail
-                    }
-                    alt={product.title}
-                  />
-                  {product.images ? (
-                    <div className="miniimages">
-                      {product.images?.map((x, id) => (
-                        <img
-                          src={x}
-                          alt={id}
-                          onClick={() => setValue(id)}
-                        ></img>
-                      ))}
+          return (
+            <>
+              <div className="containerproductdetail" key={product.id}>
+                <div className="productdetail">
+                  <div className="containerpdimg">
+                    <div className="padremainimage">
+                      <img
+                        id="thumbnail"
+                        src={
+                          product.images
+                            ? product.images[value]
+                            : product.thumbnail
+                        }
+                        alt={product.title}
+                      />
                     </div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-                <div className="pdcontent">
-                  <StarRating stars={stars} />
-                  <strong id="p-title">{product.title}</strong>
-                  <strong id="p-price">${product.price}</strong>
-                  <div className="padrebutton">
-                    <button
-                      style={{
-                        backgroundColor: isProductInCart ? "red" : "#09f",
-                      }}
-                      onClick={() => {
-                        isProductInCart
-                          ? removeFromCart(product)
-                          : addToCart(product);
-                      }}
-                    >
-                      {isProductInCart
-                        ? "Quitar del Carrito"
-                        : "Añadir al Carrito"}
-                      {isProductInCart ? (
-                        <RemoveFromCartIcon />
-                      ) : (
-                        <AddToCartIcon />
-                      )}
-                    </button>
+                    {product.images ? (
+                      <div className="miniimages">
+                        {product.images?.map((x, id) => (
+                          <img
+                            src={x}
+                            alt={id}
+                            onClick={() => setValue(id)}
+                          ></img>
+                        ))}
+                      </div>
+                    ) : (
+                      ""
+                    )}
                   </div>
-                  <p>Ver legales de promociones bancarias</p>
-                  <p id="p-ccuotas">Calcula el valor en cuotas</p>
+                  <div className="pdcontent">
+                    <StarRating stars={stars} />
+                    <strong id="p-title">{product.title}</strong>
+                    <strong id="p-price">${product.price}</strong>
+                    <div className="padrebutton">
+                      <button
+                        style={{
+                          backgroundColor: isProductInCart ? "red" : "#09f",
+                        }}
+                        onClick={() => {
+                          isProductInCart
+                            ? removeFromCart(product)
+                            : addToCart(product);
+                        }}
+                      >
+                        {isProductInCart
+                          ? "Quitar del Carrito"
+                          : "Añadir al Carrito"}
+                        {isProductInCart ? (
+                          <RemoveFromCartIcon />
+                        ) : (
+                          <AddToCartIcon />
+                        )}
+                      </button>
+                    </div>
+                    <p>Ver legales de promociones bancarias</p>
+                    <p id="p-ccuotas">Calcula el valor en cuotas</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div></div>
+              <div></div>
 
-            {filterp.length > 1 ? (
-              <>
-                <br />
-                <br />
-                <div className="padreoctv">
-                  <h2 id="octv">Otros clientes tambien vieron</h2>
-                </div>
-                <Carousel similarprodct={filterp} />
-              </>
-            ) : (
-              ""
-            )}
-          </>
-        );
-      })}
+              {filterp.length > 1 ? (
+                <>
+                  <br />
+                  <br />
+                  <div className="padreoctv">
+                    <h2 id="octv">Otros clientes tambien vieron</h2>
+                  </div>
+                  <Carousel similarprodct={filterp} />
+                </>
+              ) : (
+                ""
+              )}
+            </>
+          );
+        })}
+      </section>
     </>
   );
 }
