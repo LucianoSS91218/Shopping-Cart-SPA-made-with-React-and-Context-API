@@ -94,11 +94,11 @@
   }
 
   .carousel .carouselLeftNav {
-    left: 30px;
+    left: 1px;
   }
 
   .carousel .carouselRightNav {
-    right: 20px;
+    right: 94px;
   }
 }
 
@@ -144,15 +144,21 @@
   }
 }
 
+@media (min-width: 700px) and (max-width: 770px) {
+  .carousel .carouselRightNav {
+    right: 20px;
+  }
+}
+
 /* media query for carousel */
 
-@media (min-width: 300px) and (max-width: 391px) {
+@media (min-width: 300px) and (max-width: 389px) {
   .carousel .carouselItems {
-    max-width: 330px;
+    max-width: 140px;
   }
 
   .carousel .carouselItems .carouselItem {
-    width: 114px;
+    width: 130px;
   }
 }
 
@@ -166,7 +172,7 @@
   }
 }
 
-@media (min-width: 400px) and (max-width: 431px) {
+@media (min-width: 392px) and (max-width: 431px) {
   .carousel .carouselItems {
     max-width: 266px;
   }
