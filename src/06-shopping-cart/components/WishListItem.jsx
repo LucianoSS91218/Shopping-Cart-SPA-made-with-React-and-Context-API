@@ -9,7 +9,7 @@ export function WishListItem({
   thumbnail,
   price,
   title,
-  wishlistitems,
+  wishlistitem,
   isProductInCart,
   isProductInWishList,
   addToCart,
@@ -32,8 +32,8 @@ export function WishListItem({
           }}
           onClick={() => {
             isProductInWishList
-              ? removeFromWishList(wishlistitems)
-              : addToWishList(wishlistitems);
+              ? removeFromWishList(wishlistitem)
+              : addToWishList(wishlistitem);
           }}
         />
       </div>
