@@ -74,21 +74,21 @@
 
 /* media query for arrows */
 
-@media (min-width: 300px) and (max-width: 358px) {
+@media (min-width: 300px) and (max-width: 361px) {
   #octv {
     width: 100%;
   }
 
   .carousel .carouselLeftNav {
-    left: 28px;
+    left: 3px;
   }
 
   .carousel .carouselRightNav {
-    right: 18px;
+    right: 99px;
   }
 }
 
-@media (min-width: 359px) and (max-width: 391px) {
+@media (min-width: 362px) and (max-width: 376px) {
   #octv {
     width: 90%;
   }
@@ -98,7 +98,21 @@
   }
 
   .carousel .carouselRightNav {
-    right: 94px;
+    right: 114px;
+  }
+}
+
+@media (min-width: 377px) and (max-width: 413px) {
+  #octv {
+    width: 90%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 10px;
   }
 }
 
@@ -108,25 +122,11 @@
   }
 
   .carousel .carouselLeftNav {
-    left: 30px;
+    left: 1px;
   }
 
   .carousel .carouselRightNav {
-    right: 43px;
-  }
-}
-
-@media (min-width: 413px) and (max-width: 415px) {
-  #octv {
-    width: 57%;
-  }
-
-  .carousel .carouselLeftNav {
-    left: 30px;
-  }
-
-  .carousel .carouselRightNav {
-    right: 46px;
+    right: 28px;
   }
 }
 
@@ -136,11 +136,11 @@
   }
 
   .carousel .carouselLeftNav {
-    left: 30px;
+    left: 1px;
   }
 
   .carousel .carouselRightNav {
-    right: 60px;
+    right: 48px;
   }
 }
 
