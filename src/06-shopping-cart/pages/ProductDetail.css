@@ -1,8 +1,104 @@
+/* options */
+
+.options {
+  padding: 10px;
+  width: 680px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+}
+
+/* option specifcations */
+
+.technical-specs-table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.technical-specs-table p {
+  padding: 15px 10px;
+}
+
+.technical-specs-table :nth-child(2) {
+  color: rgb(1, 156, 180);
+}
+
+.options p.active {
+  border-bottom: 2px solid rgb(1, 156, 180);
+}
+
+/* lpmqlp no pude copiar las lineas como tiene el carrefour*/
+
+/* containerinfo for description, method payment and delivery */
+
+.containerinfo {
+  border-radius: 5px;
+  border: 1px solid rgb(244, 242, 242);
+  padding: 0px 14px;
+  max-width: 900px;
+}
+
+/* option description */
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerinfo .description .padrebrand {
+  display: flex;
+  justify-content: center;
+}
+
+.containerinfo .description .padrebrand #brand {
+  font-size: 40px;
+  color: rgb(1, 156, 180);
+}
+
+/* option method payment and delivery */
+
+.method-payment {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.3rem;
+  padding: 40px 10px;
+}
+
+.delivery {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 90px;
+}
+
+.method-payment .method-payment-child .padreimgiconinfo,
+.delivery .delivery-child .padreimgiconinfo {
+  display: flex;
+  justify-content: center;
+}
+
+.method-payment .method-payment-child :nth-child(1),
+.method-payment .method-payment-child :nth-child(2),
+.delivery .delivery-child :nth-child(1),
+.delivery .delivery-child :nth-child(2) {
+  color: rgb(1, 156, 180);
+}
+
+.method-payment .method-payment-child :nth-child(4) {
+  opacity: 0.7;
+}
+
+.delivery .delivery-child :nth-child(3) {
+  width: 75%;
+}
+
 /* section */
 section {
-  max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
+  max-width: 930px;
 }
 
 /* product detail */
@@ -47,6 +143,11 @@ section {
   height: 35%;
   max-width: 66px;
   max-height: 56px;
+}
+
+.miniimages img:hover {
+  border-radius: 1px;
+  /* preguntale a la ia que el color se vea azul*/
 }
 
 /* other content */
@@ -146,5 +247,43 @@ section {
 
   .containerproductdetail .productdetail .containerpdimg #thumbnail {
     max-width: 100%;
+  }
+}
+
+/* media querys for options info */
+@media (max-width: 432px) {
+  .options {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .technical-specs-table {
+    width: 90%;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 769px) {
+  .containerinfo {
+    width: 97%;
+  }
+}
+
+@media (max-width: 820px) {
+  .method-payment {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .delivery {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .delivery .delivery-child.mobile {
+    margin-bottom: 30px;
   }
 }
