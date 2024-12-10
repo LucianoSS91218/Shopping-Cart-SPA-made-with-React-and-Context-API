@@ -99,8 +99,12 @@ section {
 
 @media (min-width: 298px) and (max-width: 391px) {
   .containerproductdetail {
-    width: 285px;
+    width: 280px;
     max-height: 790px;
+  }
+
+  #vldpb {
+    text-align: center;
   }
 
   .containerproductdetail .productdetail .containerpdimg .padremainimg {
