@@ -1,22 +1,7 @@
-.containercp {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
-}
-
 .containercp .cart-button {
   background-color: deepskyblue;
   border-radius: 50px;
   width: 42px;
   height: 33px;
-}
-
-.containercp .cart-button:hover {
-  scale: 1.1;
-}
-
-@media (max-width: 768px) {
-  .containercp {
-    justify-content: flex-end;
-  }
+  margin-right: 10px;
 }
