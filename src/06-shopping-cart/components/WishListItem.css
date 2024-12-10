@@ -47,32 +47,32 @@ button {
 
 @media (max-width: 389px) {
   li {
-    width: 35px;
+    width: 40px;
     padding: 1.6rem;
   }
 
   li img {
-    width: 70px;
-    height: 70px;
+    width: 78px;
+    height: 75px;
   }
 }
 
 @media (min-width: 390px) and (max-width: 452px) {
   li {
-    width: 60px;
+    width: 65px;
     padding: 1.6rem;
   }
 
   li img {
-    width: 90px;
+    width: 91px;
     height: 90px;
   }
 }
 
 @media (min-width: 460px) and (max-width: 541px) {
   li {
-    width: calc(29% - 12px);
-    padding: 1.6rem;
+    width: calc(32% - 12px);
+    padding: 1rem;
   }
 
   li img {
@@ -85,7 +85,11 @@ button {
 @media (min-width: 767px) and (max-width: 769px) {
   li {
     width: 145px;
-    padding: 1.6rem;
+  }
+
+  li img {
+    width: 150px;
+    height: 130px;
   }
 }
 
