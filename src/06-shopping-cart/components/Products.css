@@ -7,7 +7,9 @@
 .products li {
   display: flex;
   flex-direction: column;
-  width: calc(34% - 58px);
+  align-items: center;
+  /* ese width es lo mismo que 190px */
+  width: 192px;
   gap: 0.1rem;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
@@ -41,7 +43,6 @@
   width: 200px;
   height: 200px;
   border-radius: 4px;
-  background: #fff;
   margin-bottom: 10px;
 }
 
@@ -53,20 +54,39 @@
   cursor: pointer;
 }
 
-@media (max-width: 431px) {
+.heart {
+  width: 45px;
+  height: 20px;
+}
+
+@media (max-width: 389px) {
   .products li {
-    width: calc(51% - 32px);
+    width: 40px;
+    padding: 1.6rem;
   }
 
   .products img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 75px;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 452px) {
+  .products li {
+    width: 60px;
+    padding: 1.6rem;
+  }
+
+  .products img {
+    width: 90px;
+    height: 90px;
   }
 }
 
 @media (min-width: 460px) and (max-width: 541px) {
   .products li {
     width: calc(29% - 12px);
+    padding: 1rem;
   }
 
   .products img {
