@@ -1,15 +1,13 @@
 import "./Cart.css";
 import { productos as initialProducts } from "../mocks/products.json";
 import { ClearCartIcon } from "./Icons.jsx";
-import Home from "../assets/home-icon-transparent-free.png";
 import { useCart } from "../hooks/useCart.js";
 import { CartItem } from "./CartItem.jsx";
-import CartPage from "../pages/CartPage.jsx";
-import { useNavigate } from "react-router-dom";
+import { Navbar } from "../components/Navbar.jsx";
 
 export function Cart() {
+
   const MINIM_AMOUNT = 7000;
-  const navigte = useNavigate();
 
   const { cart, clearCart, addToCart, decrementProduct } = useCart();
 
@@ -24,22 +22,9 @@ export function Cart() {
 
   return (
     <>
-      <div className="nav">
-        <div className="padrehome">
-          <div id="home">
-            <img
-              src={Home}
-              width="105px"
-              height="95px"
-              onClick={() => navigte("/")}
-            ></img>
-            <h2>Back to home</h2>
-          </div>
-        </div>
-        <CartPage />
-      </div>
+      <Navbar />
       <section className="container">
-{cart?.length ? (
+        {cart?.length ? (
           <ul className="cart">
             {cart.map((product) => (
               <CartItem
@@ -53,7 +38,9 @@ export function Cart() {
         ) : (
           <h2>No tenes productos en carrito</h2>
         )}
-        <div className="cartfooter">
+      </section>
+      <div className="cartfooter">
+        <div className="wrapfooter">
           <h3>{`Total: $${amount}`}</h3>
           <button className={"clearcart"} onClick={clearCart}>
             <ClearCartIcon />
@@ -68,7 +55,7 @@ export function Cart() {
             Comprar
           </button>
         </div>
-      </section>
+      </div>
     </>
   );
 }
