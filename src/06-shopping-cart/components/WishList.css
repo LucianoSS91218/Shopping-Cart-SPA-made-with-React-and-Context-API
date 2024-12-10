@@ -22,3 +22,21 @@ h2 {
   margin-bottom: 21px;
   background-color: red;
 }
+
+@media (max-width: 389px) {
+  .wishlist {
+    gap: 0.4rem;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 452px) {
+  wishlist {
+    gap: 0.4rem;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 541px) {
+  wishlist {
+    gap: 0.4rem;
+  }
+}
