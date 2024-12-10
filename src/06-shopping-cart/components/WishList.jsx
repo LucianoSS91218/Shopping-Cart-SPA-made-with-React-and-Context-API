@@ -3,7 +3,6 @@ import { useWishList } from "../hooks/useWishList.js";
 import { WishListItem } from "./WishListItem.jsx";
 import { useCart } from "../hooks/useCart.js";
 import { Navbar } from "../components/Navbar.jsx";
-import { useState } from "react";
 export function WishList() {
   const { addToCart, removeFromCart, cart } = useCart();
   const checkProductInCart = (product) => {
@@ -15,12 +14,6 @@ export function WishList() {
 
   const checkProductInWishList = (product) => {
     return wishlist.some((item) => item.id === product.id);
-  };
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
