@@ -3,10 +3,8 @@ import { useState } from "react";
 import { productos } from "../mocks/products.json";
 import { AddToCartIcon, RemoveFromCartIcon } from "../components/Icons.jsx";
 import { useCart } from "../hooks/useCart.js";
-import CartPage from "../pages/CartPage.jsx";
-import { Header } from "../components/Header.jsx";
+import { Navbar } from "../components/Navbar.jsx";
 import StarRating from "../components/StarRating.jsx";
-import { RiHeart3Fill } from "react-icons/ri";
 import "./ProductDetail.css";
 import { productos as OtherProducts } from "../mocks/products.json";
 
@@ -1014,13 +1012,7 @@ export function ProductDetail() {
 
   return (
     <>
-      <nav className="nav">
-        <Header />
-        <div className="padreheart">
-          <RiHeart3Fill onClick={() => navigte("wishlist")} className="heart" />
-        </div>
-        <CartPage />
-      </nav>
+      <Navbar />
       <section>
         {pidDetail.map((product) => {
           const isProductInCart = checkProductInCart(product);
