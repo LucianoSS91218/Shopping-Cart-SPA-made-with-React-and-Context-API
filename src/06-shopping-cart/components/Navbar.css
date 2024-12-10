@@ -14,3 +14,10 @@
 .padreheart {
   color: red;
 }
+
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
