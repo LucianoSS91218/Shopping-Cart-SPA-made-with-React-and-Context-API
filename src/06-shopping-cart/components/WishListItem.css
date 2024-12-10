@@ -1,0 +1,103 @@
+li {
+  width: 190px;
+  gap: 0.1rem;
+  border-radius: 4px;
+  background: #111;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+li img {
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+li .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+li .content strong {
+  font-size: 18px;
+}
+
+li #title {
+  color: white;
+  opacity: 0.8;
+}
+
+li #price {
+  color: white;
+}
+
+.isproductincart {
+  margin-top: 4px;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (max-width: 389px) {
+  li {
+    width: 35px;
+    padding: 1.6rem;
+  }
+
+  li img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 452px) {
+  li {
+    width: 60px;
+    padding: 1.6rem;
+  }
+
+  li img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 541px) {
+  li {
+    width: calc(29% - 12px);
+    padding: 1.6rem;
+  }
+
+  li img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* iPad mini */
+@media (min-width: 767px) and (max-width: 769px) {
+  li {
+    width: 145px;
+    padding: 1.6rem;
+  }
+}
+
+.wlfooter {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+footer span {
+  color: black;
+  opacity: 0.9;
+  font-size: 18px;
+}
