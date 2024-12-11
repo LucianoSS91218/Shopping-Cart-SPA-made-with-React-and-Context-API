@@ -1,23 +1,22 @@
-.products {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 1rem;
-}
-
-.products li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* ese width es lo mismo que 190px */
-  width: 192px;
+li {
+  width: 190px;
   gap: 0.1rem;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   background: #111;
   padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.products li .content {
+li img {
+  object-fit: contain;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+li .content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,92 +24,71 @@
   padding: 10px;
 }
 
-.products li .content strong {
+li .content strong {
   font-size: 18px;
 }
 
-.products li #title {
+li #title {
   color: white;
   opacity: 0.8;
 }
 
-.products li #price {
+li #price {
   color: white;
-  font-size: 26px;
 }
 
-.products .containerprice {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 8px;
-}
-
-.products .containerprice :nth-child(2) {
-  margin-left: 8px;
-  background-color: red;
-  border-radius: 4px;
-  padding: 3px 5px;
-}
-
-.products img {
-  object-fit: contain;
-  width: 200px;
-  height: 200px;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-.products .isproductincart {
+.isproductincart {
   margin-top: 4px;
 }
 
-.products button {
+button {
   cursor: pointer;
 }
 
-@media (max-width: 397px) {
-  .products {
-    gap: 0.4rem;
-  }
+.wlfooter {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 12px;
+}
 
-  .products li {
+footer span {
+  color: black;
+  opacity: 0.9;
+  font-size: 18px;
+}
+
+@media (max-width: 397px) {
+  li {
     width: 43px;
     padding: 1.6rem;
   }
 
-  .products img {
+  li img {
     width: 78px;
     height: 75px;
   }
 }
 
 @media (min-width: 397px) and (max-width: 452px) {
-  .products {
-    gap: 0.4rem;
-  }
-
-  .products li {
+  li {
     width: 72px;
     padding: 1.6rem;
   }
 
-  .products img {
+  li img {
     width: 91px;
     height: 90px;
   }
 }
 
 @media (min-width: 460px) and (max-width: 541px) {
-  .products ul {
-    gap: 0.4rem;
-  }
-
-  .products li {
+  li {
     width: calc(32% - 12px);
     padding: 1rem;
   }
 
-  .products img {
+  li img {
     width: 100px;
     height: 100px;
   }
@@ -118,12 +96,12 @@
 
 /* iPad mini */
 @media (min-width: 767px) and (max-width: 769px) {
-  .products li {
-    width: calc(31% - 28px);
+  li {
+    width: 145px;
   }
 
-  .products img {
-    width: 155px;
+  li img {
+    width: 150px;
     height: 130px;
   }
 }
