@@ -45,19 +45,19 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 389px) {
+@media (max-width: 397px) {
   li {
-    width: 40px;
+    width: 200px;
     padding: 1.6rem;
   }
 
   li img {
-    width: 78px;
-    height: 75px;
+    width: 210px;
+    height: 200px;
   }
 }
 
-@media (min-width: 390px) and (max-width: 452px) {
+@media (min-width: 397px) and (max-width: 452px) {
   li {
     width: 65px;
     padding: 1.6rem;
