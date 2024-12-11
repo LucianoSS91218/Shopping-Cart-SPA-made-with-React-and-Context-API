@@ -39,8 +39,6 @@
 
 .carousel .carouselItems .carouselItem .padreImg {
   position: relative;
-  /*cuando cambias los px o % se te puede mover las letras y quedar descentradas con
- respecto a la imagen*/
   width: 135px;
   height: 155px;
   padding: 5px;
