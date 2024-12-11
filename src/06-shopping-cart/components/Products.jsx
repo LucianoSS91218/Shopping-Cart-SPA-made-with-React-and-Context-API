@@ -1,28 +1,23 @@
 import "./Products.css";
 import { AddToCartIcon, RemoveFromCartIcon } from "./Icons.jsx";
 import { useCart } from "../hooks/useCart.js";
-import { useWishList } from "../hooks/useWishList.js";
 import { NavLink } from "react-router-dom";
-import { RiHeart3Fill } from "react-icons/ri";
+
 export function Products({ products }) {
   const { addToCart, removeFromCart, cart } = useCart();
   const checkProductInCart = (product) => {
     return cart.some((item) => item.id === product.id);
   };
 
-  const { addToWishList, removeFromWishList, wishlist } = useWishList();
-
-  const checkProductInWishList = (product) => {
-    return wishlist.some((item) => item.id === product.id);
-  };
+  /* lamentablemente no pudiste ordenar alfabeticamente asi que ni te gastes
+   */
 
   return (
     <main className="products">
-      <h3>15 Productos</h3>
+      <h3>{products.slice(0, 15).length} productos</h3>
       <ul>
         {products.slice(0, 15).map((product) => {
           const isProductInCart = checkProductInCart(product);
-          const isProductInWishList = checkProductInWishList(product);
           return (
             <li key={product.id}>
               <div className="content">
@@ -32,18 +27,7 @@ export function Products({ products }) {
                     ? `${product.title.slice(0, 14)}...`
                     : `${product.title}`}
                 </strong>
-                <strong id="price">{`$${product.price}`}</strong>
-                <RiHeart3Fill
-                  className="heart"
-                  style={{
-                    color: isProductInWishList ? "red" : "",
-                  }}
-                  onClick={() => {
-                    isProductInWishList
-                      ? removeFromWishList(product)
-                      : addToWishList(product);
-                  }}
-                />
+                <span id="price">{`$${product.price}`}</span>
               </div>
 
               <NavLink to={`/products/${product.id}`}>Ver producto</NavLink>
