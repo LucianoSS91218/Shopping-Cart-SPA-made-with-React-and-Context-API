@@ -84,7 +84,7 @@
   }
 
   .carousel .carouselRightNav {
-    right: 79px;
+    right: 1px;
   }
 }
 
@@ -154,11 +154,11 @@
 
 @media (min-width: 300px) and (max-width: 389px) {
   .carousel .carouselItems {
-    max-width: 140px;
+    max-width: 259px;
   }
 
   .carousel .carouselItems .carouselItem {
-    width: 130px;
+    width: 108px;
   }
 }
 
