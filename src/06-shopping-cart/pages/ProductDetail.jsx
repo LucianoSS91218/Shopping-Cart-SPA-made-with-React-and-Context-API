@@ -191,9 +191,9 @@ export function ProductDetail() {
                     <div className="containerprice">
                       <span id="price">{`$${product.price}`}</span>
                       {product.discountPercentage ? (
-                        <span id="p-descuent">
+                        <p id="p-descuent">
                           {product.discountPercentage}%
-                        </span>
+                        </p>
                       ) : (
                         ""
                       )}
