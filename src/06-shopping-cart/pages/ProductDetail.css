@@ -191,6 +191,10 @@ section {
   padding: 40px 10px;
 }
 
+.method-payment #credit-cards {
+  width: 94%;
+}
+
 .delivery {
   display: flex;
   justify-content: space-around;
