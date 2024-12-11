@@ -1,4 +1,4 @@
-.products ul {
+.products {
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
@@ -68,13 +68,13 @@
   cursor: pointer;
 }
 
-@media (max-width: 389px) {
-  .products ul {
+@media (max-width: 397px) {
+  .products {
     gap: 0.4rem;
   }
 
   .products li {
-    width: 40px;
+    width: 43px;
     padding: 1.6rem;
   }
 
@@ -84,13 +84,13 @@
   }
 }
 
-@media (min-width: 390px) and (max-width: 452px) {
-  .products ul {
+@media (min-width: 397px) and (max-width: 452px) {
+  .products {
     gap: 0.4rem;
   }
 
   .products li {
-    width: 65px;
+    width: 72px;
     padding: 1.6rem;
   }
 
