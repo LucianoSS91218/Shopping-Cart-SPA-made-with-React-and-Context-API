@@ -10,9 +10,9 @@ export function Products({ products }) {
   };
 
   return (
-    <main className="products">
+    <main>
       <h3>{products.slice(0, 15).length} productos</h3>
-      <ul>
+      <ul className="products">
         {products.slice(0, 15).map((product) => {
           const isProductInCart = checkProductInCart(product);
           return (
