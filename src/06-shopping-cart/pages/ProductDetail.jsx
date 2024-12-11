@@ -17,6 +17,12 @@ import { productos as OtherProducts } from "../mocks/products.json";
 import { Carousel } from "../components/SimilarProducts.jsx";
 
 export function ProductDetail() {
+  // acordate que para hacer la paginacion de productos, desde el frontend
+  // la unica forma seria consumiendo una api como el caso de la movieapp
+  // te acordas
+
+  // actually in ecommerces the product ids are the product title plus a
+  // hyphen and the id
 
   const [value, setValue] = useState(0);
   const [optionsIndex, setOptionsIndex] = useState(0);
@@ -37,6 +43,22 @@ export function ProductDetail() {
 
   const slices = OtherProducts.slice(30, 97);
 
+  /*
+  el tema que como esto es un supermercado no podemos hacer la logica de poner cheto 
+  las caracteristicas porque no es una pagina como Naldo o Fravega,
+  como aca tenemos alimentos bebidas etc
+   */
+
+  // hace eso entonces en las especificaciones copiate del carrefour
+
+  // el tema que yo me mande la cagada de tener la key rating y stars
+
+  /*
+podria hacer lo de hasta 18 cuotas sin interes pero me da paja
+el de Hasta {} cuotas sin interes de {calculo}
+puede ser 18 la mayoria , pocas veces 3 cuotas
+ */
+
   return (
     <>
       <Navbar />
@@ -45,7 +67,7 @@ export function ProductDetail() {
           const isProductInCart = checkProductInCart(product);
           const filterp = slices.filter((f) => f.category === product.category);
           const stars = product.stars;
-
+          console.log(filterp);
           const isProductInWishList = checkProductInWishList(product);
 
           const optionsinfo = [
@@ -93,6 +115,7 @@ export function ProductDetail() {
                     <p>Pagá en 1, 3 y 6 cuotas fijas</p>
                     <p>Acreditacion instantanea</p>
                     <img
+                      id="credit-cards"
                       src="https://i.ibb.co/Zmm1t8T/Untitled-design-44.png"
                       alt="credit-cards"
                     ></img>
@@ -191,9 +214,7 @@ export function ProductDetail() {
                     <div className="containerprice">
                       <span id="price">{`$${product.price}`}</span>
                       {product.discountPercentage ? (
-                        <p id="p-descuent">
-                          {product.discountPercentage}%
-                        </p>
+                        <p id="p-descuent">{product.discountPercentage}%</p>
                       ) : (
                         ""
                       )}
