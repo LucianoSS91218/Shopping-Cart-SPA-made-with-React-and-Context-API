@@ -29,11 +29,11 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
-  max-width: 700px;
+  max-width: 703px;
 }
 
 .carousel .carouselItems .carouselItem {
-  width: calc(23% - 34px);
+  width: calc(23% - 33px);
   cursor: pointer;
 }
 
