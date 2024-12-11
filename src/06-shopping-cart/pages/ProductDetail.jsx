@@ -35,7 +35,7 @@ export function ProductDetail() {
     return wishlist.some((item) => item.id === product.id);
   };
 
-  const slices = OtherProducts.slice(30, 57);
+  const slices = OtherProducts.slice(30, 97);
 
   return (
     <>
