@@ -46,6 +46,7 @@ export function Filters() {
           <option value="all">Todas</option>
           <option value="laptops">Portátiles</option>
           <option value="smartphones">Celulares</option>
+          <option value="white spirits">Bebidas blancas</option>
           <option value="groceries">comestibles</option>
           <option value="home-decoration">decoracion casa</option>
           <option value="skincare">cuidado de piel</option>
