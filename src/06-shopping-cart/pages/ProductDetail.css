@@ -294,8 +294,8 @@ section {
 }
 
 @media (min-width: 310px) and (max-width: 387px) {
-  .method-payment #credit-cards {
-    width: 98%;
+  .method-payment .method-payment-child #credit-cards {
+    width: 95%;
   }
 }
 
