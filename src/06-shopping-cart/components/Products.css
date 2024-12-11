@@ -36,6 +36,7 @@
 
 .products li #price {
   color: white;
+  font-size: 26px;
 }
 
 .products .containerprice {
