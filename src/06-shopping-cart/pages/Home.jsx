@@ -16,6 +16,8 @@ export function Home() {
       <main>
         <Filters />
         <Products products={filteredProducts} />
+        <br />
+        <h4>Copyright © Luciano Sanuni</h4>
       </main>
     </>
   );
