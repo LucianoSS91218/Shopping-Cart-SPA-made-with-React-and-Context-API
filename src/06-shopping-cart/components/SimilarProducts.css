@@ -74,7 +74,7 @@
 
 /* media query for arrows */
 
-@media (min-width: 300px) and (max-width: 361px) {
+@media (min-width: 314px) and (max-width: 337px) {
   #octv {
     width: 100%;
   }
@@ -84,11 +84,95 @@
   }
 
   .carousel .carouselRightNav {
-    right: 1px;
+    right: 70px;
   }
 }
 
-@media (min-width: 362px) and (max-width: 376px) {
+@media (min-width: 337px) and (max-width: 342px) {
+  #octv {
+    width: 100%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 3px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 72px;
+  }
+}
+
+@media (min-width: 342px) and (max-width: 345px) {
+  #octv {
+    width: 100%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 3px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 80px;
+  }
+}
+
+@media (min-width: 345px) and (max-width: 348px) {
+  #octv {
+    width: 100%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 3px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 78px;
+  }
+}
+
+@media (min-width: 348px) and (max-width: 352px) {
+  #octv {
+    width: 100%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 3px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 85px;
+  }
+}
+
+@media (min-width: 352px) and (max-width: 359px) {
+  #octv {
+    width: 100%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 3px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 89px;
+  }
+}
+
+@media (min-width: 359px) and (max-width: 361px) {
+  #octv {
+    width: 100%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 3px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 95px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 362px) {
   #octv {
     width: 90%;
   }
@@ -98,11 +182,123 @@
   }
 
   .carousel .carouselRightNav {
-    right: 114px;
+    right: 97px;
   }
 }
 
-@media (min-width: 377px) and (max-width: 413px) {
+@media (min-width: 362px) and (max-width: 367px) {
+  #octv {
+    width: 90%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 100px;
+  }
+}
+
+@media (min-width: 367px) and (max-width: 372px) {
+  #octv {
+    width: 90%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 105px;
+  }
+}
+
+@media (min-width: 372px) and (max-width: 375px) {
+  #octv {
+    width: 90%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 108px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 376px) {
+  #octv {
+    width: 90%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 111px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 379px) {
+  #octv {
+    width: 90%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 111px;
+  }
+}
+
+@media (min-width: 379px) and (max-width: 385px) {
+  #octv {
+    width: 90%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 118px;
+  }
+}
+
+@media (min-width: 385px) and (max-width: 389px) {
+  #octv {
+    width: 90%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 122px;
+  }
+}
+
+@media (min-width: 389px) and (max-width: 399px) {
+  #octv {
+    width: 90%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 1px;
+  }
+}
+
+@media (min-width: 399px) and (max-width: 408px) {
   #octv {
     width: 90%;
   }
@@ -116,7 +312,21 @@
   }
 }
 
-@media (min-width: 410px) and (max-width: 412px) {
+@media (min-width: 408px) and (max-width: 412px) {
+  #octv {
+    width: 90%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 15px;
+  }
+}
+
+@media (min-width: 412px) and (max-width: 416px) {
   #octv {
     width: 100%;
   }
@@ -126,11 +336,53 @@
   }
 
   .carousel .carouselRightNav {
-    right: 28px;
+    right: 18px;
   }
 }
 
-@media (min-width: 428px) and (max-width: 431px) {
+@media (min-width: 416px) and (max-width: 419px) {
+  #octv {
+    width: 100%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 20px;
+  }
+}
+
+@media (min-width: 419px) and (max-width: 424px) {
+  #octv {
+    width: 100%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 24px;
+  }
+}
+
+@media (min-width: 423px) and (max-width: 426px) {
+  #octv {
+    width: 100%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 30px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 431px) {
   #octv {
     width: 95%;
   }
@@ -140,7 +392,77 @@
   }
 
   .carousel .carouselRightNav {
-    right: 48px;
+    right: 35px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 436px) {
+  #octv {
+    width: 95%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 38px;
+  }
+}
+
+@media (min-width: 436px) and (max-width: 441px) {
+  #octv {
+    width: 95%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 42px;
+  }
+}
+
+@media (min-width: 441px) and (max-width: 447px) {
+  #octv {
+    width: 95%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 46px;
+  }
+}
+
+@media (min-width: 441px) and (max-width: 452px) {
+  #octv {
+    width: 95%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 49px;
+  }
+}
+
+@media (min-width: 452px) and (max-width: 461px) {
+  #octv {
+    width: 95%;
+  }
+
+  .carousel .carouselLeftNav {
+    left: 1px;
+  }
+
+  .carousel .carouselRightNav {
+    right: 57px;
   }
 }
 
@@ -154,15 +476,15 @@
 
 @media (min-width: 300px) and (max-width: 389px) {
   .carousel .carouselItems {
-    max-width: 259px;
+    max-width: 134px;
   }
 
   .carousel .carouselItems .carouselItem {
-    width: 108px;
+    width: 120px;
   }
 }
 
-@media (min-width: 390px) and (max-width: 391px) {
+@media (min-width: 389px) and (max-width: 391px) {
   .carousel .carouselItems {
     max-width: 265px;
   }
@@ -172,7 +494,17 @@
   }
 }
 
-@media (min-width: 392px) and (max-width: 431px) {
+@media (min-width: 391px) and (max-width: 431px) {
+  .carousel .carouselItems {
+    max-width: 266px;
+  }
+
+  .carousel .carouselItems .carouselItem {
+    width: 121px;
+  }
+}
+
+@media (min-width: 431px) and (max-width: 459px) {
   .carousel .carouselItems {
     max-width: 266px;
   }
