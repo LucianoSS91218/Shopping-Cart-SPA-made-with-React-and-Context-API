@@ -71,11 +71,10 @@ section {
   opacity: 0.8;
 }
 
-#p-price {
-  font-size: 24px;
+.containerprice #price {
+  font-size: 40px;
   margin-bottom: 15px;
   color: white;
-  font-weight: 800;
 }
 
 .containerproductdetail .productdetail .containerprice {
@@ -89,6 +88,7 @@ section {
   background-color: red;
   border-radius: 4px;
   padding: 4px 9px;
+  font-size: 18px;
 }
 
 .heart {
