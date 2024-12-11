@@ -9,9 +9,6 @@ export function Products({ products }) {
     return cart.some((item) => item.id === product.id);
   };
 
-  /* lamentablemente no pudiste ordenar alfabeticamente asi que ni te gastes
-   */
-
   return (
     <main className="products">
       <h3>{products.slice(0, 15).length} productos</h3>
