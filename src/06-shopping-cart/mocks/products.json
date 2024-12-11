@@ -1404,19 +1404,6 @@
       "category": "white spirits",
       "stars": 4,
       "thumbnail": "https://i.ibb.co/KKC89zr/jose-cuervo-especial-reposado-tequila.png"
-    },
-    {
-      "id": 97,
-      "title": "Absolut Vodka 750 ml",
-      "description": "asdasd",
-      "price": 310,
-      "discountPercentage": 25,
-      "rating": 4.42,
-      "stock": 7,
-      "brand": "Absolut",
-      "category": "white spirits",
-      "stars": 4,
-      "thumbnail": "https://i.ibb.co/8bB1CXf/absolut-vodka.png"
     }
   ],
   "total": 100,
