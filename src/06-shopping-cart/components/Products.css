@@ -4,11 +4,11 @@
   gap: 1rem;
 }
 
-.products li {
+.products .theproduct {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  flex-shrink: 0;
   width: 192px;
   gap: 0.1rem;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -17,7 +17,7 @@
   padding: 0.6rem;
 }
 
-.products li .content {
+.products .theproduct .content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,16 +25,16 @@
   padding: 10px;
 }
 
-.products li .content strong {
+.products .theproduct .content strong {
   font-size: 18px;
 }
 
-.products li #title {
+.products .theproduct #title {
   color: white;
   opacity: 0.8;
 }
 
-.products li #price {
+.products .theproduct #price {
   color: white;
   font-size: 26px;
 }
@@ -68,44 +68,60 @@
   cursor: pointer;
 }
 
-@media (max-width: 397px) {
+@media (max-width: 364px) {
   .products {
     gap: 0.4rem;
   }
 
-  .products li {
-    width: 200px;
+  .products .theproduct {
+    width: 106px;
     padding: 1.6rem;
   }
 
   .products img {
-    width: 210px;
-    height: 200px;
+    width: 115px;
+    height: 120px;
   }
 }
 
-@media (min-width: 397px) and (max-width: 452px) {
+@media (min-width: 365px) and (max-width: 397px) {
   .products {
     gap: 0.4rem;
   }
 
-  .products li {
-    width: 72px;
+  .products .theproduct {
+    width: 120px;
     padding: 1.6rem;
   }
 
   .products img {
-    width: 91px;
-    height: 90px;
+    width: 120px;
+    height: 125px;
+  }
+}
+
+@media (min-width: 397px) and (max-width: 459px) {
+  .products {
+    gap: 0.4rem;
+  }
+
+  .products .theproduct {
+    width: 128px;
+    padding: 1.6rem;
+  }
+
+  .products img {
+    width: 125px;
+    height: 130px;
   }
 }
 
 @media (min-width: 460px) and (max-width: 541px) {
-  .products ul {
+  .products {
     gap: 0.4rem;
   }
 
-  .products li {
+  .products .theproduct {
     width: calc(32% - 12px);
     padding: 1rem;
   }
@@ -118,7 +134,7 @@
 
 /* iPad mini */
 @media (min-width: 767px) and (max-width: 769px) {
-  .products li {
+  .products .theproduct {
     width: calc(31% - 28px);
   }
 
