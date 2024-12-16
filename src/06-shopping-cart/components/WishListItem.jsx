@@ -18,7 +18,7 @@ export function WishListItem({
   removeFromWishList,
 }) {
   return (
-    <li key={id}>
+    <li key={id} className="elemento">
       <div className="content">
         <img src={thumbnail} alt={title} />
         <strong id="title">
