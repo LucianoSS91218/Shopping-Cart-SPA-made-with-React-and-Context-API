@@ -10,13 +10,12 @@ export function Products({ products }) {
   };
 
   return (
-    <main>
-      <h3>{products.slice(0, 15).length} productos</h3>
-      <ul className="products">
+   <h3>{products.slice(0, 15).length} productos</h3>
+      <div className="products">
         {products.slice(0, 15).map((product) => {
           const isProductInCart = checkProductInCart(product);
           return (
-            <li key={product.id}>
+            <div key={product.id} className="theproduct">
               <div className="content">
                 <img src={product.thumbnail} alt={product.title} />
                 <strong id="title">
@@ -42,10 +41,9 @@ export function Products({ products }) {
                   {isProductInCart ? <RemoveFromCartIcon /> : <AddToCartIcon />}
                 </button>
               </div>
-            </li>
+            </div>
           );
         })}
-      </ul>
-    </main>
+      </div>
   );
 }
