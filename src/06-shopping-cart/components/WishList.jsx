@@ -47,11 +47,6 @@ export function WishList() {
         ) : (
           <h2>No tenes productos en lista de favoritos</h2>
         )}
-        <div className="wlfooter">
-          <button className={"clearwishlist"} onClick={clearWishList}>
-            Borrar toda la lista de favoritos
-          </button>
-        </div>
       </section>
     </>
   );
