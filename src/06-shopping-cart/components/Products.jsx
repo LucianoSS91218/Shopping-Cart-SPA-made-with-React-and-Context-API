@@ -10,7 +10,8 @@ export function Products({ products }) {
   };
 
   return (
-   <h3>{products.slice(0, 15).length} productos</h3>
+    <>
+      <h3>{products.slice(0, 15).length} productos</h3>
       <div className="products">
         {products.slice(0, 15).map((product) => {
           const isProductInCart = checkProductInCart(product);
@@ -45,5 +46,6 @@ export function Products({ products }) {
           );
         })}
       </div>
+    </>
   );
 }
