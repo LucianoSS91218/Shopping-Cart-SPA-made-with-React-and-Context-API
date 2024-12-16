@@ -11,14 +11,15 @@ export function Home() {
 
   return (
     <>
-      <Navbar />
+<Navbar />
       <br />
-      <main>
+      <header>
         <Filters />
+      </header>
+      <main>
         <Products products={filteredProducts} />
-        <br />
-        <h4>Copyright © Luciano Sanuni</h4>
       </main>
+      <footer>Copyright Luciano Sanuni</footer>
     </>
   );
 }
