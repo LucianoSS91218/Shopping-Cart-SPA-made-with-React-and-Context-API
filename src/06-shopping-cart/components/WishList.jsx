@@ -19,8 +19,8 @@ export function WishList() {
   return (
     <>
       <Navbar />
+      <h3>{wishlist?.length + " favoritos"}</h3>
       <section className="container">
-        <h3>{wishlist?.length + " favoritos"}</h3>
         {wishlist?.length ? (
           <ul className="wishlist">
             {wishlist.map((wishlistitems) => {
