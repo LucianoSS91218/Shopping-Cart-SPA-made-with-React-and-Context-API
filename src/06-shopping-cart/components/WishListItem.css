@@ -1,5 +1,5 @@
-li {
-  width: 190px;
+.elemento {
+  width: 192px;
   gap: 0.1rem;
   border-radius: 4px;
   background: #111;
@@ -9,14 +9,14 @@ li {
   flex-direction: column;
 }
 
-li img {
+.elemento img {
   object-fit: contain;
   width: 200px;
   height: 200px;
   margin-bottom: 10px;
 }
 
-li .content {
+.elemento .content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,84 +24,80 @@ li .content {
   padding: 10px;
 }
 
-li .content strong {
+.elemento .content strong {
   font-size: 18px;
 }
 
-li #title {
+.elemento #title {
   color: white;
   opacity: 0.8;
 }
 
-li #price {
+.elemento #price {
   color: white;
+  font-size: 26px;
 }
 
 .isproductincart {
   margin-top: 4px;
 }
 
-button {
-  cursor: pointer;
-}
-
-@media (max-width: 397px) {
-  li {
-    width: 200px;
-    padding: 1.6rem;
+@media (max-width: 364px) {
+  .elemento {
+    width: 100px;
+    padding: 1.4rem;
   }
 
-  li img {
-    width: 210px;
-    height: 200px;
+  .elemento img {
+    width: 120px;
+    height: 120px;
   }
 }
 
-@media (min-width: 397px) and (max-width: 452px) {
-  li {
-    width: 72px;
-    padding: 1.6rem;
+@media (min-width: 365px) and (max-width: 397px) {
+  .elemento {
+    width: 120px;
+    padding: 1.4rem;
   }
 
-  li img {
-    width: 91px;
-    height: 90px;
+  .elemento img {
+    width: 120px;
+    height: 125px;
+  }
+}
+
+@media (min-width: 397px) and (max-width: 459px) {
+  .elemento {
+    width: 128px;
+    padding: 1.5rem;
+  }
+
+  .elemento img {
+    width: 125px;
+    height: 130px;
   }
 }
 
 @media (min-width: 460px) and (max-width: 541px) {
-  li {
+  .elemento {
     width: calc(32% - 12px);
     padding: 1rem;
   }
 
-  li img {
-    width: 100px;
-    height: 100px;
+  .elemento img {
+    width: 135px;
+    height: 140px;
   }
 }
 
 /* iPad mini */
 @media (min-width: 767px) and (max-width: 769px) {
-  li {
+  .elemento {
     width: 145px;
   }
 
-  li img {
+  .elemento img {
     width: 150px;
     height: 130px;
   }
-}
-
-.wlfooter {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  margin-top: 12px;
-}
-
-footer span {
-  color: black;
-  opacity: 0.9;
-  font-size: 18px;
 }
