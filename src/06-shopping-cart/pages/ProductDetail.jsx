@@ -16,13 +16,10 @@ import { productos as OtherProducts } from "../mocks/products.json";
 
 import { Carousel } from "../components/SimilarProducts.jsx";
 
-export function ProductDetail() {
-  // acordate que para hacer la paginacion de productos, desde el frontend
-  // la unica forma seria consumiendo una api como el caso de la movieapp
-  // te acordas
+import useDarkLight from "../dark-light/hooks/useDarkLight.js";
+import "../dark-light/DarkLight.css";
 
-  // actually in ecommerces the product ids are the product title plus a
-  // hyphen and the id
+export function ProductDetail() {
 
   const [value, setValue] = useState(0);
   const [optionsIndex, setOptionsIndex] = useState(0);
@@ -43,21 +40,12 @@ export function ProductDetail() {
 
   const slices = OtherProducts.slice(30, 97);
 
-  /*
-  el tema que como esto es un supermercado no podemos hacer la logica de poner cheto 
-  las caracteristicas porque no es una pagina como Naldo o Fravega,
-  como aca tenemos alimentos bebidas etc
-   */
-
-  // hace eso entonces en las especificaciones copiate del carrefour
-
-  // el tema que yo me mande la cagada de tener la key rating y stars
-
-  /*
-podria hacer lo de hasta 18 cuotas sin interes pero me da paja
-el de Hasta {} cuotas sin interes de {calculo}
-puede ser 18 la mayoria , pocas veces 3 cuotas
- */
+    const [theme, setTheme] = useDarkLight("theme", "light");
+  const [activeDark, setActiveDark] = useState(false);
+  function handleToggleTheme() {
+    setTheme(theme === "dark" ? "light" : "dark");
+    setActiveDark(true);
+  }
 
   return (
     <>
