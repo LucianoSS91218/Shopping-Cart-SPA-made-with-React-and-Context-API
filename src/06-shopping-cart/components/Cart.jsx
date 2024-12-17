@@ -42,7 +42,7 @@ export function Cart() {
         )}
         <section className="container">
           {cart?.length ? (
-            <ul className="cart">
+            <ul className={cart?.length > 2 ? "cart swipe" : "cart"}>
               {cart.map((product) => (
                 <CartItem
                   {...product}
