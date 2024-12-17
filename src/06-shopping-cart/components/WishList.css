@@ -27,6 +27,12 @@ section {
   cursor: pointer;
 }
 
+@media (max-width: 356px) {
+  .clearwishlist {
+    width: 94%;
+  }
+}
+
 @media (max-width: 389px) {
   .wishlist {
     gap: 0.4rem;
