@@ -23,6 +23,11 @@
   right: 180px;
 }
 
+.carousel .carouselLeftNav.actlr,
+.carousel .carouselRightNav.actlr {
+  color: gray;
+}
+
 .carousel .carouselItems {
   display: flex;
   gap: 13px;
