@@ -65,6 +65,12 @@ h2 {
   background-color: lawngreen;
 }
 
+@media (max-width: 370px) {
+  #textemptycart {
+    width: 90%;
+  }
+}
+
 @media (min-width: 359px) and (max-width: 376px) {
   .cart {
     width: 178px;
