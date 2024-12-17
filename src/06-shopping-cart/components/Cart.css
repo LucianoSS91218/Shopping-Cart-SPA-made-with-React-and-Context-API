@@ -22,10 +22,13 @@ h2 {
   background-color: white;
   border: 1px solid gray;
   padding: 32px;
-  height: 90vh;
   max-width: 215px;
-  overflow-y: scroll;
   border-radius: 5px;
+  height: 100vh;  
+}
+
+.cart.swipe {
+  overflow-y: scroll;
 }
 
 .clearcart {
