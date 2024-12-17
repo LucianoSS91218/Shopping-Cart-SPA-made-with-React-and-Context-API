@@ -30,6 +30,7 @@ export function Cart() {
   return (
     <>
       <Navbar />
+      <div className="light-dark-mode" data-theme={theme}>
       {cart?.length ? (
           <h3 id="productlength">{cart.length} productos en carrito</h3>
         ) : (
@@ -68,6 +69,7 @@ export function Cart() {
           </button>
         </div>
       </div>
+        </div>
     </>
   );
 }
