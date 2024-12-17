@@ -19,8 +19,11 @@ export function Home() {
 
   return (
     <>
-      <div className="light-dark-mode" data-theme={theme}>
   <Navbar />
+      <div className="light-dark-mode" data-theme={theme}>
+        <button id="changedm" onClick={handleToggleTheme}>
+          Change Theme
+        </button>
       <br />
       <header>
         <Filters />
