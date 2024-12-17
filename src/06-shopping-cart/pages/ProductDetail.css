@@ -320,3 +320,9 @@ section {
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: 984px) {
+  .containerinfo {
+    width: 79%;
+  }
+}
