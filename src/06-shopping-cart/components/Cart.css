@@ -14,7 +14,8 @@ h2 {
 }
 
 .cart {
-background-color: white;
+  background-color: white;
+  border: 1px solid gray;
   padding: 32px;
   height: 90vh;
   max-width: 215px;
