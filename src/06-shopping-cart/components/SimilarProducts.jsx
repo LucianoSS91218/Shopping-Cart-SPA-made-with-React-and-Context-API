@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import "./SimilarProducts.css";
 
 import ContentWrapper from "../components/ContentWrapper.jsx";
-export const Carousel = ({ similarprodct }) => {
+export const Carousel = ({ similarprodct, activeDark }) => {
   const navigte = useNavigate();
   const carouselContainer = useRef();
 
