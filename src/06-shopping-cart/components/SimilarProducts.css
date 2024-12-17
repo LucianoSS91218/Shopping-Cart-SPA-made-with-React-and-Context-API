@@ -480,10 +480,16 @@
 @media (min-width: 300px) and (max-width: 389px) {
   .carousel .carouselItems {
     max-width: 134px;
+    overflow-x: auto;
   }
 
   .carousel .carouselItems .carouselItem {
     width: 120px;
+  }
+
+  .carousel .carouselLeftNav,
+  .carousel .carouselRightNav {
+    display: none;
   }
 }
 
