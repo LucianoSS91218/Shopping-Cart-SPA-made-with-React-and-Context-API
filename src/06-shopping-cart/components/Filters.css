@@ -6,7 +6,13 @@
 }
 
 .filters #minprice {
-  font-size: 20px;
+  font-size: 24px;
+  color: rgb(2, 191, 191);
+}
+
+.filters label {
+  color: rgb(2, 191, 191);
+  font-size: 18px;
 }
 
 .filters > div {
