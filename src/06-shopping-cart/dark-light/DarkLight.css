@@ -1,0 +1,30 @@
+:root {
+  --background: #ffffff;
+  --text-primary: #000;
+  --button-bg: #000;
+  --button-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  --background: #000000;
+  --text-primary: #fff;
+  --button-bg: #fff;
+  --button-text: #000;
+}
+
+.light-dark-mode {
+  background-color: var(--background);
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.light-dark-mode #changedm {
+  background-color: var(--button-bg);
+  border: 1px solid var(--button-bg);
+  color: var(--button-text);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px;
+}
