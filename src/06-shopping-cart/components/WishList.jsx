@@ -19,7 +19,7 @@ export function WishList() {
     return wishlist.some((item) => item.id === product.id);
   };
 
-    const [theme, setTheme] = useDarkLight("theme", "light");
+  const [theme, setTheme] = useDarkLight("theme", "light");
   function handleToggleTheme() {
     setTheme(theme === "dark" ? "light" : "dark");
   }
@@ -28,41 +28,46 @@ export function WishList() {
     <>
       <Navbar />
       <div className="light-dark-mode" data-theme={theme}>
-      <h3>{wishlist?.length + " favoritos"}</h3>
-      <section className="container">
-        {wishlist?.length ? (
-          <ul className="wishlist">
-            {wishlist.map((wishlistitems) => {
-              const isProductInCart = checkProductInCart(wishlistitems);
-              const isProductInWishList = checkProductInWishList(wishlistitems);
-              return (
-                <WishListItem
-                  key={wishlistitems.id}
-                  id={wishlistitems.id}
-                  thumbnail={wishlistitems.thumbnail}
-                  price={wishlistitems.price}
-                  title={wishlistitems.title}
-                  wishlistitem={wishlistitems}
-                  isProductInCart={isProductInCart}
-                  isProductInWishList={isProductInWishList}
-                  addToCart={addToCart}
-                  removeFromCart={removeFromCart}
-                  addToWishList={addToWishList}
-                  removeFromWishList={removeFromWishList}
-                />
-              );
-            })}
-          </ul>
-        ) : (
-          <h2>No tenes productos en lista de favoritos</h2>
-        )}
-      </section>
-      <div className="wlfooter">
+        <button id="changedm" onClick={handleToggleTheme}>
+          Change Theme
+        </button>
+        <br />
+        <h3>{wishlist?.length + " favoritos"}</h3>
+        <section className="container">
+          {wishlist?.length ? (
+            <ul className="wishlist">
+              {wishlist.map((wishlistitems) => {
+                const isProductInCart = checkProductInCart(wishlistitems);
+                const isProductInWishList =
+                  checkProductInWishList(wishlistitems);
+                return (
+                  <WishListItem
+                    key={wishlistitems.id}
+                    id={wishlistitems.id}
+                    thumbnail={wishlistitems.thumbnail}
+                    price={wishlistitems.price}
+                    title={wishlistitems.title}
+                    wishlistitem={wishlistitems}
+                    isProductInCart={isProductInCart}
+                    isProductInWishList={isProductInWishList}
+                    addToCart={addToCart}
+                    removeFromCart={removeFromCart}
+                    addToWishList={addToWishList}
+                    removeFromWishList={removeFromWishList}
+                  />
+                );
+              })}
+            </ul>
+          ) : (
+            <h2>No tenes productos en lista de favoritos</h2>
+          )}
+        </section>
+        <div className="wlfooter">
           <button className={"clearwishlist"} onClick={clearWishList}>
             Borrar toda la lista de favoritos
           </button>
         </div>
-        </div>
+      </div>
     </>
   );
 }
