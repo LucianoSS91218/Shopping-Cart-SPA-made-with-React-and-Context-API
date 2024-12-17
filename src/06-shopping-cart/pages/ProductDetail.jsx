@@ -252,7 +252,7 @@ export function ProductDetail() {
                   <div className="padreoctv">
                     <h2 id="octv">Otros clientes tambien vieron</h2>
                   </div>
-                  <Carousel similarprodct={filterp} />
+                  <Carousel similarprodct={filterp} activeDark={activeDark} />
                 </>
               ) : (
                 ""
