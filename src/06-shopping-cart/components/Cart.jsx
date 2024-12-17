@@ -22,7 +22,7 @@ export function Cart() {
     })
     .reduce((x, y) => x + y, 0);
 
-    const [theme, setTheme] = useDarkLight("theme", "light");
+  const [theme, setTheme] = useDarkLight("theme", "light");
   function handleToggleTheme() {
     setTheme(theme === "dark" ? "light" : "dark");
   }
@@ -31,45 +31,49 @@ export function Cart() {
     <>
       <Navbar />
       <div className="light-dark-mode" data-theme={theme}>
-      {cart?.length ? (
+        <button id="changedm" onClick={handleToggleTheme}>
+          Change Theme
+        </button>
+        <br />
+        {cart?.length ? (
           <h3 id="productlength">{cart.length} productos en carrito</h3>
         ) : (
           ""
         )}
-      <section className="container">
-        {cart?.length ? (
-          <ul className="cart">
-            {cart.map((product) => (
-              <CartItem
-                {...product}
-                key={product.id}
-                addToCart={() => addToCart(product)}
-                decrementProduct={() => decrementProduct(product)}
-              />
-            ))}
-          </ul>
-        ) : (
-          <h2>No tenes productos en carrito</h2>
-        )}
-      </section>
-      <div className="cartfooter">
-        <div className="wrapfooter">
-          {cart?.length ? <h3>{`Total: $${amount}`}</h3> : ""}
-          <button className={"clearcart"} onClick={clearCart}>
-            <ClearCartIcon />
-          </button>
-          <button
-            className={`${
-              amount === MINIM_AMOUNT || amount > MINIM_AMOUNT
-                ? "finalizebuy good"
-                : "finalizebuy"
-            }`}
-          >
-            Comprar
-          </button>
+        <section className="container">
+          {cart?.length ? (
+            <ul className="cart">
+              {cart.map((product) => (
+                <CartItem
+                  {...product}
+                  key={product.id}
+                  addToCart={() => addToCart(product)}
+                  decrementProduct={() => decrementProduct(product)}
+                />
+              ))}
+            </ul>
+          ) : (
+            <h2>No tenes productos en carrito</h2>
+          )}
+        </section>
+        <div className="cartfooter">
+          <div className="wrapfooter">
+            {cart?.length ? <h3>{`Total: $${amount}`}</h3> : ""}
+            <button className={"clearcart"} onClick={clearCart}>
+              <ClearCartIcon />
+            </button>
+            <button
+              className={`${
+                amount === MINIM_AMOUNT || amount > MINIM_AMOUNT
+                  ? "finalizebuy good"
+                  : "finalizebuy"
+              }`}
+            >
+              Comprar
+            </button>
+          </div>
         </div>
       </div>
-        </div>
     </>
   );
 }
