@@ -23,6 +23,7 @@ export function Cart() {
   return (
     <>
       <Navbar />
+      <h3 id="productlength">{cart?.length} productos en carrito</h3>
       <section className="container">
         {cart?.length ? (
           <ul className="cart">
