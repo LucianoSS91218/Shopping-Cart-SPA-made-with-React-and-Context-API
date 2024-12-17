@@ -4,6 +4,8 @@ import { ClearCartIcon } from "./Icons.jsx";
 import { useCart } from "../hooks/useCart.js";
 import { CartItem } from "./CartItem.jsx";
 import { Navbar } from "../components/Navbar.jsx";
+import useDarkLight from "../dark-light/hooks/useDarkLight.js";
+import "../dark-light/DarkLight.css";
 
 export function Cart() {
 
@@ -19,6 +21,11 @@ export function Cart() {
       return quantity * search.price;
     })
     .reduce((x, y) => x + y, 0);
+
+    const [theme, setTheme] = useDarkLight("theme", "light");
+  function handleToggleTheme() {
+    setTheme(theme === "dark" ? "light" : "dark");
+  }
 
   return (
     <>
