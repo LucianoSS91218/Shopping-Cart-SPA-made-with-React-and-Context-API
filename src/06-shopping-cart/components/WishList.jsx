@@ -3,6 +3,9 @@ import { useWishList } from "../hooks/useWishList.js";
 import { WishListItem } from "./WishListItem.jsx";
 import { useCart } from "../hooks/useCart.js";
 import { Navbar } from "../components/Navbar.jsx";
+import useDarkLight from "../dark-light/hooks/useDarkLight.js";
+import "../dark-light/DarkLight.css";
+
 export function WishList() {
   const { addToCart, removeFromCart, cart } = useCart();
   const checkProductInCart = (product) => {
@@ -15,6 +18,11 @@ export function WishList() {
   const checkProductInWishList = (product) => {
     return wishlist.some((item) => item.id === product.id);
   };
+
+    const [theme, setTheme] = useDarkLight("theme", "light");
+  function handleToggleTheme() {
+    setTheme(theme === "dark" ? "light" : "dark");
+  }
 
   return (
     <>
