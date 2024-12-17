@@ -12,6 +12,7 @@ section {
   width: 690px;
   max-height: 480px;
   border: 1px solid gray;
+  background: #111;
 }
 
 .productdetail {
