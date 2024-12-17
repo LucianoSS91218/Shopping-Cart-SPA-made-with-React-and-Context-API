@@ -46,7 +46,7 @@ export function Cart() {
       </section>
       <div className="cartfooter">
         <div className="wrapfooter">
-          <h3>{`Total: $${amount}`}</h3>
+          {cart?.length ? <h3>{`Total: $${amount}`}</h3> : ""}
           <button className={"clearcart"} onClick={clearCart}>
             <ClearCartIcon />
           </button>
