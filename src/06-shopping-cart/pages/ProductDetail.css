@@ -12,7 +12,7 @@ section {
   width: 690px;
   max-height: 480px;
   border: 1px solid gray;
-  background: #111;
+  background-color: rgb(199, 197, 197);
 }
 
 .productdetail {
@@ -69,12 +69,13 @@ section {
   font-size: 24px;
   color: white;
   opacity: 0.8;
+  color: #111;
 }
 
 .containerprice #price {
   font-size: 40px;
   margin-bottom: 15px;
-  color: white;
+  color: #111;
 }
 
 .containerproductdetail .productdetail .containerprice {
@@ -98,8 +99,13 @@ section {
   margin-bottom: 10px;
 }
 
+#vldpb {
+  color: #111;
+}
+
 #p-ccuotas {
   text-decoration: underline;
+  color: #111;
 }
 
 .padreoctv {
@@ -154,10 +160,6 @@ section {
   border-bottom: 2px solid rgb(1, 156, 180);
 }
 
-/* lpmqlp no pude copiar las lineas como tiene el carrefour*/
-
-/* containerinfo for description, method payment and delivery */
-
 .containerinfo {
   border-radius: 5px;
   border: 1px solid rgb(244, 242, 242);
@@ -192,8 +194,9 @@ section {
 }
 
 .method-payment #credit-cards {
-   max-inline-size: 100%;
-   block-size: auto;
+  max-inline-size: 100%;
+  block-size: auto;
+  /* no hace falta poner ningun width: 94% ni mediaquery porque con estas 2 lineas ya esta */
 }
 
 .delivery {
