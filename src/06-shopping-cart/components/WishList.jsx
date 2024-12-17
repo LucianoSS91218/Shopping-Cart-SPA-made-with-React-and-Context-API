@@ -27,6 +27,7 @@ export function WishList() {
   return (
     <>
       <Navbar />
+      <div className="light-dark-mode" data-theme={theme}>
       <h3>{wishlist?.length + " favoritos"}</h3>
       <section className="container">
         {wishlist?.length ? (
@@ -60,6 +61,7 @@ export function WishList() {
           <button className={"clearwishlist"} onClick={clearWishList}>
             Borrar toda la lista de favoritos
           </button>
+        </div>
         </div>
     </>
   );
