@@ -53,7 +53,7 @@ export function Cart() {
               ))}
             </ul>
           ) : (
-            <h2>No tenes productos en carrito</h2>
+            <h2 id="textemptycart">No tenes productos en carrito</h2>
           )}
         </section>
         <div className="cartfooter">
