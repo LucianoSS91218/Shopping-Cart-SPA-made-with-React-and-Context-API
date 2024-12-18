@@ -1,5 +1,4 @@
 import { useParams } from "react-router";
-import { useState } from "react";
 import { productos } from "../mocks/products.json";
 import { AddToCartIcon, RemoveFromCartIcon } from "../components/Icons.jsx";
 import { CiCreditCard1 } from "react-icons/ci";
@@ -13,6 +12,7 @@ import StarRating from "../components/StarRating.jsx";
 import "./ProductDetail.css";
 import { useWishList } from "../hooks/useWishList.js";
 import { productos as OtherProducts } from "../mocks/products.json";
+import { useRef, useState, useEffect } from "react";
 
 import { Carousel } from "../components/SimilarProducts.jsx";
 
@@ -46,6 +46,30 @@ export function ProductDetail() {
     setTheme(theme === "dark" ? "light" : "dark");
     setActiveDark(true);
   }
+
+    const [alture, setAlture] = useState(false);
+
+  const dmref = useRef();
+
+  useEffect(() => {
+    // use intersection observer to detect end of the page scroll
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setAlture(true);
+        }
+      },
+      {
+        rootMargin: "1400px",
+      }
+    );
+
+    observer.observe(dmref.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <>
