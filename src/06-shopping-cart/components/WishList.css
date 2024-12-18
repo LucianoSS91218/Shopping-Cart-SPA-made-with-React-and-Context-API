@@ -27,6 +27,10 @@ section {
   cursor: pointer;
 }
 
+.fixd {
+  position: fixed;
+}
+
 @media (max-width: 356px) {
   .clearwishlist {
     width: 94%;
