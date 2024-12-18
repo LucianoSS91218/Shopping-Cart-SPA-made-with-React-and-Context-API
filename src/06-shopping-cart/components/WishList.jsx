@@ -57,6 +57,7 @@ export function WishList() {
           Change Theme
         </button>
         <br />
+        <br />
         <h3>{wishlist?.length + " favoritos"}</h3>
         <section className="container">
           {wishlist?.length ? (
@@ -87,7 +88,7 @@ export function WishList() {
             <h2>No tenes productos en lista de favoritos</h2>
           )}
         </section>
-        <br ref={dmref} />
+        <div ref={dmref}></div>
         <div className="wlfooter">
           <button className={"clearwishlist"} onClick={clearWishList}>
             Borrar toda la lista de favoritos
