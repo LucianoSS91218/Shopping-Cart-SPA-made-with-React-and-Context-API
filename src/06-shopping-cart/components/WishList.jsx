@@ -38,7 +38,7 @@ export function WishList() {
         }
       },
       {
-        rootMargin: "1200px",
+        rootMargin: "1800px",
       }
     );
 
