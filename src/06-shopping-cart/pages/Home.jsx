@@ -17,6 +17,30 @@ export function Home() {
     setTheme(theme === "dark" ? "light" : "dark");
   }
 
+    const [alture, setAlture] = useState(false);
+
+  const dmref = useRef();
+
+  useEffect(() => {
+    // use intersection observer to detect end of the page scroll
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setAlture(true);
+        }
+      },
+      {
+        rootMargin: "1500px",
+      }
+    );
+
+    observer.observe(dmref.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <>
   <Navbar />
@@ -35,12 +59,7 @@ export function Home() {
       <main>
         <Products products={filteredProducts} />
       </main>
-        <br />
-        <button id="changedm" onClick={handleToggleTheme}>
-          Change Theme
-        </button>
-        <br />
-        <br />
+        <br ref={dmref} />
       <footer>Copyright Luciano Sanuni</footer>
           </div>
     </>
