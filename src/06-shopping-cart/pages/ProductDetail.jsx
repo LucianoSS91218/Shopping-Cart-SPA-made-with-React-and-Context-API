@@ -289,6 +289,7 @@ export function ProductDetail() {
                     </div>
                   </div>
                 </div>
+                <div ref={dmref} />
 
                 {filterp.length > 1 ? (
                   <>
