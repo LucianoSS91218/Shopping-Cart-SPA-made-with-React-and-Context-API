@@ -59,7 +59,7 @@ export function Home() {
       <main>
         <Products products={filteredProducts} />
       </main>
-        <br ref={dmref} />
+        <div ref={dmref}></div>
       <footer>Copyright Luciano Sanuni</footer>
           </div>
     </>
