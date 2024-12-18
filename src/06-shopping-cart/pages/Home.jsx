@@ -30,7 +30,7 @@ export function Home() {
         }
       },
       {
-        rootMargin: "2000px",
+        rootMargin: "3500px",
       }
     );
 
