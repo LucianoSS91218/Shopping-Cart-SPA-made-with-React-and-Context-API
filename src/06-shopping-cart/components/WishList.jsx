@@ -5,6 +5,7 @@ import { useCart } from "../hooks/useCart.js";
 import { Navbar } from "../components/Navbar.jsx";
 import useDarkLight from "../dark-light/hooks/useDarkLight.js";
 import "../dark-light/DarkLight.css";
+import { useRef, useState, useEffect } from "react";
 
 export function WishList() {
   const { addToCart, removeFromCart, cart } = useCart();
@@ -23,6 +24,30 @@ export function WishList() {
   function handleToggleTheme() {
     setTheme(theme === "dark" ? "light" : "dark");
   }
+
+  const [alture, setAlture] = useState(false);
+
+  const dmref = useRef();
+
+  useEffect(() => {
+    // use intersection observer to detect end of the page scroll
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setAlture(true);
+        }
+      },
+      {
+        rootMargin: "2200px",
+      }
+    );
+
+    observer.observe(dmref.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
 
   return (
     <>
@@ -62,6 +87,7 @@ export function WishList() {
             <h2>No tenes productos en lista de favoritos</h2>
           )}
         </section>
+        <br ref={dmref} />
         <div className="wlfooter">
           <button className={"clearwishlist"} onClick={clearWishList}>
             Borrar toda la lista de favoritos
