@@ -11,3 +11,7 @@ main {
   margin: 0 auto;
 }
 
+.fixd {
+  position: fixed;
+}
+
