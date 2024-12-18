@@ -81,7 +81,7 @@ export function Cart() {
             <h2 id="textemptycart">No tenes productos en carrito</h2>
           )}
         </section>
-        <br ref={dmref} />
+        <div ref={dmref}></div>
         <div className="cartfooter">
           <div className="wrapfooter">
             {cart?.length ? <h3>{`Total: $${amount}`}</h3> : ""}
