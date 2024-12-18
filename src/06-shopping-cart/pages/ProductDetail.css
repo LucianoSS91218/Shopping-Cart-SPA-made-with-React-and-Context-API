@@ -231,6 +231,10 @@ section {
   width: 75%;
 }
 
+.fixd {
+  position: fixed;
+}
+
 @media (min-width: 298px) and (max-width: 391px) {
   .containerproductdetail {
     width: 280px;
