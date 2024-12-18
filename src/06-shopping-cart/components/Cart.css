@@ -68,6 +68,10 @@ h2 {
   background-color: lawngreen;
 }
 
+.fixd {
+  position: fixed;
+}
+
 @media (max-width: 370px) {
   #textemptycart {
     width: 90%;
