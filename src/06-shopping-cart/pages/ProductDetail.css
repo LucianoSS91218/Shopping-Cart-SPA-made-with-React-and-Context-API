@@ -115,7 +115,7 @@ section {
 
 #octv {
   margin-top: 20px;
-   color: rgb(1, 156, 180);
+  color: rgb(1, 156, 180);
 }
 
 .padrebutton {
@@ -142,11 +142,11 @@ section {
   gap: 1px;
 }
 
+/* option specifcations */
+
 .actl {
   color: black;
 }
-
-/* option specifcations */
 
 .technical-specs-table {
   display: flex;
@@ -164,6 +164,8 @@ section {
 .options p.active {
   border-bottom: 2px solid rgb(1, 156, 180);
 }
+
+/* containerinfo for description, method payment and delivery */
 
 .containerinfo {
   border-radius: 5px;
@@ -201,7 +203,6 @@ section {
 .method-payment #credit-cards {
   max-inline-size: 100%;
   block-size: auto;
-  /* no hace falta poner ningun width: 94% ni mediaquery porque con estas 2 lineas ya esta */
 }
 
 .delivery {
