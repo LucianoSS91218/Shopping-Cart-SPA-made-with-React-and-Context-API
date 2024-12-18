@@ -4,7 +4,7 @@ import { useFilters } from "../hooks/useFilters.js";
 import { productos as initialProducts } from "../mocks/products.json";
 import { Navbar } from "../components/Navbar.jsx";
 import "./Home.css";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import useDarkLight from "../dark-light/hooks/useDarkLight.js";
 import "../dark-light/DarkLight.css";
 //import { IS_DEVELOPMENT } from "../config.js";
