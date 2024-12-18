@@ -53,7 +53,7 @@ export function WishList() {
     <>
       <Navbar />
       <div className="light-dark-mode" data-theme={theme}>
-        <button id="changedm" onClick={handleToggleTheme}>
+        <button id="changedm" onClick={handleToggleTheme} className={alture ? "fixd" : ""}>
           Change Theme
         </button>
         <br />
