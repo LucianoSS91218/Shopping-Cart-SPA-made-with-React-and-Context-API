@@ -73,9 +73,13 @@ export function ProductDetail() {
 
   return (
     <>
-      <Navbar />
+            <Navbar />
       <div className="light-dark-mode" data-theme={theme}>
-        <button id="changedm" onClick={handleToggleTheme} className={alture ? "fixd" : ""}>
+        <button
+          id="changedm"
+          onClick={handleToggleTheme}
+          className={alture ? "fixd" : ""}
+        >
           Change Theme
         </button>
 
