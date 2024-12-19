@@ -72,6 +72,13 @@ h2 {
   position: fixed;
 }
 
+@media (max-width: 640px) {
+ #changedm {
+   margin-top: 10px;
+ }
+  
+}
+
 @media (max-width: 370px) {
   #textemptycart {
     width: 90%;
