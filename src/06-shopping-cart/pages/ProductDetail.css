@@ -244,6 +244,12 @@ z-index: 99;
   position: fixed;
 }
 
+@media (max-width: 386px) {
+  section .padreoctv #octv {
+    width: 85%;
+  }
+}
+
 @media (min-width: 298px) and (max-width: 391px) {
   .containerproductdetail {
     width: 280px;
