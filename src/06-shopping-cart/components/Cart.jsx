@@ -60,6 +60,7 @@ export function Cart() {
           Change Theme
         </button>
         <br />
+        <br />
         {cart?.length ? (
           <h3 id="productlength">{cart.length} productos en carrito</h3>
         ) : (
