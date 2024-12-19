@@ -100,7 +100,7 @@ export function ProductDetail() {
                 titulo: "Especificaciones tecnicas",
                 elementos: (
                   <div className="technical-specs-table">
-                    <p className={theme === "light" ? "actl" : ""}>
+                    <p className={theme === "light" ? "actblack" : "actwhite"}>
                       Tipo de producto
                     </p>
                     <p>{product.category}</p>
@@ -117,7 +117,7 @@ export function ProductDetail() {
                     </div>
                     <p
                       id="secondchilddescription"
-                      className={theme === "light" ? "actl" : ""}
+                      className={theme === "light" ? "actblack" : "actwhite"}
                     >
                       Lorem ipsum dolor sit amet consectetur adipiscing elit
                       magna orci velit, mi purus lacus ridiculus integer odio
@@ -141,7 +141,9 @@ export function ProductDetail() {
                     <div className="method-payment-child">
                       <CiCreditCard1 size={40} />
                       <p>Tarjetas de crédito</p>
-                      <p className={theme === "light" ? "actl" : ""}>
+                      <p
+                        className={theme === "light" ? "actblack" : "actwhite"}
+                      >
                         Pagá en 1, 3 y 6 cuotas fijas
                       </p>
                       <p>Acreditacion instantanea</p>
@@ -156,7 +158,9 @@ export function ProductDetail() {
                         <CiCreditCard1 size={40} />
                       </div>
                       <p>Tarjetas de débito</p>
-                      <p className={theme === "light" ? "actl" : ""}>
+                      <p
+                        className={theme === "light" ? "actblack" : "actwhite"}
+                      >
                         Pagá con tarjeta de débito con Visa, Master, Cabal
                       </p>
                       <p>Acreditacion instantanea</p>
@@ -169,7 +173,9 @@ export function ProductDetail() {
                         ></img>
                       </div>
                       <p>Mercado Pago</p>
-                      <p className={theme === "light" ? "actl" : ""}>
+                      <p
+                        className={theme === "light" ? "actblack" : "actwhite"}
+                      >
                         Pagá con Mercadopago en 6 cuotas fijas
                       </p>
                       <p>Acreditacion instantanea</p>
@@ -179,7 +185,9 @@ export function ProductDetail() {
                         <CiBank size={40}></CiBank>
                       </div>
                       <p>Transferencia bancaria y efectivo</p>
-                      <p className={theme === "light" ? "actl" : ""}>
+                      <p
+                        className={theme === "light" ? "actblack" : "actwhite"}
+                      >
                         Pagá con transferencia bancaria o en efectivo en nuestra
                         sucursal
                       </p>
@@ -197,7 +205,9 @@ export function ProductDetail() {
                         <CiDeliveryTruck size={50} />
                       </div>
                       <p>Envio gratuito con seguro total</p>
-                      <p className={theme === "light" ? "actl" : ""}>
+                      <p
+                        className={theme === "light" ? "actblack" : "actwhite"}
+                      >
                         A todo el pais a través de Andreani
                       </p>
                     </div>
@@ -312,9 +322,9 @@ export function ProductDetail() {
                   {optionsinfo.map((oi, index) => {
                     return (
                       <p
-                        className={`${theme === "light" ? "actl" : ""} ${
-                          optionsIndex === index ? "active" : ""
-                        }`}
+                        className={`${
+                          theme === "light" ? "actblack" : "actwhite"
+                        } ${optionsIndex === index ? "active" : ""}`}
                         onClick={() => setOptionsIndex(index)}
                       >
                         {oi.titulo}
