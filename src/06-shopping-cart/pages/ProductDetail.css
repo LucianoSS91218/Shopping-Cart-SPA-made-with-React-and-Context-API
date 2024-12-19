@@ -148,8 +148,12 @@ z-index: 99;
 
 /* option specifcations */
 
-.actl {
+.actblack {
   color: black;
+}
+
+.actwhite {
+  color: white;
 }
 
 .technical-specs-table {
