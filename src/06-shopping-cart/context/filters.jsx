@@ -8,7 +8,7 @@ export function FiltersProvider({ children }) {
   const [filters, setFilters] = useState({
     category: "all",
     minPrice: 400,
-    sorttype: "relevancia"
+    sorttype: "Relevancia"
   });
 
   return (
