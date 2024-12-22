@@ -68,14 +68,18 @@ export function Products({ products, isDarkMode }) {
 
           <div className="onlymobile">
             <div onClick={(e) => handleSortButtonClick(e)} id="fathersort">
-              <BiSortDown size={32} className="iconsortonlymobile" />
-              <span data-id="abs" id="abs">
-                {`Ordenar por:`}
-              </span>
-              <span className={isDarkMode === "dark" ? "typeorderwhite" : ""}>
-                {`${filters.sorttype}`}
-                <FaArrowDown size={18} />
-              </span>
+              <div id="alignsortmobile">
+                <span id="iconsortonlymobile">
+                  <BiSortDown size={32} />
+                </span>
+                <span data-id="abs" id="abs">
+                  {`Ordenar por:`}
+                </span>
+                <span className={isDarkMode === "dark" ? "typeorderwhite" : ""}>
+                  {`${filters.sorttype}`}
+                  <FaArrowDown size={18} />
+                </span>
+              </div>
             </div>
             <div className="filtercategoryonlymobile">
               <span
