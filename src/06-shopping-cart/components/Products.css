@@ -35,6 +35,10 @@ h3 {
   justify-content: space-between;
 }
 
+.containerproducts .alignsortproducts .onlymobile #fathersort #abswhite {
+  color: white;
+}
+
 .containerproducts .alignsortproducts .onlymobile #fathersort :nth-child(3) {
   font-weight: 700;
 }
@@ -107,6 +111,14 @@ h3 {
     .filtercategoryonlymobile
     span {
     text-transform: uppercase;
+  }
+
+  .containerproducts
+    .alignsortproducts
+    .onlymobile
+    .filtercategoryonlymobile
+    span.textfiltermobilewhite {
+    color: white;
   }
 }
 
