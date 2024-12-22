@@ -7,7 +7,6 @@ import "./Home.css";
 import { useRef, useState, useEffect, useMemo } from "react";
 import useDarkLight from "../dark-light/hooks/useDarkLight.js";
 import "../dark-light/DarkLight.css";
-import "../components/ActiveSortFilters.css";
 
 export function Home() {
   const { filters, filterProducts } = useFilters();
