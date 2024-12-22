@@ -1,37 +1,83 @@
 .filters {
+  color: black;
+}
+
+.filtersdarkmode {
+  color: white;
+}
+
+.filters #namefilter,
+.filtersdarkmode #namefilter {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.filtersdarkmode #namefilter,
+.filtersdarkmode #namecategory {
+  color: white;
+}
+
+.filters #namecategory,
+.filtersdarkmode #namecategory {
+  font-weight: 650;
+}
+
+.filters ul li,
+.filtersdarkmode ul li {
+  font-weight: 580;
+  font-size: 17px;
+}
+
+.filters ul .activecategoryfilter,
+.filtersdarkmode ul .activecategoryfilter {
+  color: green;
+}
+
+.filters .pricefilter,
+.filtersdarkmode .pricefilter {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   font-size: 14px;
   font-weight: 700;
 }
 
-.filters #minprice {
+.filters #minprice,
+.filtersdarkmode #minprice {
   font-size: 24px;
-  color: rgb(2, 191, 191);
 }
 
-.filters label {
-  color: rgb(2, 191, 191);
+.filters label,
+.filtersdarkmode label {
   font-size: 18px;
 }
 
-.filters > div {
+.filters input,
+.filtersdarkmode input {
+  max-width: 200px;
+}
+
+.filters > div,
+.filtersdarkmode > div {
   display: flex;
   gap: 1rem;
 }
 
 @media (max-width: 768px) {
-  .filters {
+  .filters,
+  .filtersdarkmode {
     flex-direction: column;
   }
 
-  .filters .pricefilter {
+  .filters .pricefilter,
+  .filtersdarkmode .pricefilter {
     flex-direction: column;
     margin-bottom: 24px;
     width: 50%;
   }
 
-  .filters .categoryfilter {
+  .filters .categoryfilter,
+  .filtersdarkmode .categoryfilter {
     margin-bottom: 20px;
     justify-content: center;
   }
