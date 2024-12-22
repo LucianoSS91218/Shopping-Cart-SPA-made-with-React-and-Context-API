@@ -4,12 +4,13 @@ import { useFilters } from "../hooks/useFilters.js";
 import { productos as initialProducts } from "../mocks/products.json";
 import { Navbar } from "../components/Navbar.jsx";
 import "./Home.css";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useMemo } from "react";
 import useDarkLight from "../dark-light/hooks/useDarkLight.js";
 import "../dark-light/DarkLight.css";
-//import { IS_DEVELOPMENT } from "../config.js";
+import "../components/ActiveSortFilters.css";
+
 export function Home() {
-  const { filterProducts } = useFilters();
+  const { filters, filterProducts } = useFilters();
   const filteredProducts = filterProducts(initialProducts);
 
   const [theme, setTheme] = useDarkLight("theme", "light");
@@ -17,7 +18,7 @@ export function Home() {
     setTheme(theme === "dark" ? "light" : "dark");
   }
 
-    const [alture, setAlture] = useState(false);
+  const [alture, setAlture] = useState(false);
 
   const dmref = useRef();
 
@@ -43,7 +44,7 @@ export function Home() {
 
   return (
     <>
-  <Navbar />
+      <Navbar />
       <div className="light-dark-mode" data-theme={theme}>
         <button
           id="changedm"
@@ -52,16 +53,23 @@ export function Home() {
         >
           Change Theme
         </button>
-      <br />
-      <header>
-        <Filters />
-      </header>
-      <main>
-        <Products products={filteredProducts} />
-      </main>
-        <div ref={dmref}></div>
-      <footer>Copyright Luciano Sanuni</footer>
+        <main>
+          <div
+            className={filteredProducts.length > 0 ? "alignlayout" : "layout"}
+          >
+            <Filters isDarkMode={theme} />
+            {filteredProducts.length > 0 ? (
+              <Products products={filteredProducts} isDarkMode={theme} />
+            ) : (
+              <div className="noproducts">
+                <h3>No hay productos de {filters.category} para mostrar</h3>
+              </div>
+            )}
           </div>
+        </main>
+        <div ref={dmref}></div>
+        <footer>Copyright Luciano Sanuni</footer>
+      </div>
     </>
   );
 }
