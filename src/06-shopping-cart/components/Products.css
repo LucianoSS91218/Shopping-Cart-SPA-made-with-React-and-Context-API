@@ -117,6 +117,14 @@ h3 {
     .alignsortproducts
     .onlymobile
     .filtercategoryonlymobile
+    span {
+    margin-right: 5px;
+  }
+
+  .containerproducts
+    .alignsortproducts
+    .onlymobile
+    .filtercategoryonlymobile
     span.textfiltermobilewhite {
     color: white;
   }
@@ -191,6 +199,38 @@ h3 {
   position: absolute;
   bottom: -230px;
   right: 44px;
+}
+
+@media (max-width: 440px) {
+  .containerfiltersort .filterssort :nth-child(1) {
+    position: absolute;
+    bottom: -54px;
+    right: 91px;
+  }
+
+  .containerfiltersort .filterssort :nth-child(2) {
+    position: absolute;
+    bottom: -102px;
+    right: 91px;
+  }
+
+  .containerfiltersort .filterssort :nth-child(3) {
+    position: absolute;
+    bottom: -151px;
+    right: 91px;
+  }
+
+  .containerfiltersort .filterssort :nth-child(4) {
+    position: absolute;
+    bottom: -200px;
+    right: 91px;
+  }
+
+  .containerfiltersort .filterssort :nth-child(5) {
+    position: absolute;
+    bottom: -249px;
+    right: 91px;
+  }
 }
 
 /* products */
