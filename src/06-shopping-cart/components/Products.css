@@ -1,11 +1,159 @@
-h3 {
-color: rgb(2, 191, 191);
+#padreh3 {
+  display: flex;
+
+  align-items: center;
 }
+
+h3 {
+  color: rgb(2, 191, 191);
+}
+
+.containerproducts {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerproducts .lengthproducts {
+  font-size: 21px;
+  font-weight: 750;
+}
+
+.containerproducts .lengthproductswhite {
+  color: white;
+  font-size: 21px;
+  font-weight: 750;
+}
+
+.containerproducts .alignsortproducts {
+  display: flex;
+  justify-content: space-between;
+  max-width: 990px;
+}
+
+.containerproducts .alignsortproducts .onlymobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerproducts .alignsortproducts .onlymobile .iconsortonlymobile {
+  display: none;
+}
+
+.containerproducts
+  .alignsortproducts
+  .filtercategoryonlymobile
+  span.titlefiltercategoryonlymobilewhite {
+  color: white;
+}
+
+.containerproducts .alignsortproducts .filtercategoryonlymobile {
+  display: none;
+}
+
+@media (max-width: 440px) {
+  .containerproducts .alignsortproducts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .containerproducts .alignsortproducts .filtercategoryonlymobile span {
+    color: black;
+  }
+
+  .containerproducts .alignsortproducts .onlymobile #fathersort :nth-child(2) {
+    display: none;
+  }
+
+  .containerproducts .alignsortproducts .onlymobile #fathersort :nth-child(1),
+  .containerproducts
+    .alignsortproducts
+    .onlymobile
+    .filtercategoryonlymobile
+    span {
+    text-transform: uppercase;
+  }
+}
+
+.containerproducts .alignsortproducts #abs {
+  font-size: 20px;
+}
+
+.containerproducts .alignsortproducts div :nth-child(2) {
+  font-size: 23px;
+  color: black;
+}
+
+.containerproducts .alignsortproducts div :nth-child(2).typeorderwhite {
+  color: white;
+}
+
+/* buttons filter sort */
+
+.containerproducts .containerfiltersort {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerfiltersort .filterssort {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerfiltersort .filterssort button {
+  background-color: #fff;
+  color: black;
+  border-radius: none;
+  font-weight: 400;
+  font-size: 18px;
+  width: 260px;
+  height: 50px;
+  text-align: left;
+}
+
+.containerfiltersort .filterssort button:hover {
+  background-color: #e3e4e6;
+}
+
+.containerfiltersort .filterssort :nth-child(1) {
+  position: absolute;
+  bottom: -30px;
+  right: 44px;
+}
+
+.containerfiltersort .filterssort :nth-child(2) {
+  position: absolute;
+  bottom: -80px;
+  right: 44px;
+}
+
+.containerfiltersort .filterssort :nth-child(3) {
+  position: absolute;
+  bottom: -130px;
+  right: 44px;
+}
+
+.containerfiltersort .filterssort :nth-child(4) {
+  position: absolute;
+  bottom: -180px;
+  right: 44px;
+}
+
+.containerfiltersort .filterssort :nth-child(5) {
+  position: absolute;
+  bottom: -230px;
+  right: 44px;
+}
+
+/* products */
 
 .products {
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
+  justify-content: flex-start;
+  padding: 0.25rem 0.2rem;
+  margin: 0 auto; /* Center horizontally */
 }
 
 .products .theproduct {
@@ -13,7 +161,7 @@ color: rgb(2, 191, 191);
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  width: 192px;
+  width: 218px;
   gap: 0.1rem;
   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
