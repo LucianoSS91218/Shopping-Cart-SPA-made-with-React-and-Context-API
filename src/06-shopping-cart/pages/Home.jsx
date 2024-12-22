@@ -1,6 +1,6 @@
 import { Products } from "../components/Products";
 import { Filters } from "../components/Filters.jsx";
-import { useFilters } from "../hooks/useFilters.js";
+import { useFilters } from "../hooks/useFilters.jsx";
 import { productos as initialProducts } from "../mocks/products.json";
 import { Navbar } from "../components/Navbar.jsx";
 import "./Home.css";
