@@ -7,6 +7,7 @@ import "./Home.css";
 import { useRef, useState, useEffect, useMemo } from "react";
 import useDarkLight from "../dark-light/hooks/useDarkLight.js";
 import "../dark-light/DarkLight.css";
+import "../components/ActiveSortFilters.css";
 
 export function Home() {
   const { filters, filterProducts } = useFilters();
@@ -30,7 +31,8 @@ export function Home() {
         }
       },
       {
-        rootMargin: "2800px",
+        //para mi el rootMargin le dice cuantos px de donde esta la referencia
+        rootMargin: "3100px",
       }
     );
 
