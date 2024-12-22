@@ -17,8 +17,8 @@ main .alignlayout {
 
 main .layout {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 main .layout .noproducts {
