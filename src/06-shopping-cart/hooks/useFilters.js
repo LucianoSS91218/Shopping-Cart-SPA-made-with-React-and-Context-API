@@ -15,8 +15,8 @@ export function useFilters() {
   const sortStrategies = {
     minprice: (a, b) => a.price - b.price,
     maxprice: (a, b) => b.price - a.price,
-    nameasc: (a, b) => a.title.localeCompare(b.title)),
-    namedesc: (a, b) => b.title.localeCompare(a.title)),
+    nameasc: (a, b) => a.title.localeCompare(b.title),
+    namedesc: (a, b) => b.title.localeCompare(a.title),
   };
 
   const sortFunction = sortStrategies[filters.sorttype] || (() => 0); // Default: no sorting
