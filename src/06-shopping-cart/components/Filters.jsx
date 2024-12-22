@@ -2,13 +2,6 @@ import { useId } from "react";
 import { useFilters } from "../hooks/useFilters.js";
 import "./Filters.css";
 
-export function Filters() {
-  const { filters, setFilters } = useFilters();
-
-  const minPriceFilterId = useId();import { useId } from "react";
-import { useFilters } from "../hooks/useFilters.js";
-import "./Filters.css";
-
 export function Filters({ isDarkMode }) {
   const { filters, setFilters } = useFilters();
 
