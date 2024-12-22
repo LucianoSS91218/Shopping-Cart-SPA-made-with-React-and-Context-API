@@ -68,18 +68,16 @@ export function Products({ products, isDarkMode }) {
 
           <div className="onlymobile">
             <div onClick={(e) => handleSortButtonClick(e)} id="fathersort">
-              <div id="alignsortmobile">
-                <span id="iconsortonlymobile">
-                  <BiSortDown size={32} />
-                </span>
-                <span data-id="abs" id="abs">
-                  {`Ordenar por:`}
-                </span>
-                <span className={isDarkMode === "dark" ? "typeorderwhite" : ""}>
-                  {`${filters.sorttype}`}
-                  <FaArrowDown size={18} />
-                </span>
-              </div>
+              <span id="iconsortonlymobile">
+                <BiSortDown size={32} />
+              </span>
+              <span data-id="abs" id="abs">
+                {`Ordenar por: `}
+              </span>
+              <span className={isDarkMode === "dark" ? "typeorderwhite" : ""}>
+                {`${filters.sorttype}`}
+                <FaArrowDown size={18} />
+              </span>
             </div>
             <div className="filtercategoryonlymobile">
               <span
@@ -89,7 +87,7 @@ export function Products({ products, isDarkMode }) {
                     : ""
                 }
               >
-                Filtrar por
+                Filtrar
               </span>
             </div>
           </div>
