@@ -71,7 +71,10 @@ export function Products({ products, isDarkMode }) {
               <span id="iconsortonlymobile">
                 <BiSortDown size={32} />
               </span>
-              <span data-id="abs" id="abs">
+              <span
+                data-id="abs"
+                id={isDarkMode === "dark" ? "abswhite" : "abs"}
+              >
                 {`Ordenar por: `}
               </span>
               <span className={isDarkMode === "dark" ? "typeorderwhite" : ""}>
@@ -81,11 +84,7 @@ export function Products({ products, isDarkMode }) {
             </div>
             <div className="filtercategoryonlymobile">
               <span
-                className={
-                  isDarkMode === "dark"
-                    ? "titlefiltercategoryonlymobilewhite"
-                    : ""
-                }
+                className={isDarkMode === "dark" ? "textfiltermobilewhite" : ""}
               >
                 Filtrar
               </span>
