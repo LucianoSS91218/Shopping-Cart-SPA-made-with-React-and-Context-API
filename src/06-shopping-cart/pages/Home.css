@@ -1,17 +1,43 @@
 /* MAIN */
-header {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem;
+
+.cwhite {
+  color: white;
 }
 
 main {
   width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
+  max-width: 1490px;
+}
+
+main .alignlayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main .layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+main .layout .noproducts {
+  display: flex;
+  justify-content: center;
+}
+
+main #noproducts {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .filters,
+  .filtersdarkmode {
+    display: none;
+  }
 }
 
 .fixd {
   position: fixed;
 }
-
