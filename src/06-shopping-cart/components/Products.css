@@ -35,12 +35,20 @@ h3 {
   justify-content: space-between;
 }
 
+.containerproducts .alignsortproducts .onlymobile #fathersort :nth-child(3) {
+  font-weight: 700;
+}
+
+.containerproducts .alignsortproducts .onlymobile #fathersort :nth-child(2) {
+  color: black;
+}
+
 .containerproducts
   .alignsortproducts
   .onlymobile
   #fathersort
-  #abs
-  .iconsortonlymobile {
+  #alignsortmobile
+  #iconsortonlymobile {
   display: none;
 }
 
@@ -61,6 +69,12 @@ h3 {
     flex-direction: column;
   }
 
+  .containerproducts .alignsortproducts .onlymobile #fathersort {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
   .containerproducts .alignsortproducts .filtercategoryonlymobile,
   .containerproducts .alignsortproducts .onlymobile #fathersort :nth-child(1) {
     display: block;
@@ -72,11 +86,6 @@ h3 {
     #fathersort
     #iconsortonlymobile {
     background-color: black;
-  }
-
-  .containerproducts .alignsortproducts .onlymobile #alignsortmobile {
-    display: flex;
-    justify-content: space-between;
   }
 
   .containerproducts
@@ -91,7 +100,7 @@ h3 {
     display: none;
   }
 
-  .containerproducts .alignsortproducts .onlymobile #fathersort :nth-child(1),
+  .containerproducts .alignsortproducts .onlymobile #fathersort :nth-child(2),
   .containerproducts
     .alignsortproducts
     .onlymobile
@@ -100,11 +109,6 @@ h3 {
     text-transform: uppercase;
   }
 }
-
-/* en lugar de usar el margen, le decimos al container lo q va a ocupar */
-/*.containerproducts .alignsortproducts p {
-  margin-right: 84px;
-}*/
 
 .containerproducts .alignsortproducts #abs {
   font-size: 20px;
