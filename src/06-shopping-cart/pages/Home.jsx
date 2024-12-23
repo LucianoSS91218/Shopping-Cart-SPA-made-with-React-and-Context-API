@@ -7,40 +7,23 @@ import "./Home.css";
 import { useRef, useState, useEffect, useMemo } from "react";
 import useDarkLight from "../dark-light/hooks/useDarkLight.js";
 import "../dark-light/DarkLight.css";
+import useNearScreen from "../hooks/useNearScreen.js";
 
 export function Home() {
   const { filters, filterProducts } = useFilters();
   const filteredProducts = filterProducts(initialProducts);
 
   const [theme, setTheme] = useDarkLight("theme", "light");
+  
+  const externalRef = useRef();
+  const { isNearScreen } = useNearScreen({
+    distance: "3100px",
+    externalRef,
+  });
+
   function handleToggleTheme() {
     setTheme(theme === "dark" ? "light" : "dark");
   }
-
-  const [alture, setAlture] = useState(false);
-
-  const dmref = useRef();
-
-  useEffect(() => {
-    // use intersection observer to detect end of the page scroll
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setAlture(true);
-        }
-      },
-      {
-        //para mi el rootMargin le dice cuantos px de donde esta la referencia
-        rootMargin: "3100px",
-      }
-    );
-
-    observer.observe(dmref.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
 
   return (
     <>
@@ -49,7 +32,7 @@ export function Home() {
         <button
           id="changedm"
           onClick={handleToggleTheme}
-          className={alture ? "fixd" : ""}
+          className={isNearScreen ? "fixd" : ""}
         >
           Change Theme
         </button>
@@ -67,7 +50,7 @@ export function Home() {
             )}
           </div>
         </main>
-        <div ref={dmref}></div>
+        <div ref={externalRef}></div>
         <footer>Copyright Luciano Sanuni</footer>
       </div>
     </>
