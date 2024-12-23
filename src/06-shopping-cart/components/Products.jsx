@@ -109,17 +109,13 @@ export function Products({ products, isDarkMode }) {
         )}
 
         <div className="products">
-          {products.slice(0, 15).map((product) => {
+          {products.slice(0, 8).map((product) => {
             const isProductInCart = checkProductInCart(product);
             return (
               <div key={product.id} className="theproduct">
                 <div className="content">
                   <img src={product.thumbnail} alt={product.title} />
-                  <strong id="title">
-                    {product.title.length > 14
-                      ? `${product.title.slice(0, 14)}...`
-                      : `${product.title}`}
-                  </strong>
+                  <strong id="title">{product.title}</strong>
                   <span id="price">{`$${product.price}`}</span>
                 </div>
 
