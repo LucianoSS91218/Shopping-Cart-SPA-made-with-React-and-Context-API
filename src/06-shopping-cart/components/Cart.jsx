@@ -7,6 +7,7 @@ import { Navbar } from "../components/Navbar.jsx";
 import useDarkLight from "../dark-light/hooks/useDarkLight.js";
 import "../dark-light/DarkLight.css";
 import { useRef, useState, useEffect } from "react";
+import useNearScreen from "../hooks/useNearScreen.js";
 
 export function Cart() {
 
@@ -24,39 +25,22 @@ export function Cart() {
     .reduce((x, y) => x + y, 0);
 
   const [theme, setTheme] = useDarkLight("theme", "light");
+  
+  const externalRef = useRef();
+  const { isNearScreen } = useNearScreen({
+    distance: "1600px",
+    externalRef,
+  });
+
   function handleToggleTheme() {
     setTheme(theme === "dark" ? "light" : "dark");
   }
-
-    const [alture, setAlture] = useState(false);
-
-  const dmref = useRef();
-
-  useEffect(() => {
-    // use intersection observer to detect end of the page scroll
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setAlture(true);
-        }
-      },
-      {
-        rootMargin: "1600px",
-      }
-    );
-
-    observer.observe(dmref.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
 
   return (
     <>
       <Navbar />
       <div className="light-dark-mode" data-theme={theme}>
-        <button id="changedm" onClick={handleToggleTheme} className={alture ? "fixd" : ""}>
+        <button id="changedm" onClick={handleToggleTheme} className={isNearScreen ? "fixd" : ""}>
           Change Theme
         </button>
         <br />
@@ -82,7 +66,7 @@ export function Cart() {
             <h2 id="textemptycart">No tenes productos en carrito</h2>
           )}
         </section>
-        <div ref={dmref}></div>
+        <div ref={externalRef}></div>
         <div className="cartfooter">
           <div className="wrapfooter">
             {cart?.length ? <h3>{`Total: $${amount}`}</h3> : ""}
