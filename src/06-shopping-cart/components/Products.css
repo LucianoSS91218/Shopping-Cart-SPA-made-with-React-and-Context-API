@@ -284,6 +284,12 @@ h3 {
   margin-bottom: 10px;
 }
 
+.products .gotoproduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .products .isproductincart {
   margin-top: 4px;
 }
