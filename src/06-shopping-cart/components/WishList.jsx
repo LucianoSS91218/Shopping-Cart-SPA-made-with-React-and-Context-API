@@ -6,6 +6,7 @@ import { Navbar } from "../components/Navbar.jsx";
 import useDarkLight from "../dark-light/hooks/useDarkLight.js";
 import "../dark-light/DarkLight.css";
 import { useRef, useState, useEffect } from "react";
+import useNearScreen from "../hooks/useNearScreen.js";
 
 export function WishList() {
   const { addToCart, removeFromCart, cart } = useCart();
@@ -20,40 +21,21 @@ export function WishList() {
     return wishlist.some((item) => item.id === product.id);
   };
 
-  const [theme, setTheme] = useDarkLight("theme", "light");
+  const externalRef = useRef();
+  const { isNearScreen } = useNearScreen({
+    distance: "1800px",
+    externalRef,
+  });
+
   function handleToggleTheme() {
     setTheme(theme === "dark" ? "light" : "dark");
   }
-
-  const [alture, setAlture] = useState(false);
-
-  const dmref = useRef();
-
-  useEffect(() => {
-    // use intersection observer to detect end of the page scroll
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setAlture(true);
-        }
-      },
-      {
-        rootMargin: "1800px",
-      }
-    );
-
-    observer.observe(dmref.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
 
   return (
     <>
       <Navbar />
       <div className="light-dark-mode" data-theme={theme}>
-        <button id="changedm" onClick={handleToggleTheme} className={alture ? "fixd" : ""}>
+        <button id="changedm" onClick={handleToggleTheme} className={isNearScreen ? "fixd" : ""}>
           Change Theme
         </button>
         <br />
@@ -88,7 +70,7 @@ export function WishList() {
             <h2>No tenes productos en lista de favoritos</h2>
           )}
         </section>
-        <div ref={dmref}></div>
+        <div ref={externalRef}></div>
         <div className="wlfooter">
           <button className={"clearwishlist"} onClick={clearWishList}>
             Borrar toda la lista de favoritos
