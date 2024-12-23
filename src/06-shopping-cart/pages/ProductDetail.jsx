@@ -18,6 +18,7 @@ import { Carousel } from "../components/SimilarProducts.jsx";
 
 import useDarkLight from "../dark-light/hooks/useDarkLight.js";
 import "../dark-light/DarkLight.css";
+import useNearScreen from "../hooks/useNearScreen.js";
 
 export function ProductDetail() {
 
@@ -40,36 +41,19 @@ export function ProductDetail() {
 
   const slices = OtherProducts.slice(30, 97);
 
-    const [theme, setTheme] = useDarkLight("theme", "light");
+const [theme, setTheme] = useDarkLight("theme", "light");
   const [activeDark, setActiveDark] = useState(false);
+
+  const externalRef = useRef();
+  const { isNearScreen } = useNearScreen({
+    distance: "1400px",
+    externalRef,
+  });
+
   function handleToggleTheme() {
     setTheme(theme === "dark" ? "light" : "dark");
     setActiveDark(true);
   }
-
-    const [alture, setAlture] = useState(false);
-
-  const dmref = useRef();
-
-  useEffect(() => {
-    // use intersection observer to detect end of the page scroll
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setAlture(true);
-        }
-      },
-      {
-        rootMargin: "1400px",
-      }
-    );
-
-    observer.observe(dmref.current);
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
 
   return (
     <>
@@ -78,7 +62,7 @@ export function ProductDetail() {
         <button
           id="changedm"
           onClick={handleToggleTheme}
-          className={alture ? "fixd" : ""}
+          className={isNearScreen ? "fixd" : ""}
         >
           Change Theme
         </button>
@@ -303,7 +287,7 @@ export function ProductDetail() {
                     </div>
                   </div>
                 </div>
-                <div ref={dmref} />
+                <div ref={externalRef} />
 
                 {filterp.length > 1 ? (
                   <>
