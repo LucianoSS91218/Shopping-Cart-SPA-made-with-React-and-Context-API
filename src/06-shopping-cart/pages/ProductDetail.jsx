@@ -16,10 +16,6 @@ import { useRef, useState, useEffect } from "react";
 
 import { Carousel } from "../components/SimilarProducts.jsx";
 
-import useDarkLight from "../dark-light/hooks/useDarkLight.js";
-import "../dark-light/DarkLight.css";
-import useNearScreen from "../hooks/useNearScreen.js";
-
 export function ProductDetail() {
 
   const [value, setValue] = useState(0);
@@ -41,33 +37,9 @@ export function ProductDetail() {
 
   const slices = OtherProducts.slice(30, 97);
 
-  const [theme, setTheme] = useDarkLight("theme", "light");
-  const [activeDark, setActiveDark] = useState(false);
-
-  const externalRef = useRef();
-  const { isNearScreen } = useNearScreen({
-    distance: "1400px",
-    externalRef,
-  });
-
-  function handleToggleTheme() {
-    setTheme(theme === "dark" ? "light" : "dark");
-    setActiveDark(true);
-  }
-
   return (
     <>
       <Navbar />
-      <div className="light-dark-mode" data-theme={theme}>
-        <button
-          id="changedm"
-          onClick={handleToggleTheme}
-          className={isNearScreen ? "fixd" : ""}
-        >
-          Change Theme
-        </button>
-
-        <br />
         <section>
           {pidDetail.map((product) => {
             const isProductInCart = checkProductInCart(product);
@@ -84,7 +56,7 @@ export function ProductDetail() {
                 titulo: "Especificaciones tecnicas",
                 elementos: (
                   <div className="technical-specs-table">
-                    <p className={theme === "light" ? "actblack" : "actwhite"}>
+                    <p>
                       Tipo de producto
                     </p>
                     <p>{product.category}</p>
@@ -101,7 +73,6 @@ export function ProductDetail() {
                     </div>
                     <p
                       id="secondchilddescription"
-                      className={theme === "light" ? "actblack" : "actwhite"}
                     >
                       Lorem ipsum dolor sit amet consectetur adipiscing elit
                       magna orci velit, mi purus lacus ridiculus integer odio
@@ -126,7 +97,6 @@ export function ProductDetail() {
                       <CiCreditCard1 size={40} />
                       <p>Tarjetas de crédito</p>
                       <p
-                        className={theme === "light" ? "actblack" : "actwhite"}
                       >
                         Pagá en 1, 3 y 6 cuotas fijas
                       </p>
@@ -143,7 +113,6 @@ export function ProductDetail() {
                       </div>
                       <p>Tarjetas de débito</p>
                       <p
-                        className={theme === "light" ? "actblack" : "actwhite"}
                       >
                         Pagá con tarjeta de débito con Visa, Master, Cabal
                       </p>
@@ -158,7 +127,6 @@ export function ProductDetail() {
                       </div>
                       <p>Mercado Pago</p>
                       <p
-                        className={theme === "light" ? "actblack" : "actwhite"}
                       >
                         Pagá con Mercadopago en 6 cuotas fijas
                       </p>
@@ -170,7 +138,6 @@ export function ProductDetail() {
                       </div>
                       <p>Transferencia bancaria y efectivo</p>
                       <p
-                        className={theme === "light" ? "actblack" : "actwhite"}
                       >
                         Pagá con transferencia bancaria o en efectivo en nuestra
                         sucursal
@@ -190,7 +157,6 @@ export function ProductDetail() {
                       </div>
                       <p>Envio gratuito con seguro total</p>
                       <p
-                        className={theme === "light" ? "actblack" : "actwhite"}
                       >
                         A todo el pais a través de Andreani
                       </p>
@@ -321,7 +287,6 @@ export function ProductDetail() {
             );
           })}
         </section>
-      </div>
     </>
   );
 }
