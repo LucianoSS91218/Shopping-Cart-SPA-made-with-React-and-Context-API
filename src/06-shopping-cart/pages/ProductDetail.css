@@ -5,10 +5,6 @@ section {
   max-width: 930px;
 }
 
-#changedm {
-z-index: 99;
-}
-
 /* product detail */
 
 .containerproductdetail {
@@ -56,6 +52,7 @@ z-index: 99;
 
 .miniimages img:hover {
   border-radius: 1px;
+  /* preguntale a la ia que el color se vea azul*/
 }
 
 /* other content */
@@ -173,8 +170,6 @@ z-index: 99;
   border-bottom: 2px solid rgb(1, 156, 180);
 }
 
-/* containerinfo for description, method payment and delivery */
-
 .containerinfo {
   border-radius: 5px;
   border: 1px solid rgb(244, 242, 242);
@@ -211,6 +206,7 @@ z-index: 99;
 .method-payment #credit-cards {
   max-inline-size: 100%;
   block-size: auto;
+  /* no hace falta poner ningun width: 94% ni mediaquery porque con estas 2 lineas ya esta */
 }
 
 .delivery {
