@@ -5,39 +5,39 @@
 }
 
 main {
-  width: 100%;
-  max-width: 1490px;
-}
-
-main .alignlayout {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-main .layout {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-main .layout .noproducts {
   display: flex;
   justify-content: center;
+}
+
+main .box {
+  display: grid;
+  grid-template-columns: 30% 75%; /* Adjust percentages as needed */
+  grid-gap: 5px;
+}
+
+@media (max-width: 1024px) {
+  main .box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 main #noproducts {
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 500px) {
-  .filters,
-  .filtersdarkmode {
-    display: none;
-  }
+  display: grid;
+  place-content: center;
 }
 
 .fixd {
   position: fixed;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footerwhite {
+  color: black;
 }
