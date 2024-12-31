@@ -1,5 +1,4 @@
 import { Products } from "../components/Products";
-import { FiltersDesktop } from "../components/FiltersDesktop.jsx";
 import { useFilters } from "../hooks/useFilters.js";
 import { productos as initialProducts } from "../mocks/products.json";
 import { Navbar } from "../components/Navbar.jsx";
@@ -38,7 +37,6 @@ export function Home() {
         </button>
         <main>
           <div className="box">
-            <FiltersDesktop isDarkMode={theme} />
             {filteredProducts.length > 0 ? (
               <Products products={filteredProducts} isDarkMode={theme} />
             ) : (
