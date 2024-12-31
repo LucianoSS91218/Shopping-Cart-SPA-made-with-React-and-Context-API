@@ -272,9 +272,7 @@ export function ProductDetail() {
                   {optionsinfo.map((oi, index) => {
                     return (
                       <p
-                        className={`${
-                          theme === "light" ? "actblack" : "actwhite"
-                        } ${optionsIndex === index ? "active" : ""}`}
+                        className={`${optionsIndex === index ? "active" : ""}`}
                         onClick={() => setOptionsIndex(index)}
                       >
                         {oi.titulo}
