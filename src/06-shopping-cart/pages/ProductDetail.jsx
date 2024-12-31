@@ -41,7 +41,7 @@ export function ProductDetail() {
 
   const slices = OtherProducts.slice(30, 97);
 
-const [theme, setTheme] = useDarkLight("theme", "light");
+  const [theme, setTheme] = useDarkLight("theme", "light");
   const [activeDark, setActiveDark] = useState(false);
 
   const externalRef = useRef();
@@ -57,7 +57,7 @@ const [theme, setTheme] = useDarkLight("theme", "light");
 
   return (
     <>
-            <Navbar />
+      <Navbar />
       <div className="light-dark-mode" data-theme={theme}>
         <button
           id="changedm"
