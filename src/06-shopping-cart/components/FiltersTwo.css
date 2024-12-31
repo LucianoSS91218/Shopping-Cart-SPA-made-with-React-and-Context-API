@@ -367,12 +367,15 @@
   left: 77px;
 }
 
-.modalfiltersmobile .modal-container .content hr.hide {
+.modalfiltersmobile .modal-container .content hr.hidehr {
   display: none;
 }
 
-.modalfiltersmobile .modal-container .content hr {
+.modalfiltersmobile .modal-container .content hr.showhr {
   display: block;
+}
+
+.modalfiltersmobile .modal-container .content hr {
   width: 316px;
   background-color: black;
   height: 1px;
