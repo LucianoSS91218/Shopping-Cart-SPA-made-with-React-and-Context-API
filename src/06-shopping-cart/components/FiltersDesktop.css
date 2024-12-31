@@ -63,22 +63,9 @@
   gap: 1rem;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .filters,
   .filtersdarkmode {
-    flex-direction: column;
-  }
-
-  .filters .pricefilter,
-  .filtersdarkmode .pricefilter {
-    flex-direction: column;
-    margin-bottom: 24px;
-    width: 50%;
-  }
-
-  .filters .categoryfilter,
-  .filtersdarkmode .categoryfilter {
-    margin-bottom: 20px;
-    justify-content: center;
+    display: none;
   }
 }
