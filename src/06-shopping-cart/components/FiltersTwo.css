@@ -122,11 +122,6 @@
   }
 }
 
-/* en lugar de usar el margen, le decimos al container lo q va a ocupar */
-/* NO: .containerproducts .alignsortproducts p {
-  margin-right: 84px;
-}*/
-
 .containerproducts .alignsortproducts #abs {
   font-size: 20px;
 }
@@ -346,19 +341,63 @@
   left: 77px;
 }
 
-.modalfiltersmobile .modal-container .content hr {
-  max-width: 280px;
-}
-
 .modalfiltersmobile .modal-container .content hr.hide {
   display: none;
 }
 
 .modalfiltersmobile .modal-container .content hr {
   display: block;
-  width: 390px;
+  width: 316px;
   background-color: black;
   height: 1px;
+}
+
+@media (max-width: 321px) {
+  .modalfiltersmobile .modal-container .content hr {
+    max-width: 260px;
+  }
+}
+
+@media (min-width: 321px) {
+  .modalfiltersmobile .modal-container .content hr {
+    max-width: 267px;
+  }
+}
+
+@media (min-width: 336px) {
+  .modalfiltersmobile .modal-container .content hr {
+    max-width: 270px;
+  }
+}
+
+@media (min-width: 343px) {
+  .modalfiltersmobile .modal-container .content hr {
+    max-width: 278px;
+  }
+}
+
+@media (min-width: 353px) {
+  .modalfiltersmobile .modal-container .content hr {
+    max-width: 284px;
+  }
+}
+
+@media (min-width: 363px) {
+  .modalfiltersmobile .modal-container .content hr {
+    max-width: 290px;
+  }
+}
+
+@media (min-width: 373px) {
+  .modalfiltersmobile .modal-container .content hr {
+    max-width: 296px;
+  }
+}
+
+@media (min-width: 373px) and (max-width: 390px) {
+  .modalfiltersmobile .modal-container .content hr {
+    max-width: 303px;
+  }
 }
 
 .modalfiltersmobile .modal-container .content {
@@ -404,6 +443,46 @@
   position: absolute;
   bottom: 4px;
   left: 118px;
+}
+
+@media (min-width: 393px) and (max-width: 404px) {
+  .modalfiltersmobile .modal-container #padrecleanfilters {
+    position: absolute;
+    bottom: 15px;
+    left: 118px;
+  }
+}
+
+@media (min-width: 404px) and (max-width: 413px) {
+  .modalfiltersmobile .modal-container #padrecleanfilters {
+    position: absolute;
+    bottom: 16px;
+    left: 118px;
+  }
+}
+
+@media (min-width: 413px) and (max-width: 421px) {
+  .modalfiltersmobile .modal-container #padrecleanfilters {
+    position: absolute;
+    bottom: 17px;
+    left: 118px;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 429px) {
+  .modalfiltersmobile .modal-container #padrecleanfilters {
+    position: absolute;
+    bottom: 19px;
+    left: 118px;
+  }
+}
+
+@media (min-width: 429px) and (max-width: 438px) {
+  .modalfiltersmobile .modal-container #padrecleanfilters {
+    position: absolute;
+    bottom: 21px;
+    left: 118px;
+  }
 }
 
 @media (min-width: 1024px) {
