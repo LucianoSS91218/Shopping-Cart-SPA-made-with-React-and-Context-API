@@ -1,10 +1,10 @@
 import { Products } from "../components/Products";
-import { Filters } from "../components/Filters.jsx";
+import { FiltersDesktop } from "../components/FiltersDesktop.jsx";
 import { useFilters } from "../hooks/useFilters.js";
 import { productos as initialProducts } from "../mocks/products.json";
 import { Navbar } from "../components/Navbar.jsx";
 import "./Home.css";
-import { useRef, useState, useEffect, useMemo } from "react";
+import { useRef } from "react";
 import useDarkLight from "../dark-light/hooks/useDarkLight.js";
 import "../dark-light/DarkLight.css";
 import useNearScreen from "../hooks/useNearScreen.js";
@@ -14,7 +14,7 @@ export function Home() {
   const filteredProducts = filterProducts(initialProducts);
 
   const [theme, setTheme] = useDarkLight("theme", "light");
-  
+
   const externalRef = useRef();
   const { isNearScreen } = useNearScreen({
     distance: "3100px",
@@ -27,8 +27,8 @@ export function Home() {
 
   return (
     <>
-      <Navbar />
       <div className="light-dark-mode" data-theme={theme}>
+        <Navbar />
         <button
           id="changedm"
           onClick={handleToggleTheme}
@@ -37,10 +37,8 @@ export function Home() {
           Change Theme
         </button>
         <main>
-          <div
-            className={filteredProducts.length > 0 ? "alignlayout" : "layout"}
-          >
-            <Filters isDarkMode={theme} />
+          <div className="box">
+            <FiltersDesktop isDarkMode={theme} />
             {filteredProducts.length > 0 ? (
               <Products products={filteredProducts} isDarkMode={theme} />
             ) : (
@@ -51,7 +49,9 @@ export function Home() {
           </div>
         </main>
         <div ref={externalRef}></div>
-        <footer>Copyright Luciano Sanuni</footer>
+        <footer className={theme === "light" ? "footerwhite" : ""}>
+          Copyright Luciano Sanuni
+        </footer>
       </div>
     </>
   );
