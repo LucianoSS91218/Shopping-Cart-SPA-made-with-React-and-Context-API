@@ -290,6 +290,33 @@
   font-size: 30px;
 }
 
+@media (max-width: 355px) {
+  .modalfiltersmobile .head .modal-close {
+    position: absolute;
+    top: -40px;
+    left: 260px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 355px) and (max-width: 363px) {
+  .modalfiltersmobile .head .modal-close {
+    position: absolute;
+    top: -40px;
+    left: 267px;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 363px) and (max-width: 367px) {
+  .modalfiltersmobile .head .modal-close {
+    position: absolute;
+    top: -40px;
+    left: 270px;
+    font-size: 30px;
+  }
+}
+
 /* content */
 
 .modalfiltersmobile .modal-container {
