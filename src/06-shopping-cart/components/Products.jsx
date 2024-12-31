@@ -163,7 +163,7 @@ export function Products({ products, isDarkMode }) {
   ];
 
   const { titulo, items } = filtersOptionsMobile[indice];
-
+  
   return (
     <>
       <div className="containerproducts">
@@ -278,7 +278,11 @@ export function Products({ products, isDarkMode }) {
                         <p>{f.titulo}</p>
                         <FaAngleRight size={24} />
                       </div>
-                      <hr />
+                      <hr
+                        className={`${
+                          showOptionsFilters ? "hidehr" : "showhr"
+                        }`}
+                      />
                     </>
                   );
                 })}
