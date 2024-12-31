@@ -9,7 +9,6 @@
     max-width: 600px;
   }
 }
-/* la verdad que nose */
 
 .containerproducts .alignsortproducts .onlymobile {
   display: flex;
@@ -441,8 +440,24 @@
 
 .modalfiltersmobile .modal-container #padrecleanfilters {
   position: absolute;
-  bottom: 4px;
+  bottom: 9px;
   left: 118px;
+}
+
+@media (min-width: 371px) and (max-width: 388px) {
+  .modalfiltersmobile .modal-container #padrecleanfilters {
+    position: absolute;
+    bottom: 13px;
+    left: 118px;
+  }
+}
+
+@media (min-width: 388px) and (max-width: 393px) {
+  .modalfiltersmobile .modal-container #padrecleanfilters {
+    position: absolute;
+    bottom: 16px;
+    left: 118px;
+  }
 }
 
 @media (min-width: 393px) and (max-width: 404px) {
