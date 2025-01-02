@@ -45,6 +45,10 @@ export function Products({ products }) {
   const [indice, setIndice] = useState(0);
 
   useEffect(() => {
+    if (isOpenModal) {
+      document.body.style.overflow = "hidden";
+    }
+
     const handleClickOutside = (event) => {
       if (
         sortoptionsref.current &&
@@ -58,6 +62,7 @@ export function Products({ products }) {
         !modalFilters.current.contains(event.target)
       ) {
         setIsOpenModal(false);
+        document.body.style.overflow = "auto";
       }
     };
 
@@ -73,12 +78,10 @@ export function Products({ products }) {
 
   const showModalFilters = () => {
     setIsOpenModal(true);
-    document.body.style.overflow = "hidden";
   };
 
   const closeModalFilters = () => {
     setIsOpenModal(false);
-    document.body.style.overflow = "auto";
   };
 
   const CATEGORIES_TO_MAP = {
