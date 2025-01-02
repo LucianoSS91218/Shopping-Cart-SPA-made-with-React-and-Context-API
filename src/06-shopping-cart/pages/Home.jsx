@@ -15,7 +15,7 @@ export function Home() {
         <main>
           <div className="box">
             {filteredProducts.length > 0 ? (
-              <Products products={filteredProducts} isDarkMode={theme} />
+              <Products products={filteredProducts} />
             ) : (
               <div className="noproducts">
                 <h3>No hay productos de {filters.category} para mostrar</h3>
