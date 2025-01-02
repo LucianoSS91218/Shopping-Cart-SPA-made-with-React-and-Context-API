@@ -125,7 +125,6 @@ export function Products({ products }) {
     {
       id: "ajg947nj5",
       titulo: "Categoria",
-      nose: "hola",
       items: (
         <ul>
           {Object.entries(CATEGORIES_TO_MAP).map(([key, literal]) => (
@@ -146,7 +145,6 @@ export function Products({ products }) {
     {
       id: "mkg285kl9",
       titulo: "Precio",
-      nose: "chau",
       items: (
         <>
           <p>Rangos de precio</p>
