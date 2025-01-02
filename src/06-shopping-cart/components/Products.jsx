@@ -44,6 +44,9 @@ export function Products({ products }) {
 
   const [indice, setIndice] = useState(0);
 
+  const [showOptionsFilters, setShowOptionsFilters] = useState(false);
+  const [ReShowOptionsFilters, setReShowOptionsFilters] = useState(true);
+
   useEffect(() => {
     if (isOpenModal) {
       document.body.style.overflow = "hidden";
@@ -63,6 +66,7 @@ export function Products({ products }) {
       ) {
         setIsOpenModal(false);
         document.body.style.overflow = "auto";
+        setShowOptionsFilters(false);
       }
     };
 
@@ -94,9 +98,6 @@ export function Products({ products }) {
     skincare: "Cuidado de piel",
     fragrances: "Fragancias",
   };
-
-  const [showOptionsFilters, setShowOptionsFilters] = useState(false);
-  const [ReShowOptionsFilters, setReShowOptionsFilters] = useState(true);
 
   const handleModalCleanFilters = () => {
     setFilters((prevState) => ({
