@@ -11,7 +11,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
 import ReactDOM from "react-dom";
 
-export function Products({ products, isDarkMode }) {
+export function Products({ products }) {
   const { addToCart, removeFromCart, cart } = useCart();
   const checkProductInCart = (product) => {
     return cart.some((item) => item.id === product.id);
@@ -169,9 +169,6 @@ export function Products({ products, isDarkMode }) {
       <div className="containerproducts">
         <div className="alignsortproducts">
           <p
-            className={
-              isDarkMode === "light" ? "lengthproducts" : "lengthproductswhite"
-            }
           >
             15 Productos
           </p>
@@ -186,20 +183,18 @@ export function Products({ products, isDarkMode }) {
                 <BiSortDown size={32} />
               </span>
               <span
-                id={isDarkMode === "dark" ? "abswhite" : "abs"}
                 ref={sortoptionsref}
                 onClick={() => handleSortButtonClick()}
               >
                 {`Ordenar por: `}
               </span>
-              <span className={isDarkMode === "dark" ? "typeorderwhite" : ""}>
+              <span>
                 {`${filters.sorttype}`}
                 <FaArrowDown size={18} />
               </span>
             </div>
             <div className="filtercategoryonlymobile">
               <span
-                className={isDarkMode === "dark" ? "textfiltermobilewhite" : ""}
                 onClick={showModalFilters}
               >
                 Filtrar
