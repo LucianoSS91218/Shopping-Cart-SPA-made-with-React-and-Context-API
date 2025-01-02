@@ -27,29 +27,4 @@
   font-weight: 600;
   cursor: pointer;
   margin-left: 10px;
-  margin-top: 10px;
-}
-
-@media (max-width: 500px) {
-  .light-dark-mode {
-    position: relative;
-  }
-
-  .light-dark-mode #changedm {
-    position: absolute;
-    top: 130px;
-    left: -8px;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 1600px) {
-  .light-dark-mode {
-    position: relative;
-  }
-
-  .light-dark-mode #changedm {
-    position: absolute;
-    top: 54px;
-    left: -8px;
-  }
 }
