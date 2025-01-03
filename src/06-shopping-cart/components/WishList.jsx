@@ -21,9 +21,11 @@ export function WishList() {
     return wishlist.some((item) => item.id === product.id);
   };
 
+  const [theme, setTheme] = useDarkLight("theme", "light");
+
   const externalRef = useRef();
   const { isNearScreen } = useNearScreen({
-    distance: "1800px",
+    distance: "200px",
     externalRef,
   });
 
@@ -33,9 +35,13 @@ export function WishList() {
 
   return (
     <>
-      <Navbar />
       <div className="light-dark-mode" data-theme={theme}>
-        <button id="changedm" onClick={handleToggleTheme} className={isNearScreen ? "fixd" : ""}>
+        <Navbar />
+        <button
+          id="changedm"
+          onClick={handleToggleTheme}
+          className={isNearScreen ? "fixd" : ""}
+        >
           Change Theme
         </button>
         <br />
