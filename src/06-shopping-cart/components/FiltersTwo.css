@@ -81,6 +81,15 @@
   .containerproducts
     .alignsortproducts
     .onlymobile
+    #fathersort
+    #iconsortonlymobile
+    .iconwhite {
+    color: white;
+  }
+
+  .containerproducts
+    .alignsortproducts
+    .onlymobile
     .filtercategoryonlymobile
     span {
     color: black;
@@ -120,6 +129,11 @@
     width: 84%;
   }
 }
+
+/* en lugar de usar el margen, le decimos al container lo q va a ocupar */
+/* NO: .containerproducts .alignsortproducts p {
+  margin-right: 84px;
+}*/
 
 .containerproducts .alignsortproducts #abs {
   font-size: 20px;
@@ -229,95 +243,28 @@
   }
 }
 
+/* modal filter right */
+
 .modalfiltersmobile {
-  display: none;
   z-index: 9;
   top: 0;
   left: 0;
   height: 96vh;
   background-color: #fff;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 68%;
-  transform: translateX(20px);
+  transform: translateX(100%);
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
 }
 
 .modalfiltersmobile.is-open {
-  display: flex;
-  transition: all 1s ease-in-out;
-  transform: translateX(-8px);
-}
-
-.modalfiltersmobile .head {
-  position: relative;
-}
-
-.modalfiltersmobile .head :nth-child(1) {
-  position: absolute;
-  top: 8px;
-  left: -5px;
-  color: rgb(1, 156, 180);
-}
-
-.modalfiltersmobile .head :nth-child(1).active {
-  display: block;
-}
-.modalfiltersmobile .head :nth-child(1).inactive {
-  display: none;
-}
-
-.modalfiltersmobile .head :nth-child(2) {
-  position: absolute;
-  top: -12px;
-  left: 22px;
-}
-
-.modalfiltersmobile .head :nth-child(2).active {
   opacity: 1;
-  visibility: visible;
+  transform: translateX(0%);
 }
-
-.modalfiltersmobile .head :nth-child(2).inactive {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.modalfiltersmobile .head .modal-close {
-  position: absolute;
-  top: -40px;
-  left: 286px;
-  font-size: 30px;
-}
-
-@media (max-width: 355px) {
-  .modalfiltersmobile .head .modal-close {
-    position: absolute;
-    top: -40px;
-    left: 260px;
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 355px) and (max-width: 363px) {
-  .modalfiltersmobile .head .modal-close {
-    position: absolute;
-    top: -40px;
-    left: 267px;
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 363px) and (max-width: 367px) {
-  .modalfiltersmobile .head .modal-close {
-    position: absolute;
-    top: -40px;
-    left: 270px;
-    font-size: 30px;
-  }
-}
-
-/* content */
 
 .modalfiltersmobile .modal-container {
   display: flex;
@@ -325,8 +272,47 @@
   justify-content: flex-start;
 }
 
+/* modal gobacktomain and close */
+
+.modalfiltersmobile .modal-container .head {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.modalfiltersmobile .modal-container .head .headgoback {
+  opacity: 0;
+}
+
+.modalfiltersmobile .modal-container .head .headgoback svg {
+  color: rgb(1, 156, 180);
+  position: absolute;
+  top: 22px;
+  left: -7px;
+}
+
+.modalfiltersmobile .modal-container .head .headgoback p {
+  color: black;
+  position: absolute;
+  top: 6px;
+  left: 20px;
+}
+
+/*
+  opacity: 1;
+  visibility: visible;
+*/
+.modalfiltersmobile .modal-container .head .headgoback.active {
+  opacity: 1;
+}
+
+.modalfiltersmobile .head .headgoback .modal-close {
+  font-size: 40px;
+}
+
+/* modal header titles */
+
 .modalfiltersmobile .modal-container .titlehead {
-  margin-top: 62px;
   display: flex;
   justify-content: flex-start;
 }
@@ -337,102 +323,50 @@
 }
 
 .modalfiltersmobile .modal-container .titlehead :nth-child(1) {
-  margin-right: 25px;
+  margin-right: 5px;
 }
 
+.modalfiltersmobile .modal-container .titlehead svg {
+  color: rgb(1, 156, 180);
+  margin-right: 3px;
+}
+
+.modalfiltersmobile .modal-container .titlehead svg,
 .modalfiltersmobile .modal-container .titlehead :nth-child(3) {
   display: none;
 }
 
-.modalfiltersmobile .modal-container .titlehead :nth-child(3).active {
+.modalfiltersmobile .modal-container .titlehead svg.active,
+.modalfiltersmobile .modal-container .titlehead :nth-child(3) {
   display: block;
-}
-
-.modalfiltersmobile .modal-container .titlehead svg {
-  position: absolute;
-  top: 81px;
-  left: 77px;
-  color: rgb(1, 156, 180);
-  margin-right: 10px;
-  display: none;
-}
-
-.modalfiltersmobile .modal-container .titlehead svg.active {
-  display: block;
-}
-
-.modalfiltersmobile .modal-container .titlehead svg.align {
-  position: absolute;
-  top: 82px;
-  left: 77px;
-}
-
-.modalfiltersmobile .modal-container .content hr.hidehr {
-  display: none;
-}
-
-.modalfiltersmobile .modal-container .content hr.showhr {
-  display: block;
-}
-
-.modalfiltersmobile .modal-container .content hr {
-  width: 316px;
-  background-color: black;
-  height: 1px;
-}
-
-@media (max-width: 321px) {
-  .modalfiltersmobile .modal-container .content hr {
-    max-width: 260px;
-  }
-}
-
-@media (min-width: 321px) {
-  .modalfiltersmobile .modal-container .content hr {
-    max-width: 267px;
-  }
-}
-
-@media (min-width: 336px) {
-  .modalfiltersmobile .modal-container .content hr {
-    max-width: 270px;
-  }
-}
-
-@media (min-width: 343px) {
-  .modalfiltersmobile .modal-container .content hr {
-    max-width: 278px;
-  }
-}
-
-@media (min-width: 353px) {
-  .modalfiltersmobile .modal-container .content hr {
-    max-width: 284px;
-  }
-}
-
-@media (min-width: 363px) {
-  .modalfiltersmobile .modal-container .content hr {
-    max-width: 290px;
-  }
-}
-
-@media (min-width: 373px) {
-  .modalfiltersmobile .modal-container .content hr {
-    max-width: 296px;
-  }
-}
-
-@media (min-width: 373px) and (max-width: 390px) {
-  .modalfiltersmobile .modal-container .content hr {
-    max-width: 303px;
-  }
 }
 
 .modalfiltersmobile .modal-container .content {
   display: flex;
   flex-direction: column;
 }
+
+/* adjust hr */
+.modalfiltersmobile .modal-container .hidehr {
+  display: none;
+}
+
+.modalfiltersmobile .modal-container .hrtitlehead {
+  display: flex; /* Give each item equal space */
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+/* content's hr */
+.modalfiltersmobile .modal-container .content .showhr {
+  display: flex;
+  flex-basis: 100%; /* Give each item equal space */
+  border: 1px solid black;
+  height: 1px;
+  box-sizing: border-box;
+}
+
+/* option category and price */
 
 .modalfiltersmobile .modal-container .content .option {
   display: flex;
@@ -468,66 +402,12 @@
   display: block;
 }
 
-.modalfiltersmobile .modal-container #padrecleanfilters {
-  position: absolute;
-  bottom: 9px;
-  left: 118px;
-}
-
-@media (min-width: 371px) and (max-width: 388px) {
-  .modalfiltersmobile .modal-container #padrecleanfilters {
-    position: absolute;
-    bottom: 13px;
-    left: 118px;
-  }
-}
-
-@media (min-width: 388px) and (max-width: 393px) {
-  .modalfiltersmobile .modal-container #padrecleanfilters {
-    position: absolute;
-    bottom: 16px;
-    left: 118px;
-  }
-}
-
-@media (min-width: 393px) and (max-width: 404px) {
-  .modalfiltersmobile .modal-container #padrecleanfilters {
-    position: absolute;
-    bottom: 15px;
-    left: 118px;
-  }
-}
-
-@media (min-width: 404px) and (max-width: 413px) {
-  .modalfiltersmobile .modal-container #padrecleanfilters {
-    position: absolute;
-    bottom: 16px;
-    left: 118px;
-  }
-}
-
-@media (min-width: 413px) and (max-width: 421px) {
-  .modalfiltersmobile .modal-container #padrecleanfilters {
-    position: absolute;
-    bottom: 17px;
-    left: 118px;
-  }
-}
-
-@media (min-width: 421px) and (max-width: 429px) {
-  .modalfiltersmobile .modal-container #padrecleanfilters {
-    position: absolute;
-    bottom: 19px;
-    left: 118px;
-  }
-}
-
-@media (min-width: 429px) and (max-width: 438px) {
-  .modalfiltersmobile .modal-container #padrecleanfilters {
-    position: absolute;
-    bottom: 21px;
-    left: 118px;
-  }
+.modalfiltersmobile #padrecleanfilters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
 }
 
 @media (min-width: 1024px) {
