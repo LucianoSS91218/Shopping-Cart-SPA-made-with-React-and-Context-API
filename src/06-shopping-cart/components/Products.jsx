@@ -11,7 +11,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
 import ReactDOM from "react-dom";
 
-export function Products({ products }) {
+export function Products({ products, isDarkMode }) {
   const { addToCart, removeFromCart, cart } = useCart();
   const checkProductInCart = (product) => {
     return cart.some((item) => item.id === product.id);
@@ -29,6 +29,8 @@ export function Products({ products }) {
     "Nombre, descendente": "Nombre, descendente",
   };
 
+  const sortoptionsref = useRef();
+
   const handleChangeSort = (text) => {
     setFilters((prevState) => ({
       ...prevState,
@@ -36,7 +38,9 @@ export function Products({ products }) {
     }));
   };
 
-  const sortoptionsref = useRef();
+  const handleSortButtonClick = () => {
+    setShowButtonsSort(!showButtonsSort);
+  };
 
   const [isOpenModal, setIsOpenModal] = useState(false);
 
@@ -44,12 +48,11 @@ export function Products({ products }) {
 
   const [indice, setIndice] = useState(0);
 
-  const [showOptionsFilters, setShowOptionsFilters] = useState(false);
-  const [ReShowOptionsFilters, setReShowOptionsFilters] = useState(true);
-
   useEffect(() => {
     if (isOpenModal) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "auto";
     }
 
     const handleClickOutside = (event) => {
@@ -65,8 +68,6 @@ export function Products({ products }) {
         !modalFilters.current.contains(event.target)
       ) {
         setIsOpenModal(false);
-        document.body.style.overflow = "auto";
-        setShowOptionsFilters(false);
       }
     };
 
@@ -74,19 +75,9 @@ export function Products({ products }) {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [isOpenModal]);
 
-  const handleSortButtonClick = () => {
-    setShowButtonsSort(!showButtonsSort);
-  };
-
-  const showModalFilters = () => {
-    setIsOpenModal(true);
-  };
-
-  const closeModalFilters = () => {
-    setIsOpenModal(false);
-  };
+  const [showOptionsFilters, setShowOptionsFilters] = useState(false);
 
   const CATEGORIES_TO_MAP = {
     all: "Todos",
@@ -99,12 +90,12 @@ export function Products({ products }) {
     fragrances: "Fragancias",
   };
 
-  const handleModalCleanFilters = () => {
-    setFilters((prevState) => ({
-      ...prevState,
-      category: "all",
-      minPrice: 440,
-    }));
+  const showModalFilters = () => {
+    setIsOpenModal(true);
+  };
+
+  const closeModalFilters = () => {
+    setIsOpenModal(false);
   };
 
   const handleChangeCategory = (text) => {
@@ -118,6 +109,14 @@ export function Products({ products }) {
     setFilters((prevState) => ({
       ...prevState,
       minPrice: event.target.value,
+    }));
+  };
+
+  const handleModalCleanFilters = () => {
+    setFilters((prevState) => ({
+      ...prevState,
+      category: "all",
+      minPrice: 440,
     }));
   };
 
@@ -171,6 +170,9 @@ export function Products({ products }) {
       <div className="containerproducts">
         <div className="alignsortproducts">
           <p
+            className={
+              isDarkMode === "light" ? "lengthproducts" : "lengthproductswhite"
+            }
           >
             15 Productos
           </p>
@@ -182,21 +184,26 @@ export function Products({ products }) {
                 ref={sortoptionsref}
                 onClick={() => handleSortButtonClick()}
               >
-                <BiSortDown size={32} />
+                <BiSortDown
+                  size={32}
+                  className={isDarkMode === "dark" ? "iconwhite" : ""}
+                />
               </span>
               <span
+                id={isDarkMode === "dark" ? "abswhite" : "abs"}
                 ref={sortoptionsref}
                 onClick={() => handleSortButtonClick()}
               >
                 {`Ordenar por: `}
               </span>
-              <span>
+              <span className={isDarkMode === "dark" ? "typeorderwhite" : ""}>
                 {`${filters.sorttype}`}
                 <FaArrowDown size={18} />
               </span>
             </div>
             <div className="filtercategoryonlymobile">
               <span
+                className={isDarkMode === "dark" ? "textfiltermobilewhite" : ""}
                 onClick={showModalFilters}
               >
                 Filtrar
@@ -222,40 +229,38 @@ export function Products({ products }) {
             ref={modalFilters}
             className={`modalfiltersmobile ${isOpenModal && "is-open"}`}
           >
-            <div className="head">
-              <FaAngleLeft
-                onClick={() => setReShowOptionsFilters(!ReShowOptionsFilters)}
-                className={showOptionsFilters ? "active" : "inactive"}
-                size={26}
-              />
-              <p
-                onClick={() => setReShowOptionsFilters(!ReShowOptionsFilters)}
-                className={
-                  showOptionsFilters || !ReShowOptionsFilters
-                    ? "active"
-                    : "inactive"
-                }
-              >
-                Atras
-              </p>
-              <p className="modal-close" onClick={closeModalFilters}>
-                X
-              </p>
-            </div>
             <div className="modal-container">
+              <div className="head">
+                <div
+                  className={`headgoback ${
+                    showOptionsFilters ? "active" : "inactive"
+                  }`}
+                >
+                  <FaAngleLeft
+                    onClick={() => setShowOptionsFilters(!showOptionsFilters)}
+                    size={30}
+                  />
+                  <p onClick={() => setShowOptionsFilters(!showOptionsFilters)}>
+                    Atras
+                  </p>
+                </div>
+                <p className={`modalclose`} onClick={closeModalFilters}>
+                  X
+                </p>
+              </div>
               <div className="titlehead">
                 <strong>Filtros</strong>
                 <FaAngleRight
-                  className={`${titulo === "Categoria" ? "align" : ""} ${
-                    showOptionsFilters ? "active" : ""
-                  }`}
+                  className={`${showOptionsFilters ? "active" : ""}`}
                   size={30}
                 />
                 <strong className={showOptionsFilters ? "active" : ""}>
                   {showOptionsFilters ? titulo : ""}
                 </strong>
               </div>
-              <hr />
+              <div>
+                <hr className={showOptionsFilters ? "hidehr" : "hrtitlehead"} />
+              </div>
 
               <div className="content">
                 {filtersOptionsMobile.map((f, index) => {
@@ -263,9 +268,7 @@ export function Products({ products }) {
                     <>
                       <div
                         className={`${
-                          !showOptionsFilters || !ReShowOptionsFilters
-                            ? "option"
-                            : "option inactive"
+                          !showOptionsFilters ? "option" : "option inactive"
                         }`}
                         onClick={() => {
                           setShowOptionsFilters(true);
@@ -275,30 +278,30 @@ export function Products({ products }) {
                         <p>{f.titulo}</p>
                         <FaAngleRight size={24} />
                       </div>
-                      <hr
-                        className={`${
-                          showOptionsFilters ? "hidehr" : "showhr"
-                        }`}
-                      />
+                      <div>
+                        <hr
+                          className={`${
+                            showOptionsFilters ? "hidehr" : "showhr"
+                          }`}
+                        />
+                      </div>
                     </>
                   );
                 })}
 
                 <div
                   className={`${
-                    showOptionsFilters && ReShowOptionsFilters
-                      ? "showitems active"
-                      : "showitems"
+                    showOptionsFilters ? "showitems active" : "showitems"
                   }`}
                 >
                   {items}
                 </div>
               </div>
-              <div id="padrecleanfilters">
-                <button id="cleanfilters" onClick={handleModalCleanFilters}>
-                  Limpiar
-                </button>
-              </div>
+            </div>
+            <div id="padrecleanfilters">
+              <button id="cleanfilters" onClick={handleModalCleanFilters}>
+                Limpiar
+              </button>
             </div>
           </dialog>,
           document.getElementById("modalfiltersmobile")
