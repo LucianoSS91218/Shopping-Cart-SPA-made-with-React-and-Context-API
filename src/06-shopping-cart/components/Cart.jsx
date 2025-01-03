@@ -25,22 +25,25 @@ export function Cart() {
     .reduce((x, y) => x + y, 0);
 
   const [theme, setTheme] = useDarkLight("theme", "light");
-  
   const externalRef = useRef();
   const { isNearScreen } = useNearScreen({
-    distance: "1600px",
+    distance: "300px",
     externalRef,
   });
 
   function handleToggleTheme() {
     setTheme(theme === "dark" ? "light" : "dark");
   }
-
+  
   return (
     <>
-      <Navbar />
       <div className="light-dark-mode" data-theme={theme}>
-        <button id="changedm" onClick={handleToggleTheme} className={isNearScreen ? "fixd" : ""}>
+        <Navbar />
+        <button
+          id="changedm"
+          onClick={handleToggleTheme}
+          className={isNearScreen ? "fixd" : ""}
+        >
           Change Theme
         </button>
         <br />
@@ -66,6 +69,7 @@ export function Cart() {
             <h2 id="textemptycart">No tenes productos en carrito</h2>
           )}
         </section>
+
         <div ref={externalRef}></div>
         <div className="cartfooter">
           <div className="wrapfooter">
